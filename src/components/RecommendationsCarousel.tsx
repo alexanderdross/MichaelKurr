@@ -150,7 +150,7 @@ export default function RecommendationsCarousel() {
         <div>
           {/* Quote icon */}
           <svg
-            className="w-10 h-10 text-gold/40 mb-4"
+            className="w-10 h-10 text-gold/60 mb-4"
             viewBox="0 0 24 24"
             fill="currentColor"
             aria-hidden="true"
@@ -185,7 +185,7 @@ export default function RecommendationsCarousel() {
                 rec.name
               )}
             </cite>
-            <span className="text-sm text-charcoal/60 block leading-snug mt-0.5">
+            <span className="text-sm text-charcoal/80 block leading-snug mt-0.5">
               {rec.title}
             </span>
             <span className="text-xs text-gold font-medium mt-1 block">

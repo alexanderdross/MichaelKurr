@@ -101,7 +101,7 @@ export default function Hero() {
         className="hidden sm:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-3 text-white/60 hover:text-white/80 transition-colors duration-200 cursor-pointer"
         aria-label="Scroll down to About section"
       >
-        <span className="text-xs tracking-widest uppercase">
+        <span className="text-xs tracking-widest uppercase text-white/70">
           Scroll to explore
         </span>
         <div className="w-px h-12 bg-gradient-to-b from-white/40 to-transparent animate-pulse" />

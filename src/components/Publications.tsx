@@ -76,7 +76,7 @@ export default function Publications() {
               <h3 className="font-heading text-2xl font-semibold text-navy mb-1" lang="de">
                 Prozessorientierte Reorganisation
               </h3>
-              <p className="text-charcoal/60 text-sm mb-3" lang="de">
+              <p className="text-charcoal/80 text-sm mb-3" lang="de">
                 Reengineering-Projekte professionell gestalten und umsetzen
               </p>
               <p className="text-gold font-medium text-sm mb-2">
@@ -120,7 +120,7 @@ export default function Publications() {
               <h3 className="font-heading text-2xl font-semibold text-navy mb-1" lang="de">
                 Kooperationsmanagement
               </h3>
-              <p className="text-charcoal/60 text-sm mb-3" lang="de">
+              <p className="text-charcoal/80 text-sm mb-3" lang="de">
                 Systematische Vorbereitung – Gezielter Auf- und Ausbau –
                 Entscheidende Erfolgsfaktoren
               </p>
