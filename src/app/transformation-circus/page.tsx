@@ -1099,7 +1099,7 @@ export default function TransformationCircusPage() {
 
         {/* Disclaimer */}
         <div className="py-4 bg-gray-100 text-center">
-          <p className="text-xs text-charcoal/50 max-w-3xl mx-auto px-6">
+          <p className="text-xs text-charcoal/65 max-w-3xl mx-auto px-6">
             &copy; 2026 Dr. Kurr Advisory. All rights reserved. The views
             expressed are solely those of Dr. Michael A. Kurr. All examples
             provided are purely hypothetical. Some ideas were inspired by GenAI.
@@ -1109,7 +1109,7 @@ export default function TransformationCircusPage() {
       </main>
 
       {/* ── Footer ── */}
-      <footer className="py-8 bg-navy-dark text-white/50 border-t border-white/5">
+      <footer className="py-8 bg-navy-dark text-white/70 border-t border-white/5">
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm">
             &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights

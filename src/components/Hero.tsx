@@ -98,7 +98,7 @@ export default function Hero() {
       {/* Scroll indicator — hidden on small screens to avoid overlap */}
       <a
         href="#about"
-        className="hidden sm:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-3 text-white/40 hover:text-white/70 transition-colors duration-200 cursor-pointer"
+        className="hidden sm:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-3 text-white/60 hover:text-white/80 transition-colors duration-200 cursor-pointer"
         aria-label="Scroll down to About section"
       >
         <span className="text-xs tracking-widest uppercase">
