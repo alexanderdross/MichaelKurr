@@ -40,7 +40,7 @@ export default function NotFound() {
               <span className="text-sm font-semibold text-white group-hover:text-gold transition-colors duration-200">
                 {link.label}
               </span>
-              <span className="text-xs text-white/40 mt-0.5">{link.desc}</span>
+              <span className="text-xs text-white/60 mt-0.5">{link.desc}</span>
             </Link>
           ))}
         </div>
@@ -68,7 +68,7 @@ export default function NotFound() {
         </Link>
 
         {/* Footer note */}
-        <p className="text-white/30 text-xs mt-16">
+        <p className="text-white/50 text-xs mt-16">
           michaelkurr.com &mdash; Dr. Michael Kurr
         </p>
       </div>

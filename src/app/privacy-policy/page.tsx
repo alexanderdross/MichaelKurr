@@ -323,7 +323,7 @@ export default function PrivacyPolicyPage() {
       </main>
 
       {/* Footer */}
-      <footer className="py-8 bg-navy-dark text-white/50 border-t border-white/5">
+      <footer className="py-8 bg-navy-dark text-white/70 border-t border-white/5">
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm">
             &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights
@@ -347,15 +347,13 @@ export default function PrivacyPolicyPage() {
             >
               Imprint
             </Link>
-            <a
-              href="https://www.linkedin.com/in/michaelkurr/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Connect with Dr. Michael Kurr on LinkedIn"
+            <Link
+              href="/transformation-circus/"
+              title="The Transformation Circus"
               className="hover:text-white/80 transition-colors"
             >
-              LinkedIn
-            </a>
+              Transformation Circus
+            </Link>
           </nav>
         </div>
       </footer>

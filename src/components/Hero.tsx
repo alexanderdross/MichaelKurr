@@ -51,7 +51,7 @@ export default function Hero() {
 
         {/* Content */}
         <div className="text-center lg:text-left">
-          <p className="fade-in text-gold font-body text-lg tracking-[0.3em] uppercase mb-4">
+          <p className="fade-in text-gold font-body text-lg tracking-[0.15em] uppercase mb-4">
             Dr.
           </p>
           <h1 className="fade-in font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
@@ -96,12 +96,16 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator — hidden on small screens to avoid overlap */}
-      <div className="hidden sm:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-3 text-white/40" aria-hidden="true">
+      <a
+        href="#about"
+        className="hidden sm:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-3 text-white/60 hover:text-white/80 transition-colors duration-200 cursor-pointer"
+        aria-label="Scroll down to About section"
+      >
         <span className="text-xs tracking-widest uppercase">
           Scroll to explore
         </span>
         <div className="w-px h-12 bg-gradient-to-b from-white/40 to-transparent animate-pulse" />
-      </div>
+      </a>
     </section>
   );
 }

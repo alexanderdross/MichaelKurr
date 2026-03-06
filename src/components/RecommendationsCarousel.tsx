@@ -255,7 +255,7 @@ export default function RecommendationsCarousel() {
       </div>
 
       {/* Counter */}
-      <p className="text-center text-xs text-charcoal/50 mt-3" aria-hidden="true">
+      <p className="text-center text-xs text-charcoal/65 mt-3" aria-hidden="true">
         {current + 1} / {total}
       </p>
     </div>

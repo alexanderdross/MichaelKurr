@@ -282,7 +282,7 @@ export default async function ExpertisePage({
                 title={`Previous expertise: ${prev.title}`}
                 className="fade-in flex-1 group p-6 rounded-xl border border-gray-200 hover:border-gold/40 hover:shadow-md transition-all duration-300"
               >
-                <span className="text-xs font-semibold tracking-wider uppercase text-charcoal/50">
+                <span className="text-xs font-semibold tracking-wider uppercase text-charcoal/65">
                   Previous
                 </span>
                 <span className="block font-heading text-lg font-semibold text-navy group-hover:text-gold transition-colors mt-1">
@@ -298,7 +298,7 @@ export default async function ExpertisePage({
                 title={`Next expertise: ${next.title}`}
                 className="fade-in flex-1 group p-6 rounded-xl border border-gray-200 hover:border-gold/40 hover:shadow-md transition-all duration-300 text-right"
               >
-                <span className="text-xs font-semibold tracking-wider uppercase text-charcoal/50">
+                <span className="text-xs font-semibold tracking-wider uppercase text-charcoal/65">
                   Next
                 </span>
                 <span className="block font-heading text-lg font-semibold text-navy group-hover:text-gold transition-colors mt-1">
@@ -338,7 +338,7 @@ export default async function ExpertisePage({
       </main>
 
       {/* Footer */}
-      <footer className="py-8 bg-navy-dark text-white/50 border-t border-white/5">
+      <footer className="py-8 bg-navy-dark text-white/70 border-t border-white/5">
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm">
             &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights
@@ -369,15 +369,13 @@ export default async function ExpertisePage({
             >
               Privacy
             </Link>
-            <a
-              href="https://www.linkedin.com/in/michaelkurr/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Connect with Dr. Michael Kurr on LinkedIn"
+            <Link
+              href="/transformation-circus/"
+              title="The Transformation Circus"
               className="hover:text-white/80 transition-colors"
             >
-              LinkedIn
-            </a>
+              Transformation Circus
+            </Link>
           </nav>
         </div>
       </footer>
