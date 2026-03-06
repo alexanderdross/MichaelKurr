@@ -390,23 +390,23 @@ export default function TransformationCircusPage() {
 
       <main id="main-content">
         {/* ── Breadcrumb ── */}
-        <div className="pt-16 bg-white">
+        <div className="pt-20 bg-navy">
           <div className="max-w-6xl mx-auto px-6">
             <nav aria-label="Breadcrumb" className="py-3">
-              <ol className="flex items-center gap-2 text-sm text-charcoal">
+              <ol className="flex items-center gap-2 text-sm text-white/80">
                 <li>
                   <Link
                     href="/"
                     title="Home"
-                    className="hover:text-navy transition-colors"
+                    className="hover:text-gold transition-colors"
                   >
                     Home
                   </Link>
                 </li>
-                <li aria-hidden="true" className="text-gray-300">
+                <li aria-hidden="true" className="text-white/30">
                   /
                 </li>
-                <li aria-current="page" className="text-navy font-medium">
+                <li aria-current="page" className="text-gold-light font-medium">
                   The Transformation Circus
                 </li>
               </ol>
