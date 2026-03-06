@@ -43,6 +43,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     })),
     {
+      url: `${base}/advisory/`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    {
       url: `${base}/transformation-circus/`,
       lastModified,
       changeFrequency: "monthly" as const,

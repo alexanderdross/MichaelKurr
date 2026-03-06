@@ -24,6 +24,7 @@ export const NAV_LINKS = [
   { href: "#publications", label: "Publications", title: "Browse published books and academic works" },
   { href: "#leadership", label: "Leadership", title: "Discover Dr. Kurr's leadership philosophy" },
   { href: "#recommendations", label: "Testimonials", title: "Read LinkedIn recommendations and colleague testimonials" },
+  { href: "/advisory/", label: "Advisory", title: "Fractional C-Level & Transformation Advisory for Pharma & Life Sciences" },
   { href: "/transformation-circus/", label: "Transformation Circus", title: "Leading the Transformation Circus in the Age of AI" },
 ] as const;
 

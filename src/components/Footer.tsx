@@ -22,6 +22,13 @@ export default function Footer() {
             Publications
           </a>
           <a
+            href="/advisory/"
+            title="Fractional C-Level & Transformation Advisory"
+            className="hover:text-white/80 transition-colors"
+          >
+            Advisory
+          </a>
+          <a
             href="/transformation-circus/"
             title="The Transformation Circus — Leading Pharma Transformation in the Age of AI"
             className="hover:text-white/80 transition-colors"
