@@ -213,18 +213,19 @@ export default function Navigation() {
 
             {/* Featured page links — framed in mobile too */}
             <li aria-hidden="true" className="h-px bg-white/10 my-2" />
-            {featured.map((link) => (
-              <li key={link.href}>
+            <li className="flex gap-3">
+              {featured.map((link) => (
                 <a
+                  key={link.href}
                   href={link.href}
                   title={link.title}
                   onClick={() => setMenuOpen(false)}
-                  className="inline-block text-base px-5 py-3 border border-gold/50 text-gold rounded hover:bg-gold hover:text-navy transition-all"
+                  className="flex-1 text-center text-base px-5 py-3 border border-gold/50 text-gold rounded hover:bg-gold hover:text-navy transition-all"
                 >
                   {link.label}
                 </a>
-              </li>
-            ))}
+              ))}
+            </li>
           </ul>
         </div>
       )}
