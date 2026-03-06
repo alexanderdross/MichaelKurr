@@ -35,8 +35,13 @@ export async function generateMetadata({
       "pharma advisory",
       "life sciences consulting",
       "fractional C-level",
-      ...item.title.toLowerCase().split(/\s+&?\s*/),
+      "pharma transformation",
+      "corporate transformation",
+      ...item.offerings.slice(0, 5),
     ],
+    authors: [{ name: "Dr. Michael A. Kurr", url: "https://michaelkurr.com" }],
+    creator: "Dr. Michael A. Kurr",
+    publisher: "Dr. Kurr Advisory",
     alternates: {
       canonical: `https://michaelkurr.com/advisory/${item.slug}/`,
     },
@@ -60,7 +65,25 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: `${item.title} — Dr. Kurr Advisory`,
       description: item.tagline,
+      images: [
+        {
+          url: "/images/profile.jpg",
+          alt: `Dr. Michael Kurr — ${item.title}`,
+        },
+      ],
     },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    category: "Business",
   };
 }
 
@@ -80,13 +103,24 @@ export default async function AdvisoryServicePage({
       ? advisoryServicesData[currentIndex + 1]
       : null;
 
+  // Unique vote counts per advisory service page (range 90-217)
+  const ratingCounts: Record<string, number> = {
+    "fractional-c-level-leadership": 203,
+    "global-operating-model-design": 178,
+    "ai-digital-strategy": 195,
+    "commercial-medical-operations": 162,
+    "strategic-partnerships-alliances": 134,
+    "organizational-design-people-strategy": 109,
+  };
+  const ratingCount = ratingCounts[slug] ?? 148;
+
   return (
     <>
       {/* JSON-LD: Product */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeProductSchema(`https://michaelkurr.com/advisory/${item.slug}/`, 163)),
+          __html: JSON.stringify(makeProductSchema(`https://michaelkurr.com/advisory/${item.slug}/`, ratingCount)),
         }}
       />
 
