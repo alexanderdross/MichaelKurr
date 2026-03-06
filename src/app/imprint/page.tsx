@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import ScrollAnimations from "@/components/ScrollAnimations";
-import { makeProductSchema } from "@/data/schemas";
+import { makeProductSchema, makeNavigationSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
   title: "Imprint — Dr. Michael Kurr",
@@ -21,6 +21,14 @@ export default function ImprintPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(makeProductSchema("https://michaelkurr.com/imprint/", 91)),
+        }}
+      />
+
+      {/* JSON-LD: SiteNavigationElement */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(makeNavigationSchema("https://michaelkurr.com/imprint/", "Imprint")),
         }}
       />
 

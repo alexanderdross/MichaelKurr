@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import ScrollAnimations from "@/components/ScrollAnimations";
-import { makeProductSchema } from "@/data/schemas";
+import { makeProductSchema, makeNavigationSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
   title:
@@ -268,6 +268,14 @@ export default function AdvisoryPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(makeProductSchema("https://michaelkurr.com/advisory/", 217)),
+        }}
+      />
+
+      {/* JSON-LD: SiteNavigationElement */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(makeNavigationSchema("https://michaelkurr.com/advisory/", "Advisory Services")),
         }}
       />
 

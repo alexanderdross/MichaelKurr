@@ -347,26 +347,60 @@ export const articleSchemas = [
   },
 ];
 
+export const siteNavigationElements = [
+  { name: "Home", url: "https://michaelkurr.com/" },
+  { name: "About", url: "https://michaelkurr.com/#about" },
+  { name: "Expertise", url: "https://michaelkurr.com/#expertise" },
+  { name: "Impact", url: "https://michaelkurr.com/#impact" },
+  { name: "Publications", url: "https://michaelkurr.com/#publications" },
+  { name: "Leadership", url: "https://michaelkurr.com/#leadership" },
+  { name: "Recommendations", url: "https://michaelkurr.com/#recommendations" },
+  { name: "Contact", url: "https://michaelkurr.com/#contact" },
+  { name: "Advisory Services", url: "https://michaelkurr.com/advisory/" },
+  { name: "The Transformation Circus", url: "https://michaelkurr.com/transformation-circus/" },
+  { name: "Contact Page", url: "https://michaelkurr.com/contact/" },
+  { name: "Imprint", url: "https://michaelkurr.com/imprint/" },
+  { name: "Privacy Policy", url: "https://michaelkurr.com/privacy-policy/" },
+  { name: "Corporate Transformation", url: "https://michaelkurr.com/expertise/corporate-transformation/" },
+  { name: "Process Reengineering", url: "https://michaelkurr.com/expertise/process-reengineering/" },
+  { name: "Commercial & Medical Operations", url: "https://michaelkurr.com/expertise/commercial-medical-operations/" },
+  { name: "Cooperation Management", url: "https://michaelkurr.com/expertise/cooperation-management/" },
+  { name: "Digital & AI Strategy", url: "https://michaelkurr.com/expertise/digital-ai-strategy/" },
+  { name: "People & Leadership", url: "https://michaelkurr.com/expertise/people-leadership/" },
+  { name: "Transparency", url: "https://michaelkurr.com/leadership/transparency/" },
+  { name: "Respect", url: "https://michaelkurr.com/leadership/respect/" },
+  { name: "Empowerment", url: "https://michaelkurr.com/leadership/empowerment/" },
+  { name: "Fairness", url: "https://michaelkurr.com/leadership/fairness/" },
+  { name: "Vision", url: "https://michaelkurr.com/leadership/vision/" },
+];
+
 export const navigationSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   "@id": "https://michaelkurr.com/#site-navigation",
   name: "Site Navigation",
-  itemListElement: [
-    { "@type": "SiteNavigationElement", position: 1, name: "Home", url: "https://michaelkurr.com/" },
-    { "@type": "SiteNavigationElement", position: 2, name: "About", url: "https://michaelkurr.com/#about" },
-    { "@type": "SiteNavigationElement", position: 3, name: "Expertise", url: "https://michaelkurr.com/#expertise" },
-    { "@type": "SiteNavigationElement", position: 4, name: "Impact", url: "https://michaelkurr.com/#impact" },
-    { "@type": "SiteNavigationElement", position: 5, name: "Publications", url: "https://michaelkurr.com/#publications" },
-    { "@type": "SiteNavigationElement", position: 6, name: "Leadership", url: "https://michaelkurr.com/#leadership" },
-    { "@type": "SiteNavigationElement", position: 7, name: "Recommendations", url: "https://michaelkurr.com/#recommendations" },
-    { "@type": "SiteNavigationElement", position: 8, name: "Contact", url: "https://michaelkurr.com/#contact" },
-    { "@type": "SiteNavigationElement", position: 9, name: "Imprint", url: "https://michaelkurr.com/imprint/" },
-    { "@type": "SiteNavigationElement", position: 10, name: "Privacy Policy", url: "https://michaelkurr.com/privacy-policy/" },
-    { "@type": "SiteNavigationElement", position: 11, name: "Advisory Services", url: "https://michaelkurr.com/advisory/" },
-    { "@type": "SiteNavigationElement", position: 12, name: "The Transformation Circus", url: "https://michaelkurr.com/transformation-circus/" },
-  ],
+  itemListElement: siteNavigationElements.map((item, i) => ({
+    "@type": "SiteNavigationElement",
+    position: i + 1,
+    name: item.name,
+    url: item.url,
+  })),
 };
+
+export function makeNavigationSchema(currentUrl: string, currentName: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${currentName} — Site Navigation`,
+    url: currentUrl,
+    itemListElement: siteNavigationElements.map((item, i) => ({
+      "@type": "SiteNavigationElement",
+      position: i + 1,
+      name: item.name,
+      url: item.url,
+    })),
+  };
+}
 
 export const faqSchema = {
   "@context": "https://schema.org",

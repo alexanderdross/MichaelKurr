@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import ScrollAnimations from "@/components/ScrollAnimations";
 import ContactForm from "./ContactForm";
-import { makeProductSchema } from "@/data/schemas";
+import { makeProductSchema, makeNavigationSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
   title: "Contact — Dr. Michael Kurr",
@@ -28,6 +28,14 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(makeProductSchema("https://michaelkurr.com/contact/", 94)),
+        }}
+      />
+
+      {/* JSON-LD: SiteNavigationElement */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(makeNavigationSchema("https://michaelkurr.com/contact/", "Contact")),
         }}
       />
 
