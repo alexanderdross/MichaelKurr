@@ -835,7 +835,7 @@ export default function AdvisoryPage() {
                 <h3 className="font-heading text-xl font-bold mb-2">
                   Fractional C-Level
                 </h3>
-                <p className="text-gold text-sm font-medium mb-4">
+                <p className="text-gold-light text-sm font-medium mb-4">
                   Ongoing &middot; 2-3 days/week
                 </p>
                 <p className="text-sm text-white/80 leading-relaxed">
@@ -851,7 +851,7 @@ export default function AdvisoryPage() {
                 <h3 className="font-heading text-xl font-bold mb-2">
                   Transformation Sprint
                 </h3>
-                <p className="text-gold text-sm font-medium mb-4">
+                <p className="text-gold-light text-sm font-medium mb-4">
                   3-6 months &middot; Focused engagement
                 </p>
                 <p className="text-sm text-white/80 leading-relaxed">
@@ -867,7 +867,7 @@ export default function AdvisoryPage() {
                 <h3 className="font-heading text-xl font-bold mb-2">
                   Board &amp; Strategic Advisory
                 </h3>
-                <p className="text-gold text-sm font-medium mb-4">
+                <p className="text-gold-light text-sm font-medium mb-4">
                   Periodic &middot; As needed
                 </p>
                 <p className="text-sm text-white/80 leading-relaxed">
