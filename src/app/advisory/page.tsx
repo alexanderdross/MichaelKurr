@@ -195,28 +195,34 @@ function LightbulbIcon({ className = iconClass }: { className?: string }) {
   );
 }
 
-/* ─── Service card ─── */
+/* ─── Service card (linked) ─── */
 function ServiceCard({
   icon,
   title,
+  slug,
   description,
   offerings,
 }: {
   icon: React.ReactNode;
   title: string;
+  slug: string;
   description: string;
   offerings: string[];
 }) {
   return (
-    <div className="bg-white rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-md transition-shadow duration-200">
+    <Link
+      href={`/advisory/${slug}/`}
+      title={`${title} — Dr. Kurr Advisory`}
+      className="group bg-white rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-lg hover:border-gold/40 transition-all duration-300 block"
+    >
       <div className="mb-4" aria-hidden="true">
         {icon}
       </div>
-      <h3 className="font-heading text-xl font-bold text-navy mb-3">
+      <h3 className="font-heading text-xl font-bold text-navy group-hover:text-gold transition-colors duration-200 mb-3">
         {title}
       </h3>
       <p className="text-charcoal/80 mb-5 leading-relaxed">{description}</p>
-      <ul className="space-y-2">
+      <ul className="space-y-2 mb-6" aria-label={`${title} offerings`}>
         {offerings.map((item) => (
           <li key={item} className="flex items-start gap-2 text-sm text-charcoal">
             <svg className="w-4 h-4 text-gold-dark mt-0.5 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -226,7 +232,13 @@ function ServiceCard({
           </li>
         ))}
       </ul>
-    </div>
+      <span className="inline-flex items-center gap-1 text-sm font-semibold text-teal group-hover:text-gold transition-colors duration-200">
+        Learn more
+        <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </span>
+    </Link>
   );
 }
 
@@ -318,24 +330,57 @@ export default function AdvisoryPage() {
                     name: "Fractional C-Level Leadership",
                     description:
                       "Part-time CCO, CTO, or COO mandates for pharma and life sciences organizations.",
+                    url: "https://michaelkurr.com/advisory/fractional-c-level-leadership/",
                   },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Transformation Advisory",
+                    name: "Global Operating Model Design",
                     description:
-                      "End-to-end corporate transformation strategy and execution for regulated industries.",
+                      "Scalable operating models balancing centralization with local agility.",
+                    url: "https://michaelkurr.com/advisory/global-operating-model-design/",
                   },
                 },
                 {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Service",
-                    name: "Operating Model Design",
+                    name: "AI & Digital Strategy for Regulated Industries",
                     description:
-                      "Global operating model design including shared services, offshoring, and nearshoring strategies.",
+                      "Practical AI adoption within pharma compliance frameworks.",
+                    url: "https://michaelkurr.com/advisory/ai-digital-strategy/",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Commercial & Medical Operations Transformation",
+                    description:
+                      "Go-to-market and medical affairs operations redesign for efficiency and scale.",
+                    url: "https://michaelkurr.com/advisory/commercial-medical-operations/",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Strategic Partnerships & Alliances",
+                    description:
+                      "Structuring, launching, and managing strategic cooperations and vendor ecosystems.",
+                    url: "https://michaelkurr.com/advisory/strategic-partnerships-alliances/",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Organizational Design & People Strategy",
+                    description:
+                      "Building high-performing global teams and designing organizations that scale.",
+                    url: "https://michaelkurr.com/advisory/organizational-design-people-strategy/",
                   },
                 },
               ],
@@ -599,6 +644,7 @@ export default function AdvisoryPage() {
               <ServiceCard
                 icon={<BriefcaseIcon />}
                 title="Fractional C-Level Leadership"
+                slug="fractional-c-level-leadership"
                 description="Part-time CCO, CTO, or COO for organizations that need senior executive bandwidth without the full-time commitment. Ideal for scale-ups, portfolio companies, and organizations in transition."
                 offerings={[
                   "Fractional Chief Commercial Officer (CCO)",
@@ -611,6 +657,7 @@ export default function AdvisoryPage() {
               <ServiceCard
                 icon={<CogIcon />}
                 title="Global Operating Model Design"
+                slug="global-operating-model-design"
                 description="Designing and implementing scalable operating models that balance centralization with local agility — including shared services, offshoring, and nearshoring strategies."
                 offerings={[
                   "Insource vs. outsource strategy",
@@ -623,6 +670,7 @@ export default function AdvisoryPage() {
               <ServiceCard
                 icon={<CpuIcon />}
                 title="AI & Digital Strategy for Regulated Industries"
+                slug="ai-digital-strategy"
                 description="Practical AI adoption that works within pharma compliance frameworks. No hype — just AI that fits governed workflows, accelerates execution, and respects accountability."
                 offerings={[
                   "AI readiness assessment and roadmap",
@@ -635,6 +683,7 @@ export default function AdvisoryPage() {
               <ServiceCard
                 icon={<TargetIcon />}
                 title="Commercial & Medical Operations Transformation"
+                slug="commercial-medical-operations"
                 description="Redesigning go-to-market and medical affairs operations for efficiency, scale, and omnichannel engagement — the same approach that built an industry-leading service organization."
                 offerings={[
                   "Go-to-market operating model redesign",
@@ -647,6 +696,7 @@ export default function AdvisoryPage() {
               <ServiceCard
                 icon={<LinkIcon />}
                 title="Strategic Partnerships & Alliances"
+                slug="strategic-partnerships-alliances"
                 description="Structuring, launching, and managing strategic cooperations — from vendor partnerships to industry alliances. Based on published research and 20+ years of partnership management."
                 offerings={[
                   "Strategic partner selection and due diligence",
@@ -659,6 +709,7 @@ export default function AdvisoryPage() {
               <ServiceCard
                 icon={<UsersIcon />}
                 title="Organizational Design & People Strategy"
+                slug="organizational-design-people-strategy"
                 description="Building high-performing global teams from the ground up. Designing organizations that attract talent, empower leaders, and scale without losing culture."
                 offerings={[
                   "Organization design and restructuring",

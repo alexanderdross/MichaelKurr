@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { getAllExpertiseSlugs } from "@/data/expertise";
 import { getAllLeadershipSlugs } from "@/data/leadership";
+import { getAllAdvisoryServiceSlugs } from "@/data/advisory-services";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://michaelkurr.com";
@@ -48,6 +49,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
+    ...getAllAdvisoryServiceSlugs().map((slug) => ({
+      url: `${base}/advisory/${slug}/`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    })),
     {
       url: `${base}/transformation-circus/`,
       lastModified,
