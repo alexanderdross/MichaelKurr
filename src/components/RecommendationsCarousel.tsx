@@ -54,7 +54,7 @@ const recommendations = [
   },
   {
     name: "Alexander Dross",
-    title: "Global Capability Owner for Web & (AI) Strategy at Boehringer Ingelheim",
+    title: "Global Capability Owner for Web & (AI) Search Strategy at Boehringer Ingelheim",
     relationship: "Direct Report",
     url: "https://dross.net/alexander/",
     quote:
