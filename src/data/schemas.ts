@@ -431,30 +431,34 @@ export const faqSchema = {
   ],
 };
 
-export const productSchema = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  name: "Dr. Kurr Advisory — Fractional C-Level & Transformation Advisory",
-  description:
-    "Strategic advisory and fractional C-level leadership for Pharma & Life Sciences. Corporate transformation, scalable operating models, and profitable growth.",
-  brand: {
-    "@type": "Brand",
-    name: "Dr. Kurr Advisory",
-  },
-  offers: {
-    "@type": "Offer",
-    priceCurrency: "EUR",
-    availability: "https://schema.org/InStock",
-    url: "https://michaelkurr.com/#contact",
-  },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.8",
-    bestRating: "5",
-    worstRating: "1",
-    ratingCount: "361",
-  },
-};
+export function makeProductSchema(url: string, ratingCount: number) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Dr. Kurr Advisory — Fractional C-Level & Transformation Advisory",
+    description:
+      "Strategic advisory and fractional C-level leadership for Pharma & Life Sciences. Corporate transformation, scalable operating models, and profitable growth.",
+    brand: {
+      "@type": "Brand",
+      name: "Dr. Kurr Advisory",
+    },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "EUR",
+      availability: "https://schema.org/InStock",
+      url,
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.8",
+      bestRating: "5",
+      worstRating: "1",
+      ratingCount: String(ratingCount),
+    },
+  };
+}
+
+export const productSchema = makeProductSchema("https://michaelkurr.com/#contact", 148);
 
 export const allSchemas = [
   personSchema,

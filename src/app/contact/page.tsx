@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import ScrollAnimations from "@/components/ScrollAnimations";
 import ContactForm from "./ContactForm";
+import { makeProductSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
   title: "Contact — Dr. Michael Kurr",
@@ -22,6 +23,14 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      {/* JSON-LD: Product */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(makeProductSchema("https://michaelkurr.com/contact/", 94)),
+        }}
+      />
+
       {/* JSON-LD: BreadcrumbList */}
       <script
         type="application/ld+json"

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import ScrollAnimations from "@/components/ScrollAnimations";
+import { makeProductSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
   title:
@@ -236,6 +237,14 @@ function SectionDivider() {
 export default function TransformationCircusPage() {
   return (
     <>
+      {/* JSON-LD: Product */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(makeProductSchema("https://michaelkurr.com/transformation-circus/", 183)),
+        }}
+      />
+
       {/* JSON-LD: Article */}
       <script
         type="application/ld+json"

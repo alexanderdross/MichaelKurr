@@ -8,6 +8,7 @@ import {
 } from "@/data/leadership";
 import { LinkedInIcon } from "@/components/Icons";
 import ScrollAnimations from "@/components/ScrollAnimations";
+import { makeProductSchema } from "@/data/schemas";
 
 export function generateStaticParams() {
   return getAllLeadershipSlugs().map((slug) => ({ slug }));
@@ -71,6 +72,14 @@ export default async function LeadershipPage({
 
   return (
     <>
+      {/* JSON-LD: Product */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(makeProductSchema(`https://michaelkurr.com/leadership/${item.slug}/`, 127)),
+        }}
+      />
+
       {/* BreadcrumbList + Article JSON-LD */}
       <script
         type="application/ld+json"

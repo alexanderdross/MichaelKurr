@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import ScrollAnimations from "@/components/ScrollAnimations";
+import { makeProductSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
   title:
@@ -262,6 +263,14 @@ function IndustryCard({
 export default function AdvisoryPage() {
   return (
     <>
+      {/* JSON-LD: Product */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(makeProductSchema("https://michaelkurr.com/advisory/", 217)),
+        }}
+      />
+
       {/* JSON-LD: Service */}
       <script
         type="application/ld+json"
