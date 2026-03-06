@@ -420,7 +420,7 @@ export default function AdvisoryPage() {
             <Link
               href="/contact/"
               title="Get in touch with Dr. Michael Kurr"
-              className="text-sm font-medium px-5 py-2 border border-gold text-gold rounded hover:bg-gold hover:text-navy transition-all duration-200"
+              className="text-sm font-medium px-5 py-2 border border-gold-light text-gold-light rounded hover:bg-gold hover:text-navy transition-all duration-200"
             >
               Connect
             </Link>
@@ -446,7 +446,7 @@ export default function AdvisoryPage() {
                 <li aria-hidden="true" className="text-white/30">
                   /
                 </li>
-                <li aria-current="page" className="text-gold font-medium">
+                <li aria-current="page" className="text-gold-light font-medium">
                   Advisory
                 </li>
               </ol>
@@ -465,12 +465,12 @@ export default function AdvisoryPage() {
 
           <div className="relative max-w-6xl mx-auto px-6">
             <div className="max-w-3xl">
-              <p className="fade-in text-gold text-sm font-semibold tracking-[0.25em] uppercase mb-6">
+              <p className="fade-in text-gold-light text-sm font-semibold tracking-[0.25em] uppercase mb-6">
                 Dr. Kurr Advisory
               </p>
               <h1 className="fade-in font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-[1.15]">
                 Strategic Clarity.{" "}
-                <span className="text-gold">Scalable Models.</span>{" "}
+                <span className="text-gold-light">Scalable Models.</span>{" "}
                 Profitable Growth.
               </h1>
               <p className="fade-in text-xl text-white/80 mb-8 leading-relaxed max-w-2xl">
