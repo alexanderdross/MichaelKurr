@@ -82,9 +82,9 @@ function CharacterCard({
       <p className="text-3xl mb-2" aria-hidden="true">
         {emoji}
       </p>
-      <h4 className="font-heading text-lg font-bold text-navy mb-3">
+      <h3 className="font-heading text-lg font-bold text-navy mb-3">
         {name}
-      </h4>
+      </h3>
       <ul className="space-y-1 text-sm text-charcoal/75 list-disc list-inside">
         {traits.map((t) => (
           <li key={t}>{t}</li>
@@ -120,7 +120,7 @@ function CaseStudy({
       <h3 className="font-heading text-2xl sm:text-3xl font-bold text-navy mb-2">
         {title}
       </h3>
-      <p className="text-lg text-charcoal/70 italic mb-8">{subtitle}</p>
+      <p className="text-lg text-charcoal/80 italic mb-8">{subtitle}</p>
       <p className="text-[1.05rem] leading-relaxed text-charcoal/80 mb-8">
         {intro}
       </p>
@@ -130,8 +130,8 @@ function CaseStudy({
             key={item.label}
             className="bg-white rounded-lg border border-gray-200 p-5"
           >
-            <p className="font-semibold text-navy mb-1">{item.label}</p>
-            <p className="text-sm text-charcoal/70">{item.text}</p>
+            <p className="font-heading font-semibold text-navy mb-1">{item.label}</p>
+            <p className="text-sm text-charcoal/80">{item.text}</p>
           </div>
         ))}
       </div>
@@ -150,10 +150,10 @@ function TakeawayCard({
 }) {
   return (
     <div className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow duration-200">
-      <h4 className="font-heading text-base font-bold text-navy mb-2 leading-snug">
+      <h3 className="font-heading text-base font-bold text-navy mb-2 leading-snug">
         {title}
-      </h4>
-      <p className="text-sm text-charcoal/70 leading-relaxed">{text}</p>
+      </h3>
+      <p className="text-sm text-charcoal/80 leading-relaxed">{text}</p>
     </div>
   );
 }
@@ -224,9 +224,9 @@ export default function TransformationCircusPage() {
       <main id="main-content">
         {/* ── Breadcrumb ── */}
         <div className="pt-20 bg-[#1a1225]">
-          <div className="max-w-5xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <nav aria-label="Breadcrumb" className="py-3">
-              <ol className="flex items-center gap-2 text-sm text-white/60">
+              <ol className="flex items-center gap-2 text-sm text-white/80">
                 <li>
                   <Link
                     href="/"
@@ -257,7 +257,7 @@ export default function TransformationCircusPage() {
             aria-hidden="true"
           />
 
-          <div className="relative max-w-5xl mx-auto px-6 text-center">
+          <div className="relative max-w-6xl mx-auto px-6 text-center">
             <p className="fade-in text-amber-400 text-sm font-semibold tracking-[0.25em] uppercase mb-6">
               A Talk by Dr. Michael A. Kurr
             </p>
@@ -268,7 +268,7 @@ export default function TransformationCircusPage() {
             <p className="fade-in font-heading text-xl sm:text-2xl lg:text-3xl italic text-white/80 mb-8">
               Leading the Transformation Circus in the Age of AI
             </p>
-            <p className="fade-in text-white/60 text-base max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p className="fade-in text-white/80 text-base max-w-2xl mx-auto mb-10 leading-relaxed">
               Your Ringmaster:{" "}
               <strong className="text-white/90">
                 Dr. Michael A. Kurr
@@ -303,11 +303,11 @@ export default function TransformationCircusPage() {
           id="showtime"
           className="py-20 lg:py-28 bg-offwhite scroll-mt-20"
         >
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
               Welcome to the Transformation Circus &mdash; It&rsquo;s Showtime!
             </h2>
-            <p className="fade-in text-lg text-charcoal/70 italic mb-10">
+            <p className="fade-in text-lg text-charcoal/80 italic mb-10">
               Pharma transformation is a full-blown circus. Where Primates
               swing, Lions prowl, and change is the main act.
             </p>
@@ -344,48 +344,48 @@ export default function TransformationCircusPage() {
             THE RINGMASTER
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-28 bg-white">
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
               The Ringmaster &mdash; Master of Chaos, Keeper of Sanity
             </h2>
-            <p className="fade-in text-lg text-charcoal/70 italic mb-10">
+            <p className="fade-in text-lg text-charcoal/80 italic mb-10">
               You don&rsquo;t just wave a baton &mdash; you hold the tent up
               while everyone else sets it on fire.
             </p>
 
             <div className="fade-in grid sm:grid-cols-2 gap-5">
               <div className="bg-offwhite rounded-lg p-5 border border-gray-200">
-                <h4 className="font-semibold text-navy mb-2">
+                <h3 className="font-heading font-semibold text-navy mb-2">
                   Managing the Performers (i.e. the Smart Apes)
-                </h4>
-                <p className="text-sm text-charcoal/70">
+                </h3>
+                <p className="text-sm text-charcoal/80">
                   Your success team requires direction, motivation, and
                   occasional treats.
                 </p>
               </div>
               <div className="bg-offwhite rounded-lg p-5 border border-gray-200">
-                <h4 className="font-semibold text-navy mb-2">
+                <h3 className="font-heading font-semibold text-navy mb-2">
                   Keeping Chaos Monkeys in Check
-                </h4>
-                <p className="text-sm text-charcoal/70">
+                </h3>
+                <p className="text-sm text-charcoal/80">
                   A little chaos creates energy. Too much? That&rsquo;s
                   career-ending.
                 </p>
               </div>
               <div className="bg-offwhite rounded-lg p-5 border border-gray-200">
-                <h4 className="font-semibold text-navy mb-2">
+                <h3 className="font-heading font-semibold text-navy mb-2">
                   Not Getting Eaten by Lions
-                </h4>
-                <p className="text-sm text-charcoal/70">
+                </h3>
+                <p className="text-sm text-charcoal/80">
                   Senior executives respect confidence. Keep them fed with
                   progress reports.
                 </p>
               </div>
               <div className="bg-offwhite rounded-lg p-5 border border-gray-200">
-                <h4 className="font-semibold text-navy mb-2">
+                <h3 className="font-heading font-semibold text-navy mb-2">
                   Winning Over the Audience
-                </h4>
-                <p className="text-sm text-charcoal/70">
+                </h3>
+                <p className="text-sm text-charcoal/80">
                   Stakeholders want entertainment and results. Deliver both,
                   consistently.
                 </p>
@@ -416,11 +416,11 @@ export default function TransformationCircusPage() {
             THE SMART APES
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-28 bg-offwhite">
-          <div className="max-w-5xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
               Meet the Smart Apes
             </h2>
-            <p className="fade-in text-lg text-charcoal/70 mb-4">
+            <p className="fade-in text-lg text-charcoal/80 mb-4">
               The Ones You Need to Lead the Transformation Circus
             </p>
             <p className="fade-in text-[1.05rem] text-charcoal/80 mb-10">
@@ -498,11 +498,11 @@ export default function TransformationCircusPage() {
             AI AGENTS
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-28 bg-white">
-          <div className="max-w-5xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
               Meet the New Performers: The AI Agents
             </h2>
-            <p className="fade-in text-lg text-charcoal/70 italic mb-10">
+            <p className="fade-in text-lg text-charcoal/80 italic mb-10">
               They execute, they don&rsquo;t own the show.
             </p>
 
@@ -577,11 +577,11 @@ export default function TransformationCircusPage() {
             CHAOS MONKEYS
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-28 bg-offwhite">
-          <div className="max-w-5xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
               Meet the Chaos Monkeys
             </h2>
-            <p className="fade-in text-lg text-charcoal/70 mb-4">
+            <p className="fade-in text-lg text-charcoal/80 mb-4">
               The Trouble You Didn&rsquo;t Ask For
             </p>
             <p className="fade-in text-[1.05rem] text-charcoal/80 mb-10">
@@ -661,39 +661,39 @@ export default function TransformationCircusPage() {
             LION TAMER
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-28 bg-white">
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
               The Lion Tamer (Senior Executive Sponsor)
             </h2>
-            <p className="fade-in text-lg text-charcoal/70 italic mb-10">
+            <p className="fade-in text-lg text-charcoal/80 italic mb-10">
               They don&rsquo;t play by the same rules. But without them, you
               won&rsquo;t survive.
             </p>
 
             <div className="fade-in grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               <div className="bg-offwhite rounded-lg p-6 border border-gray-200">
-                <h4 className="font-semibold text-navy mb-2">
+                <h3 className="font-heading font-semibold text-navy mb-2">
                   Air Cover &amp; Political Protection
-                </h4>
-                <p className="text-sm text-charcoal/70">
+                </h3>
+                <p className="text-sm text-charcoal/80">
                   Your shield against organizational crossfire. They deflect
                   attacks that would otherwise derail you.
                 </p>
               </div>
               <div className="bg-offwhite rounded-lg p-6 border border-gray-200">
-                <h4 className="font-semibold text-navy mb-2">
+                <h3 className="font-heading font-semibold text-navy mb-2">
                   Above the Primate Hierarchy
-                </h4>
-                <p className="text-sm text-charcoal/70">
+                </h3>
+                <p className="text-sm text-charcoal/80">
                   Not bound by tribal politics. They speak a language the Board
                   understands.
                 </p>
               </div>
               <div className="bg-offwhite rounded-lg p-6 border border-gray-200 sm:col-span-2 lg:col-span-1">
-                <h4 className="font-semibold text-navy mb-2">
+                <h3 className="font-heading font-semibold text-navy mb-2">
                   Strategic Alignment
-                </h4>
-                <p className="text-sm text-charcoal/70">
+                </h3>
+                <p className="text-sm text-charcoal/80">
                   They keep the C-suite focused on your transformation&rsquo;s
                   value. No alignment, no success. They set the tone from the
                   top &mdash; and their voice makes or breaks your story.
@@ -728,48 +728,48 @@ export default function TransformationCircusPage() {
             AI IN A REGULATED TENT
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-28 bg-offwhite">
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
               AI in a Highly Regulated Tent
             </h2>
-            <p className="fade-in text-lg text-charcoal/70 italic mb-10">
+            <p className="fade-in text-lg text-charcoal/80 italic mb-10">
               In pharma, the Regulator &mdash; and MLR &mdash; are the invisible
               lions in the ring.
             </p>
 
             <div className="fade-in grid sm:grid-cols-2 gap-5">
               <div className="bg-white rounded-lg p-6 border border-gray-200">
-                <h4 className="font-semibold text-navy mb-2">
+                <h3 className="font-heading font-semibold text-navy mb-2">
                   Speed &ne; Approval
-                </h4>
-                <p className="text-sm text-charcoal/70">
+                </h3>
+                <p className="text-sm text-charcoal/80">
                   Move fast if you like &mdash; MLR cycles don&rsquo;t
                   disappear because drafts got smarter.
                 </p>
               </div>
               <div className="bg-white rounded-lg p-6 border border-gray-200">
-                <h4 className="font-semibold text-navy mb-2">
+                <h3 className="font-heading font-semibold text-navy mb-2">
                   Automation &ne; Compliance
-                </h4>
-                <p className="text-sm text-charcoal/70">
+                </h3>
+                <p className="text-sm text-charcoal/80">
                   Just because a robot did it doesn&rsquo;t mean it&rsquo;s
                   approval-ready.
                 </p>
               </div>
               <div className="bg-white rounded-lg p-6 border border-gray-200">
-                <h4 className="font-semibold text-navy mb-2">
+                <h3 className="font-heading font-semibold text-navy mb-2">
                   AI must operate inside governed workflows
-                </h4>
-                <p className="text-sm text-charcoal/70">
+                </h3>
+                <p className="text-sm text-charcoal/80">
                   No sandbox magic &mdash; the tent has walls, and auditors know
                   where they are.
                 </p>
               </div>
               <div className="bg-white rounded-lg p-6 border border-gray-200">
-                <h4 className="font-semibold text-navy mb-2">
+                <h3 className="font-heading font-semibold text-navy mb-2">
                   Accountability can&rsquo;t be delegated to algorithms
-                </h4>
-                <p className="text-sm text-charcoal/70">
+                </h3>
+                <p className="text-sm text-charcoal/80">
                   When things go wrong, no one invites the algorithm to the
                   hearing.
                 </p>
@@ -797,7 +797,7 @@ export default function TransformationCircusPage() {
             CASE STUDIES
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-28 bg-white">
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-12 text-center">
               From the Ring: Case Studies
             </h2>
@@ -1027,11 +1027,11 @@ export default function TransformationCircusPage() {
           id="takeaways"
           className="py-20 lg:py-28 bg-[#1a1225] text-white scroll-mt-20"
         >
-          <div className="max-w-5xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold mb-3 text-center">
               6 Takeaways to Survive (and Love) the Circus
             </h2>
-            <p className="fade-in text-white/60 text-center max-w-2xl mx-auto mb-12">
+            <p className="fade-in text-white/80 text-center max-w-2xl mx-auto mb-12">
               How to lead the show &mdash; without getting mauled in Act I, and
               still building a bigger tent.
             </p>
@@ -1069,11 +1069,11 @@ export default function TransformationCircusPage() {
             CLOSING CTA
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-24 bg-offwhite text-center">
-          <div className="max-w-3xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
               Until the Next Greatest Show.
             </h2>
-            <p className="fade-in text-charcoal/70 text-lg mb-8">
+            <p className="fade-in text-charcoal/80 text-lg mb-8">
               Want to discuss pharma transformation, AI strategy, or taming your
               own circus? Let&rsquo;s connect.
             </p>
@@ -1099,7 +1099,7 @@ export default function TransformationCircusPage() {
 
         {/* Disclaimer */}
         <div className="py-4 bg-gray-100 text-center">
-          <p className="text-xs text-charcoal/65 max-w-3xl mx-auto px-6">
+          <p className="text-xs text-charcoal/80 max-w-6xl mx-auto px-6">
             &copy; 2026 Dr. Kurr Advisory. All rights reserved. The views
             expressed are solely those of Dr. Michael A. Kurr. All examples
             provided are purely hypothetical. Some ideas were inspired by GenAI.
