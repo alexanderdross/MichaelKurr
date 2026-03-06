@@ -363,6 +363,7 @@ export const navigationSchema = {
     { "@type": "SiteNavigationElement", position: 8, name: "Contact", url: "https://michaelkurr.com/#contact" },
     { "@type": "SiteNavigationElement", position: 9, name: "Imprint", url: "https://michaelkurr.com/imprint/" },
     { "@type": "SiteNavigationElement", position: 10, name: "Privacy Policy", url: "https://michaelkurr.com/privacy-policy/" },
+    { "@type": "SiteNavigationElement", position: 11, name: "The Transformation Circus", url: "https://michaelkurr.com/transformation-circus/" },
   ],
 };
 

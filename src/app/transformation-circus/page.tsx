@@ -4,34 +4,91 @@ import ScrollAnimations from "@/components/ScrollAnimations";
 
 export const metadata: Metadata = {
   title:
-    "The Transformation Circus — Leading Pharma Transformation in the Age of AI | Dr. Michael Kurr",
+    "The Transformation Circus — Big Pharma, Smart Machines, Same Old Chaos | Dr. Michael Kurr",
   description:
-    "Big Pharma, Smart Machines, Same Old Chaos. Dr. Michael Kurr shares lessons on leading corporate transformation in pharma — taming chaos monkeys, smart apes, AI agents, and lion tamers.",
+    "Leading the Transformation Circus in the Age of AI. Dr. Michael Kurr shares 15+ years of lessons on pharma transformation — taming chaos monkeys, building smart ape teams, leveraging AI agents, and surviving the lion tamers of corporate executive sponsorship.",
+  keywords: [
+    "pharma transformation",
+    "corporate transformation",
+    "AI in pharma",
+    "change management",
+    "transformation leadership",
+    "Dr. Michael Kurr",
+    "Boehringer Ingelheim",
+    "pharma go-to-market",
+    "digital transformation pharma",
+    "organizational change",
+    "executive sponsorship",
+    "AI agents enterprise",
+    "chaos management",
+    "ringmaster leadership",
+    "transformation circus",
+    "smart apes leadership",
+    "content supply chain pharma",
+    "pharmaceutical operations",
+    "corporate change management",
+    "Dr. Kurr Advisory",
+  ],
+  authors: [{ name: "Dr. Michael A. Kurr", url: "https://michaelkurr.com" }],
+  creator: "Dr. Michael A. Kurr",
+  publisher: "Dr. Kurr Advisory",
   alternates: {
     canonical: "https://michaelkurr.com/transformation-circus/",
   },
   openGraph: {
     title: "The Transformation Circus — Dr. Michael Kurr",
     description:
-      "Leading the Transformation Circus in the Age of AI. Lessons from 15+ years of pharma transformation.",
+      "Big Pharma, Smart Machines, Same Old Chaos. Leading the Transformation Circus in the Age of AI. Lessons from 15+ years of pharma transformation.",
     type: "article",
     url: "https://michaelkurr.com/transformation-circus/",
+    locale: "en_US",
+    siteName: "Dr. Michael Kurr",
+    publishedTime: "2026-03-01T00:00:00Z",
+    modifiedTime: "2026-03-06T00:00:00Z",
+    authors: ["Dr. Michael A. Kurr"],
+    tags: [
+      "pharma transformation",
+      "AI in pharma",
+      "corporate transformation",
+      "change management",
+      "leadership",
+    ],
+    images: [
+      {
+        url: "/images/profile.jpg",
+        width: 800,
+        height: 800,
+        alt: "Dr. Michael Kurr — The Transformation Circus",
+      },
+    ],
   },
-  robots: { index: true, follow: true },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Transformation Circus — Dr. Michael Kurr",
+    description:
+      "Big Pharma, Smart Machines, Same Old Chaos. 15+ years of pharma transformation lessons.",
+    images: [
+      {
+        url: "/images/profile.jpg",
+        alt: "Dr. Michael Kurr — The Transformation Circus",
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  category: "Business",
 };
 
-/* ─── tiny helper ─── */
-function SectionDivider() {
-  return (
-    <div className="flex items-center justify-center py-4" aria-hidden="true">
-      <span className="text-2xl tracking-[1em] text-amber-400/60 select-none">
-        * * *
-      </span>
-    </div>
-  );
-}
-
-/* ─── Ringmaster Box (the blue callout used in the PDF) ─── */
+/* ─── Ringmaster callout box (blue tinted, matching PDF style) ─── */
 function RingmasterBox({
   title,
   children,
@@ -44,22 +101,89 @@ function RingmasterBox({
       <p className="font-heading text-lg font-bold italic text-navy mb-4">
         {title}
       </p>
-      <div className="space-y-3 text-[1.05rem] leading-relaxed text-charcoal/85">
+      <div className="space-y-3 text-[1.05rem] leading-relaxed text-charcoal">
         {children}
       </div>
     </aside>
   );
 }
 
-/* ─── Character card (Apes / Monkeys / AI Agents) ─── */
+/* ─── Slide section — mirrors PDF left-image / right-content layout ─── */
+function SlideSection({
+  id,
+  imagePlaceholder,
+  imageAlt,
+  children,
+  reverse = false,
+  bgClass = "bg-white",
+}: {
+  id?: string;
+  imagePlaceholder: string;
+  imageAlt: string;
+  children: React.ReactNode;
+  reverse?: boolean;
+  bgClass?: string;
+}) {
+  return (
+    <section
+      id={id}
+      className={`py-16 lg:py-24 ${bgClass} ${id ? "scroll-mt-20" : ""}`}
+    >
+      <div
+        className={`max-w-6xl mx-auto px-6 flex flex-col ${
+          reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+        } gap-10 lg:gap-14 items-start`}
+      >
+        {/* Image area */}
+        <div className="w-full lg:w-[38%] shrink-0">
+          <div
+            className="rounded-2xl overflow-hidden bg-gradient-to-br from-navy/5 to-navy/10 aspect-[4/3] flex items-center justify-center"
+            role="img"
+            aria-label={imageAlt}
+          >
+            <span className="text-6xl sm:text-7xl select-none" aria-hidden="true">
+              {imagePlaceholder}
+            </span>
+          </div>
+        </div>
+        {/* Content area */}
+        <div className="w-full lg:w-[62%] fade-in">{children}</div>
+      </div>
+    </section>
+  );
+}
+
+/* ─── Bullet item with emoji (matching PDF colored bullets) ─── */
+function Bullet({
+  emoji,
+  children,
+}: {
+  emoji: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="flex items-start gap-3">
+      <span className="text-lg shrink-0 mt-0.5 select-none" aria-hidden="true">
+        {emoji}
+      </span>
+      <div className="text-[1.05rem] leading-relaxed text-charcoal">
+        {children}
+      </div>
+    </div>
+  );
+}
+
+/* ─── Character card (compact, used for apes/monkeys/agents grid) ─── */
 function CharacterCard({
   emoji,
   name,
+  subtitle,
   traits,
   accent = "amber",
 }: {
   emoji: string;
   name: string;
+  subtitle?: string;
   traits: string[];
   accent?: "amber" | "red" | "sky" | "emerald";
 }) {
@@ -77,15 +201,18 @@ function CharacterCard({
   };
   return (
     <div
-      className={`rounded-xl border-2 ${borderMap[accent]} ${bgMap[accent]} p-5 sm:p-6 transition-transform hover:-translate-y-1 duration-200`}
+      className={`rounded-xl border-2 ${borderMap[accent]} ${bgMap[accent]} p-5 transition-transform hover:-translate-y-1 duration-200`}
     >
       <p className="text-3xl mb-2" aria-hidden="true">
         {emoji}
       </p>
-      <h3 className="font-heading text-lg font-bold text-navy mb-3">
+      <h3 className="font-heading text-base font-bold text-navy mb-1">
         {name}
       </h3>
-      <ul className="space-y-1 text-sm text-charcoal/75 list-disc list-inside">
+      {subtitle && (
+        <p className="text-xs text-charcoal/70 italic mb-2">{subtitle}</p>
+      )}
+      <ul className="space-y-0.5 text-sm text-charcoal list-disc list-inside">
         {traits.map((t) => (
           <li key={t}>{t}</li>
         ))}
@@ -94,66 +221,11 @@ function CharacterCard({
   );
 }
 
-/* ─── Case Study section ─── */
-function CaseStudy({
-  number,
-  title,
-  subtitle,
-  intro,
-  items,
-  ringmasterTitle,
-  ringmasterContent,
-}: {
-  number: string;
-  title: string;
-  subtitle: string;
-  intro: string;
-  items: { label: string; text: string }[];
-  ringmasterTitle: string;
-  ringmasterContent: React.ReactNode;
-}) {
+/* ─── Section divider ─── */
+function SectionDivider() {
   return (
-    <div className="fade-in">
-      <p className="text-amber-500 text-sm font-semibold tracking-[0.15em] uppercase mb-2">
-        {number}
-      </p>
-      <h3 className="font-heading text-2xl sm:text-3xl font-bold text-navy mb-2">
-        {title}
-      </h3>
-      <p className="text-lg text-charcoal/80 italic mb-8">{subtitle}</p>
-      <p className="text-[1.05rem] leading-relaxed text-charcoal/80 mb-8">
-        {intro}
-      </p>
-      <div className="grid sm:grid-cols-2 gap-4">
-        {items.map((item) => (
-          <div
-            key={item.label}
-            className="bg-white rounded-lg border border-gray-200 p-5"
-          >
-            <p className="font-heading font-semibold text-navy mb-1">{item.label}</p>
-            <p className="text-sm text-charcoal/80">{item.text}</p>
-          </div>
-        ))}
-      </div>
-      <RingmasterBox title={ringmasterTitle}>{ringmasterContent}</RingmasterBox>
-    </div>
-  );
-}
-
-/* ─── Takeaway card ─── */
-function TakeawayCard({
-  title,
-  text,
-}: {
-  title: string;
-  text: string;
-}) {
-  return (
-    <div className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow duration-200">
-      <h3 className="font-heading text-base font-bold text-navy mb-2 leading-snug">
-        {title}
-      </h3>
-      <p className="text-sm text-charcoal/80 leading-relaxed">{text}</p>
+    <div className="flex items-center justify-center py-2" aria-hidden="true">
+      <div className="w-20 h-px bg-gray-200" />
     </div>
   );
 }
@@ -164,27 +236,115 @@ function TakeawayCard({
 export default function TransformationCircusPage() {
   return (
     <>
-      {/* JSON-LD */}
+      {/* JSON-LD: Article */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
+            "@id":
+              "https://michaelkurr.com/transformation-circus/#article",
             headline:
               "Big Pharma, Smart Machines, Same Old Chaos: Leading the Transformation Circus in the Age of AI",
             author: {
               "@type": "Person",
+              "@id": "https://michaelkurr.com/#person",
               name: "Dr. Michael A. Kurr",
               url: "https://michaelkurr.com",
+              jobTitle: "Founder & Fractional C-Level Executive",
+              image: "https://michaelkurr.com/images/profile.jpg",
             },
             publisher: {
               "@type": "Organization",
               name: "Dr. Kurr Advisory",
+              url: "https://michaelkurr.com",
             },
             datePublished: "2026-03-01",
+            dateModified: "2026-03-06",
             description:
               "Lessons from 15+ years of leading pharma transformation — taming chaos, building teams, and integrating AI without losing your mind.",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://michaelkurr.com/transformation-circus/",
+            },
+            image: "https://michaelkurr.com/images/profile.jpg",
+            keywords: [
+              "pharma transformation",
+              "AI in pharma",
+              "corporate transformation",
+              "change management",
+              "leadership",
+              "executive sponsorship",
+              "organizational design",
+            ],
+            articleSection: "Pharma Transformation",
+            inLanguage: "en",
+            isPartOf: {
+              "@id": "https://michaelkurr.com/#website",
+            },
+          }),
+        }}
+      />
+
+      {/* JSON-LD: BreadcrumbList */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://michaelkurr.com/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "The Transformation Circus",
+                item: "https://michaelkurr.com/transformation-circus/",
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* JSON-LD: FAQ for key questions */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is the Transformation Circus?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The Transformation Circus is a framework by Dr. Michael Kurr that uses the circus metaphor to explain corporate pharma transformation. It features Smart Apes (your success team), Chaos Monkeys (disruptors), AI Agents (new performers), Lion Tamers (executive sponsors), and the Ringmaster (transformation leader) — all navigating change in the age of AI.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How does AI fit into pharma transformation?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "AI agents accelerate execution — they route tasks, analyze data, draft content, and flag compliance issues. But they don't replace leadership. In pharma's highly regulated environment, AI must operate inside governed workflows, and accountability cannot be delegated to algorithms. Your operating model decides what gets scaled.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What are the key takeaways for leading corporate transformation?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Six key takeaways: (1) AI won't tame the monkeys — manage disruption early, (2) Without executive sponsorship you're just an appetizer, (3) A billion-dollar business case means nothing without ownership, (4) Corporate transformation takes years — pace the change, (5) AI scales execution but your operating model decides what gets scaled, (6) Build the right team — trusted, strategic, adaptable, collaborative.",
+                },
+              },
+            ],
           }),
         }}
       />
@@ -192,13 +352,13 @@ export default function TransformationCircusPage() {
       {/* ── Top Nav ── */}
       <nav
         aria-label="Transformation Circus page navigation"
-        className="fixed top-0 left-0 right-0 z-50 bg-[#1a1225]/95 backdrop-blur-md shadow-lg py-3"
+        className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm py-3 border-b border-gray-100"
       >
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <Link
             href="/"
             title="Dr. Michael Kurr — Home"
-            className="font-heading text-xl font-bold text-white tracking-wider"
+            className="font-heading text-xl font-bold text-navy tracking-wider"
           >
             MK
           </Link>
@@ -206,14 +366,14 @@ export default function TransformationCircusPage() {
             <Link
               href="/#about"
               title="About Dr. Michael Kurr"
-              className="text-sm font-medium text-white/80 hover:text-amber-400 transition-colors duration-200"
+              className="text-sm font-medium text-charcoal hover:text-navy transition-colors duration-200"
             >
               About
             </Link>
             <Link
               href="/#contact"
               title="Get in touch with Dr. Michael Kurr"
-              className="text-sm font-medium px-5 py-2 border border-amber-400 text-amber-400 rounded hover:bg-amber-400 hover:text-[#1a1225] transition-all duration-200"
+              className="text-sm font-medium px-5 py-2 border border-navy text-navy rounded hover:bg-navy hover:text-white transition-all duration-200"
             >
               Connect
             </Link>
@@ -223,23 +383,23 @@ export default function TransformationCircusPage() {
 
       <main id="main-content">
         {/* ── Breadcrumb ── */}
-        <div className="pt-20 bg-[#1a1225]">
+        <div className="pt-16 bg-white">
           <div className="max-w-6xl mx-auto px-6">
             <nav aria-label="Breadcrumb" className="py-3">
-              <ol className="flex items-center gap-2 text-sm text-white/80">
+              <ol className="flex items-center gap-2 text-sm text-charcoal">
                 <li>
                   <Link
                     href="/"
                     title="Home"
-                    className="hover:text-amber-400 transition-colors"
+                    className="hover:text-navy transition-colors"
                   >
                     Home
                   </Link>
                 </li>
-                <li aria-hidden="true" className="text-white/30">
+                <li aria-hidden="true" className="text-gray-300">
                   /
                 </li>
-                <li aria-current="page" className="text-amber-400 font-medium">
+                <li aria-current="page" className="text-navy font-medium">
                   The Transformation Circus
                 </li>
               </ol>
@@ -248,188 +408,207 @@ export default function TransformationCircusPage() {
         </div>
 
         {/* ═══════════════════════════════════════════
-            HERO
+            SLIDE 1: HERO / TITLE
             ═══════════════════════════════════════════ */}
-        <section className="relative pt-12 pb-20 lg:pb-28 bg-[#1a1225] text-white overflow-hidden">
-          {/* Decorative gradient glow */}
-          <div
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-amber-500/[0.06] blur-3xl pointer-events-none"
-            aria-hidden="true"
-          />
-
-          <div className="relative max-w-6xl mx-auto px-6 text-center">
-            <p className="fade-in text-amber-400 text-sm font-semibold tracking-[0.25em] uppercase mb-6">
-              A Talk by Dr. Michael A. Kurr
-            </p>
-            <h1 className="fade-in font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-[1.15]">
-              Big Pharma, Smart Machines,{" "}
-              <span className="text-amber-400">Same Old Chaos</span>
-            </h1>
-            <p className="fade-in font-heading text-xl sm:text-2xl lg:text-3xl italic text-white/80 mb-8">
-              Leading the Transformation Circus in the Age of AI
-            </p>
-            <p className="fade-in text-white/80 text-base max-w-2xl mx-auto mb-10 leading-relaxed">
-              Your Ringmaster:{" "}
-              <strong className="text-white/90">
-                Dr. Michael A. Kurr
-              </strong>
-              , Chief Circus Officer
-              <br />
-              <span className="text-sm">
-                Taming the Transformation Circus since 15+ years.
-              </span>
-            </p>
-            <div className="fade-in flex flex-wrap justify-center gap-4">
-              <a
-                href="#showtime"
-                className="px-6 py-3 bg-amber-500 text-[#1a1225] font-semibold rounded hover:bg-amber-400 transition-colors duration-200"
-              >
-                Enter the Ring
-              </a>
-              <a
-                href="#takeaways"
-                className="px-6 py-3 border border-white/30 text-white/80 rounded hover:border-amber-400 hover:text-amber-400 transition-all duration-200"
-              >
-                Jump to Takeaways
-              </a>
-            </div>
+        <SlideSection
+          imagePlaceholder="&#127914;"
+          imageAlt="Ringmaster Dr. Michael Kurr in front of a colorful circus tent — The Transformation Circus"
+        >
+          <p className="text-navy/60 text-sm font-semibold tracking-[0.2em] uppercase mb-4">
+            A Talk by Dr. Michael A. Kurr
+          </p>
+          <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-4 leading-[1.15]">
+            Big Pharma, Smart Machines,{" "}
+            <span className="italic">Same Old Chaos:</span>
+          </h1>
+          <p className="font-heading text-xl sm:text-2xl lg:text-3xl italic text-charcoal mb-6">
+            Leading the Transformation Circus in the Age of AI
+          </p>
+          <p className="text-charcoal text-base mb-2">
+            Your Ringmaster:{" "}
+            <strong className="text-navy">Dr. Michael A. Kurr</strong>, Chief
+            Circus Officer
+          </p>
+          <p className="text-sm text-charcoal/80 mb-8">
+            (Taming the Transformation Circus since 15+ Years.)
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="#showtime"
+              className="px-6 py-3 bg-navy text-white font-semibold rounded hover:bg-navy-light transition-colors duration-200"
+            >
+              Enter the Ring
+            </a>
+            <a
+              href="#takeaways"
+              className="px-6 py-3 border border-navy/30 text-navy rounded hover:border-navy hover:bg-navy/5 transition-all duration-200"
+            >
+              Jump to Takeaways
+            </a>
           </div>
-        </section>
+          <p className="text-xs text-charcoal/60 italic mt-6">
+            The views expressed are solely my own. All examples provided are
+            purely hypothetical.
+          </p>
+        </SlideSection>
+
+        <SectionDivider />
 
         {/* ═══════════════════════════════════════════
-            SHOWTIME — Welcome
+            SLIDE 2: WELCOME / SHOWTIME
             ═══════════════════════════════════════════ */}
-        <section
+        <SlideSection
           id="showtime"
-          className="py-20 lg:py-28 bg-offwhite scroll-mt-20"
+          imagePlaceholder="&#127911;"
+          imageAlt="Circus tent with performers, lions, and a captivated audience — It's Showtime"
+          bgClass="bg-offwhite"
         >
-          <div className="max-w-6xl mx-auto px-6">
-            <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
-              Welcome to the Transformation Circus &mdash; It&rsquo;s Showtime!
-            </h2>
-            <p className="fade-in text-lg text-charcoal/80 italic mb-10">
-              Pharma transformation is a full-blown circus. Where Primates
-              swing, Lions prowl, and change is the main act.
-            </p>
-            <div className="fade-in space-y-5 text-[1.05rem] leading-relaxed text-charcoal/80">
+          <h2 className="font-heading text-3xl sm:text-4xl font-bold italic text-navy mb-4">
+            Welcome to the Transformation Circus — It&rsquo;s Showtime!
+          </h2>
+          <p className="text-charcoal text-lg mb-8">
+            <strong>Pharma transformation</strong> is a full-blown circus. Where{" "}
+            <strong>Primates</strong> swing, <strong>Lions</strong> prowl, and
+            change is the main act.
+          </p>
+
+          <div className="space-y-4 mb-8">
+            <Bullet emoji="&#127902;">
               <p>
                 Step right up to witness the transformation act.{" "}
                 <strong>No safety nets.</strong> No rehearsals. Just{" "}
                 <strong>pure organizational evolution in action</strong>.
               </p>
-            </div>
+            </Bullet>
+          </div>
 
-            <RingmasterBox title="Ringmaster's Starting Point:">
+          <RingmasterBox title="RINGMASTER's Starting Point:">
+            <Bullet emoji="&#129300;">
               <p>
                 Pharma transformation isn&rsquo;t just about strategy &mdash;
                 it&rsquo;s about <strong>managing chaos</strong>.
               </p>
+            </Bullet>
+            <Bullet emoji="&#9989;">
               <p>
                 You can have the best business case and execution plan, but if
                 you can&rsquo;t <strong>tame the Circus</strong>, you&rsquo;re
                 doomed.
               </p>
+            </Bullet>
+            <Bullet emoji="&#128170;">
               <p>
                 Learn what is needed to{" "}
                 <strong>become a Ringmaster</strong> yourself &mdash; without
                 losing your mind!
               </p>
-            </RingmasterBox>
-          </div>
-        </section>
+            </Bullet>
+          </RingmasterBox>
+        </SlideSection>
 
         <SectionDivider />
 
         {/* ═══════════════════════════════════════════
-            THE RINGMASTER
+            SLIDE 3: THE RINGMASTER
             ═══════════════════════════════════════════ */}
-        <section className="py-20 lg:py-28 bg-white">
-          <div className="max-w-6xl mx-auto px-6">
-            <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
-              The Ringmaster &mdash; Master of Chaos, Keeper of Sanity
-            </h2>
-            <p className="fade-in text-lg text-charcoal/80 italic mb-10">
-              You don&rsquo;t just wave a baton &mdash; you hold the tent up
-              while everyone else sets it on fire.
-            </p>
+        <SlideSection
+          imagePlaceholder="&#129464;"
+          imageAlt="The Ringmaster in a white top hat commanding the circus stage — Master of Chaos"
+        >
+          <h2 className="font-heading text-3xl sm:text-4xl font-bold italic text-navy mb-3">
+            The Ringmaster &mdash; Master of Chaos, Keeper of Sanity
+          </h2>
+          <p className="text-charcoal text-lg italic mb-8">
+            You don&rsquo;t just wave a baton &mdash; you hold the tent up while
+            everyone else sets it on fire.
+          </p>
 
-            <div className="fade-in grid sm:grid-cols-2 gap-5">
-              <div className="bg-offwhite rounded-lg p-5 border border-gray-200">
-                <h3 className="font-heading font-semibold text-navy mb-2">
-                  Managing the Performers (i.e. the Smart Apes)
-                </h3>
-                <p className="text-sm text-charcoal/80">
+          <div className="space-y-5">
+            <Bullet emoji="&#127919;">
+              <p>
+                <strong>Managing the Performers (i.e. the Smart Apes)</strong>
+                <br />
+                <span className="text-charcoal/80">
                   Your success team requires direction, motivation, and
                   occasional treats.
-                </p>
-              </div>
-              <div className="bg-offwhite rounded-lg p-5 border border-gray-200">
-                <h3 className="font-heading font-semibold text-navy mb-2">
-                  Keeping Chaos Monkeys in Check
-                </h3>
-                <p className="text-sm text-charcoal/80">
+                </span>
+              </p>
+            </Bullet>
+            <Bullet emoji="&#128168;">
+              <p>
+                <strong>Keeping Chaos Monkeys in Check</strong>
+                <br />
+                <span className="text-charcoal/80">
                   A little chaos creates energy. Too much? That&rsquo;s
                   career-ending.
-                </p>
-              </div>
-              <div className="bg-offwhite rounded-lg p-5 border border-gray-200">
-                <h3 className="font-heading font-semibold text-navy mb-2">
-                  Not Getting Eaten by Lions
-                </h3>
-                <p className="text-sm text-charcoal/80">
+                </span>
+              </p>
+            </Bullet>
+            <Bullet emoji="&#128293;">
+              <p>
+                <strong>Not Getting Eaten by Lions</strong>
+                <br />
+                <span className="text-charcoal/80">
                   Senior executives respect confidence. Keep them fed with
                   progress reports.
-                </p>
-              </div>
-              <div className="bg-offwhite rounded-lg p-5 border border-gray-200">
-                <h3 className="font-heading font-semibold text-navy mb-2">
-                  Winning Over the Audience
-                </h3>
-                <p className="text-sm text-charcoal/80">
+                </span>
+              </p>
+            </Bullet>
+            <Bullet emoji="&#128079;">
+              <p>
+                <strong>Winning Over the Audience</strong>
+                <br />
+                <span className="text-charcoal/80">
                   Stakeholders want entertainment and results. Deliver both,
                   consistently.
-                </p>
-              </div>
-            </div>
+                </span>
+              </p>
+            </Bullet>
+          </div>
 
-            <RingmasterBox title="Ringmaster's Job Description:">
+          <RingmasterBox title="RINGMASTER's Job Description:">
+            <Bullet emoji="&#127913;">
               <p>
                 Every circus has a <strong>Ringmaster</strong>. And in
                 transformation? That&rsquo;s <strong>YOU</strong>.
               </p>
+            </Bullet>
+            <Bullet emoji="&#129309;">
               <p>
                 The one{" "}
                 <strong>keeping the whole act together</strong>&hellip; or at
                 least trying to.
               </p>
+            </Bullet>
+            <Bullet emoji="&#128073;">
               <p>
                 But even the Ringmaster can&rsquo;t do it alone&hellip;
                 let&rsquo;s <strong>meet the team</strong>!
               </p>
-            </RingmasterBox>
-          </div>
-        </section>
+            </Bullet>
+          </RingmasterBox>
+        </SlideSection>
 
         <SectionDivider />
 
         {/* ═══════════════════════════════════════════
-            THE SMART APES
+            SLIDE 4: THE SMART APES
             ═══════════════════════════════════════════ */}
-        <section className="py-20 lg:py-28 bg-offwhite">
+        <section className="py-16 lg:py-24 bg-offwhite">
           <div className="max-w-6xl mx-auto px-6">
-            <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
-              Meet the Smart Apes
-            </h2>
-            <p className="fade-in text-lg text-charcoal/80 mb-4">
-              The Ones You Need to Lead the Transformation Circus
-            </p>
-            <p className="fade-in text-[1.05rem] text-charcoal/80 mb-10">
-              These Apes? They enable transformation. They are strategic,
-              skilled, reliable. They drive, build, navigate, influence, and
-              deliver.
-            </p>
+            <div className="fade-in mb-10">
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold italic text-navy mb-3">
+                Meet the Smart Apes &mdash; The Ones You Need to Lead the
+                Transformation Circus
+              </h2>
+              <p className="text-charcoal text-lg">
+                These Apes? They enable transformation. They are strategic,
+                skilled, reliable. They drive, build, navigate, influence, and
+                deliver.
+              </p>
+            </div>
 
-            <div className="fade-in grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+            <div className="fade-in grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mb-8">
               <CharacterCard
                 emoji="&#129424;"
                 name="Navigator Chimpanzee"
@@ -456,7 +635,7 @@ export default function TransformationCircusPage() {
                 traits={[
                   "Agile navigator",
                   "Cuts through bureaucracy",
-                  "Gets things done",
+                  "Gets sh*t done",
                 ]}
                 accent="amber"
               />
@@ -472,44 +651,57 @@ export default function TransformationCircusPage() {
               />
             </div>
 
-            <RingmasterBox title="Ringmaster's Guiding Principles for the Success Team:">
-              <p>
-                Transformation is a <strong>team sport</strong> &mdash; you need
-                the right performers in the ring.
-              </p>
-              <p>
-                Make sure that your{" "}
-                <strong>team is trusted</strong>, strategic, adaptable and
-                collaborative &mdash; the smarter the cast, the{" "}
-                <strong>less banana drama</strong>.
-              </p>
-              <p>
-                <strong>Avoid members</strong> that are distracting,
-                unpredictable, selfish and loud{" "}
-                <strong>without value</strong>.
-              </p>
-            </RingmasterBox>
+            <div className="fade-in">
+              <RingmasterBox title="RINGMASTER's Guiding Principles for the Success Team:">
+                <Bullet emoji="&#127942;">
+                  <p>
+                    Transformation is a <strong>team sport</strong> &mdash; you
+                    need the right performers in the ring.
+                  </p>
+                </Bullet>
+                <Bullet emoji="&#129309;">
+                  <p>
+                    Make sure that your{" "}
+                    <strong>team is trusted</strong>, strategic, adaptable and
+                    collaborative &mdash; the smarter the cast, the{" "}
+                    <strong>less banana drama</strong>.
+                  </p>
+                </Bullet>
+                <Bullet emoji="&#128683;">
+                  <p>
+                    <strong>Avoid members</strong> that are distracting,
+                    unpredictable, selfish and loud{" "}
+                    <strong>without value</strong>.
+                  </p>
+                </Bullet>
+              </RingmasterBox>
+            </div>
           </div>
         </section>
 
         <SectionDivider />
 
         {/* ═══════════════════════════════════════════
-            AI AGENTS
+            SLIDE 5: AI AGENTS
             ═══════════════════════════════════════════ */}
-        <section className="py-20 lg:py-28 bg-white">
+        <section className="py-16 lg:py-24 bg-white">
           <div className="max-w-6xl mx-auto px-6">
-            <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
-              Meet the New Performers: The AI Agents
-            </h2>
-            <p className="fade-in text-lg text-charcoal/80 italic mb-10">
-              They execute, they don&rsquo;t own the show.
-            </p>
+            <div className="fade-in mb-4">
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold italic text-navy mb-3">
+                Meet the New Performers: The AI Agents &mdash; they execute,
+                they don&rsquo;t own the show
+              </h2>
+              <p className="text-charcoal text-lg mb-10">
+                AI accelerates execution. It does not replace leadership &mdash;
+                and it cannot compensate for its absence.
+              </p>
+            </div>
 
-            <div className="fade-in grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+            <div className="fade-in grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mb-8">
               <CharacterCard
                 emoji="&#9881;&#65039;"
                 name="Workflow Orchestrator"
+                subtitle={`"Automation Engine"`}
                 traits={[
                   "Routes tasks",
                   "Triggers actions",
@@ -521,6 +713,7 @@ export default function TransformationCircusPage() {
               <CharacterCard
                 emoji="&#128200;"
                 name="Insight Analyst"
+                subtitle={`"Pattern Finder"`}
                 traits={[
                   "Analyzes large data",
                   "Detects anomalies",
@@ -532,6 +725,7 @@ export default function TransformationCircusPage() {
               <CharacterCard
                 emoji="&#128221;"
                 name="Content Co-Pilot"
+                subtitle={`"Drafting Machine"`}
                 traits={[
                   "Drafts all content",
                   "Summarizes texts",
@@ -543,6 +737,7 @@ export default function TransformationCircusPage() {
               <CharacterCard
                 emoji="&#128737;"
                 name="Compliance Sentinel"
+                subtitle={`"Risk Scanner"`}
                 traits={[
                   "Flags inconsistencies",
                   "Checks policies",
@@ -553,50 +748,59 @@ export default function TransformationCircusPage() {
               />
             </div>
 
-            <RingmasterBox title="Ringmaster's Agentic Watch-outs:">
-              <p>
-                Easy to <strong>fall in love</strong> with &mdash; especially
-                when your organization <strong>feels slow</strong>.
-              </p>
-              <p>
-                Tireless <strong>execution</strong> &mdash; they amplify speed
-                and scale.
-              </p>
-              <p>
-                <strong>BUT</strong>: no accountability, no political capital,{" "}
-                <strong>no ownership of outcomes</strong> &mdash; they execute,
-                they don&rsquo;t sponsor.
-              </p>
-            </RingmasterBox>
+            <div className="fade-in">
+              <RingmasterBox title="RINGMASTER's Agentic Watch-outs:">
+                <Bullet emoji="&#128149;">
+                  <p>
+                    Easy to <strong>fall in love</strong> with &mdash; especially
+                    when your organization <strong>feels slow</strong>.
+                  </p>
+                </Bullet>
+                <Bullet emoji="&#128171;">
+                  <p>
+                    Tireless <strong>execution</strong> &mdash; they amplify
+                    speed and scale.
+                  </p>
+                </Bullet>
+                <Bullet emoji="&#9888;&#65039;">
+                  <p>
+                    <strong>BUT</strong>: no accountability, no political
+                    capital,{" "}
+                    <strong>no ownership of outcomes</strong> &mdash; they
+                    execute, they don&rsquo;t sponsor.
+                  </p>
+                </Bullet>
+              </RingmasterBox>
+            </div>
           </div>
         </section>
 
         <SectionDivider />
 
         {/* ═══════════════════════════════════════════
-            CHAOS MONKEYS
+            SLIDE 6: CHAOS MONKEYS
             ═══════════════════════════════════════════ */}
-        <section className="py-20 lg:py-28 bg-offwhite">
+        <section className="py-16 lg:py-24 bg-offwhite">
           <div className="max-w-6xl mx-auto px-6">
-            <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
-              Meet the Chaos Monkeys
-            </h2>
-            <p className="fade-in text-lg text-charcoal/80 mb-4">
-              The Trouble You Didn&rsquo;t Ask For
-            </p>
-            <p className="fade-in text-[1.05rem] text-charcoal/80 mb-10">
-              They don&rsquo;t just make transformation interesting&hellip; they
-              turn it into a live improv act &mdash; without a script, without
-              rehearsal, and always on your budget.
-            </p>
+            <div className="fade-in mb-4">
+              <h2 className="font-heading text-3xl sm:text-4xl font-bold italic text-navy mb-3">
+                Meet the Chaos Monkeys &mdash; The Trouble You Didn&rsquo;t Ask
+                For
+              </h2>
+              <p className="text-charcoal text-lg mb-10">
+                They don&rsquo;t just make transformation interesting&hellip;
+                they turn it into a live improv act &mdash; without a script,
+                without rehearsal, and always on your budget.
+              </p>
+            </div>
 
-            <div className="fade-in grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+            <div className="fade-in grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mb-8">
               <CharacterCard
                 emoji="&#128680;"
                 name="Silo Mandrill"
                 traits={[
                   "Guards territory fiercely",
-                  "Resists collaboration like it's contagious",
+                  "Resists collaboration like it's a contagious disease",
                 ]}
                 accent="red"
               />
@@ -630,390 +834,707 @@ export default function TransformationCircusPage() {
               />
             </div>
 
-            <RingmasterBox title="Ringmaster's Guiding Principles to Manage the Chaos Monkeys:">
-              <p>
-                If you don&rsquo;t manage them,{" "}
-                <strong>
-                  they&rsquo;ll run the circus and will redesign your strategy
-                </strong>{" "}
-                in ways you did not approve.
-              </p>
-              <p>
-                <strong>Spot them early</strong>, control their influence,
-                contain the damage.
-              </p>
-              <p>
-                Let them near the levers, and you&rsquo;re in for a{" "}
-                <strong>flaming cannonball finale</strong>.
-              </p>
-              <p>
-                &hellip;and <strong>adding AI</strong> won&rsquo;t eliminate the
-                chaos&hellip; it will just create{" "}
-                <strong>hyperproductive monkeys at scale</strong>.
-              </p>
-            </RingmasterBox>
+            <div className="fade-in">
+              <RingmasterBox title="RINGMASTER's Guiding Principles to Manage the Chaos Monkeys:">
+                <Bullet emoji="&#128308;">
+                  <p>
+                    If you don&rsquo;t manage them,{" "}
+                    <strong>
+                      they&rsquo;ll run the circus and will redesign your
+                      strategy
+                    </strong>{" "}
+                    in ways you did not approve.
+                  </p>
+                </Bullet>
+                <Bullet emoji="&#128065;">
+                  <p>
+                    <strong>Spot them early</strong>, control their influence,
+                    contain the damage.
+                  </p>
+                </Bullet>
+                <Bullet emoji="&#128165;">
+                  <p>
+                    Let them near the levers, and you&rsquo;re in for a{" "}
+                    <strong>flaming cannonball finale</strong>.
+                  </p>
+                </Bullet>
+                <Bullet emoji="&#129302;">
+                  <p>
+                    &hellip;and <strong>adding AI</strong> won&rsquo;t eliminate
+                    the chaos&hellip; it will just create{" "}
+                    <strong>hyperproductive monkeys at scale</strong>.
+                  </p>
+                </Bullet>
+              </RingmasterBox>
+            </div>
           </div>
         </section>
 
         <SectionDivider />
 
         {/* ═══════════════════════════════════════════
-            LION TAMER
+            SLIDE 7: LION TAMER
             ═══════════════════════════════════════════ */}
-        <section className="py-20 lg:py-28 bg-white">
-          <div className="max-w-6xl mx-auto px-6">
-            <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
-              The Lion Tamer (Senior Executive Sponsor)
-            </h2>
-            <p className="fade-in text-lg text-charcoal/80 italic mb-10">
-              They don&rsquo;t play by the same rules. But without them, you
-              won&rsquo;t survive.
-            </p>
+        <SlideSection
+          imagePlaceholder="&#129409;"
+          imageAlt="The Lion Tamer — a senior executive in a top hat standing confidently beside a lion"
+        >
+          <h2 className="font-heading text-3xl sm:text-4xl font-bold italic text-navy mb-3">
+            The Lion Tamer (Senior Executive Sponsor)
+          </h2>
+          <p className="text-charcoal text-lg italic mb-8">
+            They don&rsquo;t play by the same rules. But without them, you
+            won&rsquo;t survive.
+          </p>
 
-            <div className="fade-in grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              <div className="bg-offwhite rounded-lg p-6 border border-gray-200">
-                <h3 className="font-heading font-semibold text-navy mb-2">
-                  Air Cover &amp; Political Protection
-                </h3>
-                <p className="text-sm text-charcoal/80">
+          <div className="space-y-5 mb-8">
+            <Bullet emoji="&#128737;">
+              <p>
+                <strong>Air Cover &amp; Political Protection</strong>
+                <br />
+                <span className="text-charcoal/80">
                   Your shield against organizational crossfire. They deflect
                   attacks that would otherwise derail you.
-                </p>
-              </div>
-              <div className="bg-offwhite rounded-lg p-6 border border-gray-200">
-                <h3 className="font-heading font-semibold text-navy mb-2">
-                  Above the Primate Hierarchy
-                </h3>
-                <p className="text-sm text-charcoal/80">
+                </span>
+              </p>
+            </Bullet>
+            <Bullet emoji="&#128081;">
+              <p>
+                <strong>Above the Primate Hierarchy</strong>
+                <br />
+                <span className="text-charcoal/80">
                   Not bound by tribal politics. They speak a language the Board
                   understands.
-                </p>
-              </div>
-              <div className="bg-offwhite rounded-lg p-6 border border-gray-200 sm:col-span-2 lg:col-span-1">
-                <h3 className="font-heading font-semibold text-navy mb-2">
-                  Strategic Alignment
-                </h3>
-                <p className="text-sm text-charcoal/80">
+                </span>
+              </p>
+            </Bullet>
+            <Bullet emoji="&#127919;">
+              <p>
+                <strong>Strategic Alignment</strong>
+                <br />
+                <span className="text-charcoal/80">
                   They keep the C-suite focused on your transformation&rsquo;s
                   value. No alignment, no success. They set the tone from the
                   top &mdash; and their voice makes or breaks your story.
-                </p>
-              </div>
-            </div>
+                </span>
+              </p>
+            </Bullet>
+          </div>
 
-            <RingmasterBox title="Ringmaster's Rules:">
+          <RingmasterBox title="RINGMASTER's Rules:">
+            <Bullet emoji="&#128308;">
               <p>
                 <strong>Without</strong> executive sponsorship,{" "}
                 <strong>don&rsquo;t even step into the ring.</strong>
               </p>
+            </Bullet>
+            <Bullet emoji="&#129409;">
               <p>
                 Lion Tamers keep the <strong>predators at bay</strong> while you
                 manage the circus.
               </p>
+            </Bullet>
+            <Bullet emoji="&#128073;">
               <p>
                 They <strong>don&rsquo;t do</strong> transformation &mdash; but
                 they <strong>decide if you do</strong>.
               </p>
+            </Bullet>
+            <Bullet emoji="&#9888;&#65039;">
               <p>
                 If they&rsquo;re not taming lions&hellip; the{" "}
                 <strong>lions are taming you</strong>.
               </p>
-            </RingmasterBox>
-          </div>
-        </section>
+            </Bullet>
+          </RingmasterBox>
+        </SlideSection>
 
         <SectionDivider />
 
         {/* ═══════════════════════════════════════════
-            AI IN A REGULATED TENT
+            SLIDE 8: AI IN A REGULATED TENT
             ═══════════════════════════════════════════ */}
-        <section className="py-20 lg:py-28 bg-offwhite">
-          <div className="max-w-6xl mx-auto px-6">
-            <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-3">
-              AI in a Highly Regulated Tent
-            </h2>
-            <p className="fade-in text-lg text-charcoal/80 italic mb-10">
-              In pharma, the Regulator &mdash; and MLR &mdash; are the invisible
-              lions in the ring.
-            </p>
+        <SlideSection
+          imagePlaceholder="&#9878;&#65039;"
+          imageAlt="AI in a highly regulated pharma tent — robots and compliance officers on stage"
+          reverse
+          bgClass="bg-offwhite"
+        >
+          <h2 className="font-heading text-3xl sm:text-4xl font-bold italic text-navy mb-3">
+            AI in a Highly Regulated Tent
+          </h2>
+          <p className="text-charcoal text-lg italic mb-8">
+            In pharma, the Regulator &mdash; and MLR &mdash; are the invisible
+            lions in the ring.
+          </p>
 
-            <div className="fade-in grid sm:grid-cols-2 gap-5">
-              <div className="bg-white rounded-lg p-6 border border-gray-200">
-                <h3 className="font-heading font-semibold text-navy mb-2">
-                  Speed &ne; Approval
-                </h3>
-                <p className="text-sm text-charcoal/80">
-                  Move fast if you like &mdash; MLR cycles don&rsquo;t
-                  disappear because drafts got smarter.
-                </p>
-              </div>
-              <div className="bg-white rounded-lg p-6 border border-gray-200">
-                <h3 className="font-heading font-semibold text-navy mb-2">
-                  Automation &ne; Compliance
-                </h3>
-                <p className="text-sm text-charcoal/80">
+          <div className="space-y-5 mb-8">
+            <Bullet emoji="&#128994;">
+              <p>
+                <strong>Speed &ne; Approval</strong>
+                <br />
+                <span className="text-charcoal/80">
+                  Move fast if you like &mdash; MLR cycles don&rsquo;t disappear
+                  because drafts got smarter.
+                </span>
+              </p>
+            </Bullet>
+            <Bullet emoji="&#128308;">
+              <p>
+                <strong>Automation &ne; Compliance</strong>
+                <br />
+                <span className="text-charcoal/80">
                   Just because a robot did it doesn&rsquo;t mean it&rsquo;s
                   approval-ready.
-                </p>
-              </div>
-              <div className="bg-white rounded-lg p-6 border border-gray-200">
-                <h3 className="font-heading font-semibold text-navy mb-2">
-                  AI must operate inside governed workflows
-                </h3>
-                <p className="text-sm text-charcoal/80">
+                </span>
+              </p>
+            </Bullet>
+            <Bullet emoji="&#129302;">
+              <p>
+                <strong>AI must operate inside governed workflows</strong>
+                <br />
+                <span className="text-charcoal/80">
                   No sandbox magic &mdash; the tent has walls, and auditors know
                   where they are.
-                </p>
-              </div>
-              <div className="bg-white rounded-lg p-6 border border-gray-200">
-                <h3 className="font-heading font-semibold text-navy mb-2">
+                </span>
+              </p>
+            </Bullet>
+            <Bullet emoji="&#9997;&#65039;">
+              <p>
+                <strong>
                   Accountability can&rsquo;t be delegated to algorithms
-                </h3>
-                <p className="text-sm text-charcoal/80">
+                </strong>
+                <br />
+                <span className="text-charcoal/80">
                   When things go wrong, no one invites the algorithm to the
                   hearing.
-                </p>
-              </div>
-            </div>
+                </span>
+              </p>
+            </Bullet>
+          </div>
 
-            <RingmasterBox title="Ringmaster's Guardrails:">
+          <RingmasterBox title="RINGMASTER's Guardrails:">
+            <Bullet emoji="&#9989;">
               <p>
                 You can <strong>scale execution</strong>.
               </p>
+            </Bullet>
+            <Bullet emoji="&#10060;">
               <p>
                 You <strong>can&rsquo;t outsource accountability</strong>.
               </p>
+            </Bullet>
+            <Bullet emoji="&#129302;">
               <p>
-                The <strong>AI</strong> can draft. A <strong>human</strong> must
-                decide &mdash; <strong>and sign their name</strong>.
+                The <strong>AI</strong> can draft.
               </p>
-            </RingmasterBox>
-          </div>
-        </section>
+            </Bullet>
+            <Bullet emoji="&#9997;&#65039;">
+              <p>
+                A <strong>human</strong> must decide &mdash;{" "}
+                <strong>and sign their name</strong>.
+              </p>
+            </Bullet>
+          </RingmasterBox>
+        </SlideSection>
 
         <SectionDivider />
 
         {/* ═══════════════════════════════════════════
             CASE STUDIES
             ═══════════════════════════════════════════ */}
-        <section className="py-20 lg:py-28 bg-white">
+        <section className="py-16 lg:py-24 bg-white">
           <div className="max-w-6xl mx-auto px-6">
-            <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-12 text-center">
+            <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold italic text-navy mb-14 text-center">
               From the Ring: Case Studies
             </h2>
 
             <div className="space-y-20">
-              {/* Case 1 */}
-              <CaseStudy
-                number="Case 1"
-                title="The Billion-Dollar No-Brainer (That Nobody Wanted)"
-                subtitle="A global transformation of MICE presented a clear opportunity for 10-15% cost savings across >$1B in annual spend."
-                intro="Even a perfect business case means nothing if nobody actually wants it."
-                items={[
-                  {
-                    label: "Demand Management",
-                    text: "Optimizing participation, strategic meeting objectives and insights creation.",
-                  },
-                  {
-                    label: "Logistics & Procurement",
-                    text: "Centralizing sourcing and vendor management for better rates.",
-                  },
-                  {
-                    label: "Compliance & Transparency",
-                    text: "Streamlined reporting and improved regulatory compliance.",
-                  },
-                  {
-                    label: "No stakeholder alignment?",
-                    text: "Without key players on your side, your transformation is dead before it starts.",
-                  },
-                ]}
-                ringmasterTitle="Ringmaster's Missing Smart Apes:"
-                ringmasterContent={
-                  <>
-                    <p>
-                      Without buy-in, any case is worthless. Align the{" "}
-                      <strong>Lions</strong> first.
+              {/* ── Case 1 (slide 9 + 10) ── */}
+              <div className="fade-in">
+                <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 items-start">
+                  <div className="w-full lg:w-[38%] shrink-0">
+                    <div
+                      className="rounded-2xl overflow-hidden bg-gradient-to-br from-amber-50 to-amber-100 aspect-[4/3] flex items-center justify-center"
+                      role="img"
+                      aria-label="Case 1: Ringmaster balancing on a tightrope with lions below"
+                    >
+                      <span
+                        className="text-6xl sm:text-7xl select-none"
+                        aria-hidden="true"
+                      >
+                        &#129409;&#128176;
+                      </span>
+                    </div>
+                  </div>
+                  <div className="w-full lg:w-[62%]">
+                    <p className="text-navy/60 text-sm font-semibold tracking-[0.15em] uppercase mb-2">
+                      Case 1
                     </p>
-                    <p>
-                      The <strong>Chimpanzee</strong> (Navigator): No one really
-                      guiding the strategic alignment with the business needs.
+                    <h3 className="font-heading text-2xl sm:text-3xl font-bold italic text-navy mb-2">
+                      The Billion-Dollar No-Brainer (That Nobody Wanted)
+                    </h3>
+                    <p className="text-charcoal text-lg italic mb-6">
+                      A global transformation of MICE presented a clear
+                      opportunity for 10-15% cost savings across &gt;$1B in
+                      annual spend.
                     </p>
-                    <p>
-                      The <strong>Lion Tamer</strong> (Executive Sponsor): No
-                      air-cover &mdash; hence the fiery escalation to HQ.
-                    </p>
-                    <p>
-                      &hellip;and <strong>AI would not have changed a thing</strong>.
-                    </p>
-                  </>
-                }
-              />
 
-              {/* Case 2 Before */}
-              <CaseStudy
-                number="Case 2 &mdash; Before"
-                title="The Circus Act in Unscalable Disorder"
-                subtitle="Market Access and Value Management was a high-wire act without a safety net."
-                intro="Significant dependence on external agencies, excessive spend, and little centralized knowledge across markets."
-                items={[
-                  {
-                    label: "Mostly Outsourced",
-                    text: "Significant dependence on external agencies and consultants.",
-                  },
-                  {
-                    label: "Excessive Spend",
-                    text: "Premium rates for specialized expertise we couldn't access internally.",
-                  },
-                  {
-                    label: "Little Centralized Knowledge",
-                    text: "Lack of institutional memory and shared learnings across markets.",
-                  },
-                  {
-                    label: "Mischievous Chimps",
-                    text: "Early-stage skeptics and noisy stakeholders, tamed through clarity and transparency.",
-                  },
-                ]}
-                ringmasterTitle="Ringmaster's Observations:"
-                ringmasterContent={
-                  <p>
-                    However, when the <strong>right Apes</strong> run the tent,
-                    the <strong>Monkeys</strong> (and the{" "}
-                    <strong>Lions</strong>) <strong>take their seats</strong>.
-                  </p>
-                }
-              />
+                    <div className="space-y-4 mb-6">
+                      <Bullet emoji="&#128203;">
+                        <p>
+                          <strong>Demand Management</strong> &mdash; Optimizing
+                          participation, strategic meeting objectives and
+                          insights creation.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#128230;">
+                        <p>
+                          <strong>Logistics &amp; Procurement</strong> &mdash;
+                          Centralizing sourcing and vendor management for better
+                          rates.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#128220;">
+                        <p>
+                          <strong>Compliance &amp; Transparency</strong> &mdash;
+                          Streamlined reporting and improved regulatory
+                          compliance.
+                        </p>
+                      </Bullet>
+                    </div>
 
-              {/* Case 2 After */}
-              <CaseStudy
-                number="Case 2 &mdash; After"
-                title="The Circus Act That Actually Worked"
-                subtitle="Instead of renting performers, we built our own world-class show."
-                intro="We insourced capabilities, deployed strategic off- and nearshoring, and executed a phased transition with clear stage-gates."
-                items={[
-                  {
-                    label: "Insourced Market Access Activities",
-                    text: "We built internal expertise instead of relying on expensive vendors.",
-                  },
-                  {
-                    label: "Strategic Off- and Nearshoring",
-                    text: "Heavy lifting went to India, white-glove service moved to Dublin.",
-                  },
-                  {
-                    label: "Phased Transition",
-                    text: "Careful capability-building with clear stage-gates ensured sustainable transformation.",
-                  },
-                  {
-                    label: "AI Amplification",
-                    text: "Now AI is amplifying what the operating model already enables.",
-                  },
-                ]}
-                ringmasterTitle="Ringmaster's Smart Apes:"
-                ringmasterContent={
-                  <>
-                    <p>
-                      The <strong>Orangutan</strong> (Engineer): Offshore teams
-                      in India quietly building expert-level Market Access
-                      capabilities.
+                    <p className="text-charcoal text-[1.05rem] mb-6">
+                      Even a perfect business case means nothing if nobody
+                      actually wants it.
                     </p>
-                    <p>
-                      The <strong>Bonobo</strong> (Performer): Europe hub
-                      managing executive-facing interactions with polish and
-                      empathy.
-                    </p>
-                  </>
-                }
-              />
 
-              {/* Case 3 Before */}
-              <CaseStudy
-                number="Case 3 &mdash; Before"
-                title="The Travelling Chaos Circus"
-                subtitle="A fast-growing product portfolio required the ComOps function to step up, but the given setup wasn't allowing them to."
-                intro="Solo acts everywhere, too many people juggling the same tasks with unpredictable results, lack of spend transparency, and confused stakeholders."
-                items={[
-                  {
-                    label: "Solo Acts Everywhere",
-                    text: "Every local team operated differently with no consistency, competing with region.",
-                  },
-                  {
-                    label: "Dropping the Ball",
-                    text: "Too many people juggled the same tasks with unpredictable results.",
-                  },
-                  {
-                    label: "Wasting Budget",
-                    text: "Lack of spend transparency for overlapping tasks and deliverables.",
-                  },
-                  {
-                    label: "Confused Stakeholders",
-                    text: "The audience struggled to see the big picture, making decision making hard.",
-                  },
-                ]}
-                ringmasterTitle="Ringmaster's Chaos Monkeys:"
-                ringmasterContent={
-                  <>
-                    <p>
-                      The <strong>Juggling Howlers</strong>: Too many regional
-                      and local ComOps teams juggling overlapping tasks.
-                    </p>
-                    <p>
-                      The <strong>Silo Mandrills</strong>: Every country doing
-                      its own thing &mdash; resisting centralization and
-                      transparency.
-                    </p>
-                  </>
-                }
-              />
+                    <div className="grid sm:grid-cols-2 gap-4 mb-6">
+                      <div className="bg-offwhite rounded-lg border border-gray-200 p-5">
+                        <p className="font-heading font-semibold text-navy mb-1">
+                          &#10060; No stakeholder alignment?
+                        </p>
+                        <p className="text-sm text-charcoal">
+                          Without key players on your side, your transformation
+                          is dead before it starts.
+                        </p>
+                      </div>
+                      <div className="bg-offwhite rounded-lg border border-gray-200 p-5">
+                        <p className="font-heading font-semibold text-navy mb-1">
+                          &#10060; No real business pain?
+                        </p>
+                        <p className="text-sm text-charcoal">
+                          Leaders won&rsquo;t champion change unless it solves
+                          their actual problems.
+                        </p>
+                      </div>
+                      <div className="bg-offwhite rounded-lg border border-gray-200 p-5 sm:col-span-2">
+                        <p className="font-heading font-semibold text-navy mb-1">
+                          &#10060; No strong sponsor?
+                        </p>
+                        <p className="text-sm text-charcoal">
+                          Your brilliant plan becomes just another meal for the
+                          lions.
+                        </p>
+                      </div>
+                    </div>
 
-              {/* Case 3 After */}
-              <CaseStudy
-                number="Case 3 &mdash; After"
-                title="The Cirque du Soleil Glow-Up"
-                subtitle="A world-class transformation where every act is in perfect sync. Even the Chaos Monkeys stopped throwing bananas for a moment."
-                intro="We centralized analytics, kept last-mile execution local, and built a structured, scalable system with unified insights."
-                items={[
-                  {
-                    label: "Centralized Analytics & Insights",
-                    text: "Everyone reading from the same script. No improvisation, just precision.",
-                  },
-                  {
-                    label: "Last-Mile Execution Kept Local",
-                    text: "Standardized where needed, flexible where required. Perfect balance.",
-                  },
-                  {
-                    label: "Structured, Scalable System",
-                    text: "Built infrastructure to support our rapidly expanding product portfolio.",
-                  },
-                  {
-                    label: "Unified Insights",
-                    text: "Eliminated competing data sources with coordinated insights creation.",
-                  },
-                ]}
-                ringmasterTitle="Ringmaster's Smart Apes:"
-                ringmasterContent={
-                  <>
-                    <p>
-                      The <strong>Chimpanzee</strong> (Navigator): Designed the
-                      model and roadmap.
+                    <RingmasterBox title="RINGMASTER's Missing Smart Apes:">
+                      <Bullet emoji="&#129424;">
+                        <p>
+                          The <strong>Chimpanzee</strong> (Navigator): No one
+                          really guiding the strategic alignment with the
+                          business needs.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#129409;">
+                        <p>
+                          The <strong>Lion Tamer</strong> (Executive Sponsor): No
+                          air-cover &mdash; hence the fiery escalation to HQ.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#129302;">
+                        <p>
+                          &hellip;and{" "}
+                          <strong>AI would not have changed a thing</strong>.
+                        </p>
+                      </Bullet>
+                    </RingmasterBox>
+                  </div>
+                </div>
+              </div>
+
+              {/* ── Case 2: Before ── */}
+              <div className="fade-in">
+                <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 items-start">
+                  <div className="w-full lg:w-[38%] shrink-0">
+                    <div
+                      className="rounded-2xl overflow-hidden bg-gradient-to-br from-red-50 to-red-100 aspect-[4/3] flex items-center justify-center"
+                      role="img"
+                      aria-label="Case 2 Before: Chaotic circus scene with performers in disorder"
+                    >
+                      <span
+                        className="text-6xl sm:text-7xl select-none"
+                        aria-hidden="true"
+                      >
+                        &#127914;&#128165;
+                      </span>
+                    </div>
+                  </div>
+                  <div className="w-full lg:w-[62%]">
+                    <p className="text-navy/60 text-sm font-semibold tracking-[0.15em] uppercase mb-2">
+                      Case 2 &mdash; Before
                     </p>
-                    <p>
-                      The <strong>Orangutan</strong> (Engineer): Delivered
-                      scalable, centralized capability.
+                    <h3 className="font-heading text-2xl sm:text-3xl font-bold italic text-navy mb-2">
+                      The Circus Act in Unscalable Disorder
+                    </h3>
+                    <p className="text-charcoal text-lg italic mb-6">
+                      Market Access and Value Management was a high-wire act
+                      without a safety net.
                     </p>
-                    <p>
-                      The <strong>Gibbon</strong> (Fixer): Enabling local
-                      markets handling last-mile delivery.
+
+                    <div className="space-y-4 mb-6">
+                      <Bullet emoji="&#128203;">
+                        <p>
+                          <strong>Mostly Outsourced</strong> &mdash; Significant
+                          dependence on external agencies and consultants.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#128176;">
+                        <p>
+                          <strong>Excessive Spend</strong> &mdash; Premium rates
+                          for specialized expertise we couldn&rsquo;t access
+                          internally.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#128218;">
+                        <p>
+                          <strong>
+                            Little centralized and proprietary Knowledge
+                          </strong>{" "}
+                          &mdash; Lack of institutional memory and shared
+                          learnings across markets.
+                        </p>
+                      </Bullet>
+                    </div>
+
+                    <RingmasterBox title="RINGMASTER's Observations:">
+                      <Bullet emoji="&#128054;">
+                        <p>
+                          The <strong>Mischievous Chimps</strong>: Early-stage
+                          skeptics and noisy stakeholders, tamed through clarity
+                          and transparency.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#9989;">
+                        <p>
+                          However, when the <strong>right Apes</strong> run the
+                          tent, the <strong>Monkeys</strong> (and the{" "}
+                          <strong>Lions</strong>){" "}
+                          <strong>take their seats</strong>.
+                        </p>
+                      </Bullet>
+                    </RingmasterBox>
+                  </div>
+                </div>
+              </div>
+
+              {/* ── Case 2: After ── */}
+              <div className="fade-in">
+                <div className="flex flex-col lg:flex-row-reverse gap-10 lg:gap-14 items-start">
+                  <div className="w-full lg:w-[38%] shrink-0">
+                    <div
+                      className="rounded-2xl overflow-hidden bg-gradient-to-br from-emerald-50 to-emerald-100 aspect-[4/3] flex items-center justify-center"
+                      role="img"
+                      aria-label="Case 2 After: Organized circus with performers in harmony under spotlight"
+                    >
+                      <span
+                        className="text-6xl sm:text-7xl select-none"
+                        aria-hidden="true"
+                      >
+                        &#127914;&#10024;
+                      </span>
+                    </div>
+                  </div>
+                  <div className="w-full lg:w-[62%]">
+                    <p className="text-navy/60 text-sm font-semibold tracking-[0.15em] uppercase mb-2">
+                      Case 2 &mdash; After
                     </p>
-                    <p>
-                      The <strong>Lion Tamer</strong>: Executive sponsors
-                      aligned across functions and levels.
+                    <h3 className="font-heading text-2xl sm:text-3xl font-bold italic text-navy mb-2">
+                      The Circus Act That Actually Worked
+                    </h3>
+                    <p className="text-charcoal text-lg italic mb-6">
+                      Instead of renting performers, we built our own
+                      world-class show.
                     </p>
-                    <p>
-                      &hellip;and now <strong>AI</strong> is amplifying what the{" "}
-                      <strong>operating model</strong> already enables.
+
+                    <div className="space-y-4 mb-6">
+                      <div className="flex items-start gap-4">
+                        <span className="shrink-0 w-8 h-8 rounded-full bg-navy text-white text-sm font-bold flex items-center justify-center mt-0.5">
+                          1
+                        </span>
+                        <p className="text-[1.05rem] text-charcoal">
+                          <strong>
+                            Insourced Market Access and Value Management
+                            Activities
+                          </strong>
+                          <br />
+                          <span className="text-charcoal/80">
+                            We built internal expertise instead of relying on
+                            expensive vendors.
+                          </span>
+                        </p>
+                      </div>
+                      <div className="flex items-start gap-4">
+                        <span className="shrink-0 w-8 h-8 rounded-full bg-navy text-white text-sm font-bold flex items-center justify-center mt-0.5">
+                          2
+                        </span>
+                        <p className="text-[1.05rem] text-charcoal">
+                          <strong>
+                            Strategic Off- and Nearshoring incl. Last Mile
+                            Optimization
+                          </strong>
+                          <br />
+                          <span className="text-charcoal/80">
+                            Heavy lifting went to India, white-glove service
+                            moved to Dublin.
+                          </span>
+                        </p>
+                      </div>
+                      <div className="flex items-start gap-4">
+                        <span className="shrink-0 w-8 h-8 rounded-full bg-navy text-white text-sm font-bold flex items-center justify-center mt-0.5">
+                          3
+                        </span>
+                        <p className="text-[1.05rem] text-charcoal">
+                          <strong>
+                            Phased Transition with clear Stage-Gates
+                          </strong>
+                          <br />
+                          <span className="text-charcoal/80">
+                            Careful capability-building ensured sustainable
+                            transformation.
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <RingmasterBox title="RINGMASTER's Smart Apes (Your Transformation Heroes):">
+                      <Bullet emoji="&#129447;">
+                        <p>
+                          The <strong>Orangutan</strong> (Engineer): Offshore
+                          teams in India quietly building expert-level Market
+                          Access capabilities.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#129445;">
+                        <p>
+                          The <strong>Bonobo</strong> (Performer): Europe hub
+                          managing executive-facing interactions with polish and
+                          empathy.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#129302;">
+                        <p>
+                          &hellip;and now <strong>AI</strong> is amplifying what
+                          the <strong>operating model</strong> already enables.
+                        </p>
+                      </Bullet>
+                    </RingmasterBox>
+                  </div>
+                </div>
+              </div>
+
+              {/* ── Case 3: Before ── */}
+              <div className="fade-in">
+                <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 items-start">
+                  <div className="w-full lg:w-[38%] shrink-0">
+                    <div
+                      className="rounded-2xl overflow-hidden bg-gradient-to-br from-orange-50 to-orange-100 aspect-[4/3] flex items-center justify-center"
+                      role="img"
+                      aria-label="Case 3 Before: Travelling chaotic circus with monkeys and disarray"
+                    >
+                      <span
+                        className="text-6xl sm:text-7xl select-none"
+                        aria-hidden="true"
+                      >
+                        &#128054;&#127914;
+                      </span>
+                    </div>
+                  </div>
+                  <div className="w-full lg:w-[62%]">
+                    <p className="text-navy/60 text-sm font-semibold tracking-[0.15em] uppercase mb-2">
+                      Case 3 &mdash; Before
                     </p>
-                  </>
-                }
-              />
+                    <h3 className="font-heading text-2xl sm:text-3xl font-bold italic text-navy mb-2">
+                      The Travelling Chaos Circus
+                    </h3>
+                    <p className="text-charcoal text-lg italic mb-6">
+                      A fast-growing product portfolio required the ComOps
+                      function to step up, but the given setup wasn&rsquo;t
+                      allowing them to.
+                    </p>
+
+                    <div className="space-y-4 mb-6">
+                      <Bullet emoji="&#127916;">
+                        <p>
+                          <strong>Solo Acts Everywhere</strong> &mdash; Every
+                          local team operated differently with no consistency,
+                          competing with region.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#129312;">
+                        <p>
+                          <strong>Dropping the Ball</strong> &mdash; Too many
+                          people juggled the same tasks with unpredictable
+                          results.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#128176;">
+                        <p>
+                          <strong>Wasting Budget</strong> &mdash; Lack of spend
+                          transparency for overlapping tasks and deliverables.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#128533;">
+                        <p>
+                          <strong>Confused Stakeholders</strong> &mdash; The
+                          audience struggled to see the big picture, making
+                          decision making hard.
+                        </p>
+                      </Bullet>
+                    </div>
+
+                    <RingmasterBox title="RINGMASTER's Chaos Monkeys:">
+                      <Bullet emoji="&#128227;">
+                        <p>
+                          The <strong>Juggling Howlers</strong>: Too many
+                          regional and local ComOps teams juggling overlapping
+                          tasks.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#128680;">
+                        <p>
+                          The <strong>Silo Mandrills</strong>: Every country
+                          doing its own thing &mdash; resisting centralization
+                          and transparency.
+                        </p>
+                      </Bullet>
+                    </RingmasterBox>
+                  </div>
+                </div>
+              </div>
+
+              {/* ── Case 3: After ── */}
+              <div className="fade-in">
+                <div className="flex flex-col lg:flex-row-reverse gap-10 lg:gap-14 items-start">
+                  <div className="w-full lg:w-[38%] shrink-0">
+                    <div
+                      className="rounded-2xl overflow-hidden bg-gradient-to-br from-sky-50 to-sky-100 aspect-[4/3] flex items-center justify-center"
+                      role="img"
+                      aria-label="Case 3 After: Cirque du Soleil-style performance with synchronized artists"
+                    >
+                      <span
+                        className="text-6xl sm:text-7xl select-none"
+                        aria-hidden="true"
+                      >
+                        &#10024;&#129464;
+                      </span>
+                    </div>
+                  </div>
+                  <div className="w-full lg:w-[62%]">
+                    <p className="text-navy/60 text-sm font-semibold tracking-[0.15em] uppercase mb-2">
+                      Case 3 &mdash; After
+                    </p>
+                    <h3 className="font-heading text-2xl sm:text-3xl font-bold italic text-navy mb-2">
+                      The Cirque du Soleil Glow-Up
+                    </h3>
+                    <p className="text-charcoal text-lg italic mb-6">
+                      A world-class transformation where every act is in perfect
+                      sync. Even the Chaos Monkeys stopped throwing bananas for
+                      a moment.
+                    </p>
+
+                    <div className="space-y-4 mb-6">
+                      <Bullet emoji="&#128202;">
+                        <p>
+                          <strong>
+                            Centralized analytics, forecasting, and brand
+                            insights
+                          </strong>
+                          <br />
+                          <span className="text-charcoal/80">
+                            Everyone reading from the same script. No
+                            improvisation, just precision.
+                          </span>
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#128205;">
+                        <p>
+                          <strong>Last-mile execution kept local</strong>
+                          <br />
+                          <span className="text-charcoal/80">
+                            Standardized where needed, flexible where required.
+                            Perfect balance.
+                          </span>
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#128736;">
+                        <p>
+                          <strong>Structured, scalable system</strong>
+                          <br />
+                          <span className="text-charcoal/80">
+                            Built infrastructure to support our rapidly expanding
+                            product portfolio.
+                          </span>
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#128161;">
+                        <p>
+                          <strong>Unified Insights</strong>
+                          <br />
+                          <span className="text-charcoal/80">
+                            Eliminated competing data sources with coordinated
+                            insights creation.
+                          </span>
+                        </p>
+                      </Bullet>
+                    </div>
+
+                    <RingmasterBox title="RINGMASTER's Smart Apes:">
+                      <Bullet emoji="&#129424;">
+                        <p>
+                          The <strong>Chimpanzee</strong> (Navigator): Designed
+                          the model and roadmap.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#129447;">
+                        <p>
+                          The <strong>Orangutan</strong> (Engineer): Delivered
+                          scalable, centralized capability.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#9889;">
+                        <p>
+                          The <strong>Gibbon</strong> (Fixer): Enabling local
+                          markets handling last-mile delivery.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#129409;">
+                        <p>
+                          The <strong>Lion Tamer</strong>: Executive sponsors
+                          aligned across functions and levels.
+                        </p>
+                      </Bullet>
+                      <Bullet emoji="&#129302;">
+                        <p>
+                          &hellip;and now <strong>AI</strong> is amplifying what
+                          the <strong>operating model</strong> already enables.
+                        </p>
+                      </Bullet>
+                    </RingmasterBox>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -1021,59 +1542,136 @@ export default function TransformationCircusPage() {
         <SectionDivider />
 
         {/* ═══════════════════════════════════════════
-            6 TAKEAWAYS
+            SLIDE 15: 6 TAKEAWAYS
             ═══════════════════════════════════════════ */}
         <section
           id="takeaways"
-          className="py-20 lg:py-28 bg-[#1a1225] text-white scroll-mt-20"
+          className="py-16 lg:py-24 bg-offwhite scroll-mt-20"
         >
           <div className="max-w-6xl mx-auto px-6">
-            <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold mb-3 text-center">
-              6 Takeaways to Survive (and Love) the Circus
-            </h2>
-            <p className="fade-in text-white/80 text-center max-w-2xl mx-auto mb-12">
-              How to lead the show &mdash; without getting mauled in Act I, and
-              still building a bigger tent.
-            </p>
+            <div className="flex flex-col lg:flex-row gap-10 lg:gap-14 items-start">
+              {/* Image */}
+              <div className="w-full lg:w-[38%] shrink-0">
+                <div
+                  className="rounded-2xl overflow-hidden bg-gradient-to-br from-navy/5 to-navy/10 aspect-[4/3] flex items-center justify-center"
+                  role="img"
+                  aria-label="Two ringmasters shaking hands under golden circus lights"
+                >
+                  <span
+                    className="text-6xl sm:text-7xl select-none"
+                    aria-hidden="true"
+                  >
+                    &#129309;&#127914;
+                  </span>
+                </div>
+              </div>
+              {/* Content */}
+              <div className="w-full lg:w-[62%] fade-in">
+                <h2 className="font-heading text-3xl sm:text-4xl font-bold italic text-navy mb-3">
+                  6 Takeaways to Survive (and Love) the Circus
+                </h2>
+                <p className="text-charcoal mb-10">
+                  How to lead the show &mdash; without getting mauled in Act I,
+                  and still building a bigger tent.
+                </p>
 
-            <div className="fade-in grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              <TakeawayCard
-                title="AI won't tame the monkeys. You still have to."
-                text="Manage disruption early before chaos takes centre stage. Or they'll turn your strategy into a banana stand."
-              />
-              <TakeawayCard
-                title="Without a Lion Tamer, you're just an appetizer"
-                text="Executive sponsorship is not an option, it is survival."
-              />
-              <TakeawayCard
-                title="A billion-dollar business case means nothing if nobody owns it"
-                text="Sell the problem first, then offer your solution."
-              />
-              <TakeawayCard
-                title="Corporate transformation takes time — usually years"
-                text="No one masters the trapeze on Day 1. Pace the change."
-              />
-              <TakeawayCard
-                title="AI scales execution"
-                text="Your operating model decides what gets scaled. Get the model right first."
-              />
-              <TakeawayCard
-                title="Build the right team — the Smart Apes"
-                text="Trusted, strategic, adaptable, collaborative. The smarter the cast, the less banana drama."
-              />
+                <div className="grid sm:grid-cols-2 gap-6 mb-10">
+                  <div>
+                    <Bullet emoji="&#128293;">
+                      <div>
+                        <p className="font-heading font-bold text-navy mb-1">
+                          AI won&rsquo;t tame the monkeys. You still have to.
+                        </p>
+                        <p className="text-sm text-charcoal/80">
+                          Manage disruption early before chaos takes centre
+                          stage &mdash; or they&rsquo;ll turn your strategy into
+                          a banana stand.
+                        </p>
+                      </div>
+                    </Bullet>
+                  </div>
+                  <div>
+                    <Bullet emoji="&#129409;">
+                      <div>
+                        <p className="font-heading font-bold text-navy mb-1">
+                          Without a Lion Tamer, you&rsquo;re just an appetizer
+                        </p>
+                        <p className="text-sm text-charcoal/80">
+                          Executive sponsorship is not an option, it is survival.
+                        </p>
+                      </div>
+                    </Bullet>
+                  </div>
+                  <div>
+                    <Bullet emoji="&#128176;">
+                      <div>
+                        <p className="font-heading font-bold text-navy mb-1">
+                          A billion-dollar business case means nothing if nobody
+                          owns it
+                        </p>
+                        <p className="text-sm text-charcoal/80">
+                          Sell the problem first, then offer your solution.
+                        </p>
+                      </div>
+                    </Bullet>
+                  </div>
+                  <div>
+                    <Bullet emoji="&#9203;">
+                      <div>
+                        <p className="font-heading font-bold text-navy mb-1">
+                          Corporate transformation takes time &mdash; usually
+                          years
+                        </p>
+                        <p className="text-sm text-charcoal/80">
+                          No one masters the trapeze on Day 1. Pace the change.
+                        </p>
+                      </div>
+                    </Bullet>
+                  </div>
+                </div>
+
+                {/* Highlighted AI box — matching PDF bottom box */}
+                <div className="rounded-xl bg-navy p-6 text-white">
+                  <Bullet emoji="&#129302;">
+                    <div>
+                      <p className="font-heading font-bold text-lg mb-1">
+                        AI scales execution.
+                      </p>
+                      <p className="text-white/80">
+                        Your <strong>operating model</strong> decides{" "}
+                        <strong>what</strong> gets scaled. Get the model right
+                        first.
+                      </p>
+                    </div>
+                  </Bullet>
+                  <div className="mt-4 pt-4 border-t border-white/15">
+                    <Bullet emoji="&#129424;">
+                      <p className="text-white/80">
+                        <strong className="text-white">
+                          Build the right team &mdash; the Smart Apes.
+                        </strong>{" "}
+                        Trusted, strategic, adaptable, collaborative. The
+                        smarter the cast, the less banana drama.
+                      </p>
+                    </Bullet>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
+        <SectionDivider />
+
         {/* ═══════════════════════════════════════════
-            CLOSING CTA
+            SLIDE 16: CLOSING CTA
             ═══════════════════════════════════════════ */}
-        <section className="py-20 lg:py-24 bg-offwhite text-center">
+        <section className="py-16 lg:py-24 bg-white text-center">
           <div className="max-w-6xl mx-auto px-6">
-            <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
+            <h2 className="fade-in font-heading text-3xl sm:text-4xl font-bold italic text-navy mb-4">
               Until the Next Greatest Show.
             </h2>
-            <p className="fade-in text-charcoal/80 text-lg mb-8">
+            <p className="fade-in text-charcoal text-lg mb-8">
               Want to discuss pharma transformation, AI strategy, or taming your
               own circus? Let&rsquo;s connect.
             </p>
@@ -1099,7 +1697,7 @@ export default function TransformationCircusPage() {
 
         {/* Disclaimer */}
         <div className="py-4 bg-gray-100 text-center">
-          <p className="text-xs text-charcoal/80 max-w-6xl mx-auto px-6">
+          <p className="text-xs text-charcoal max-w-6xl mx-auto px-6">
             &copy; 2026 Dr. Kurr Advisory. All rights reserved. The views
             expressed are solely those of Dr. Michael A. Kurr. All examples
             provided are purely hypothetical. Some ideas were inspired by GenAI.
@@ -1109,7 +1707,7 @@ export default function TransformationCircusPage() {
       </main>
 
       {/* ── Footer ── */}
-      <footer className="py-8 bg-navy-dark text-white/70 border-t border-white/5">
+      <footer className="py-8 bg-navy-dark text-white/80 border-t border-white/5">
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm">
             &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights
@@ -1122,21 +1720,21 @@ export default function TransformationCircusPage() {
             <Link
               href="/"
               title="Dr. Michael Kurr — Home"
-              className="hover:text-white/80 transition-colors"
+              className="hover:text-white transition-colors"
             >
               Home
             </Link>
             <Link
               href="/imprint/"
               title="Imprint"
-              className="hover:text-white/80 transition-colors"
+              className="hover:text-white transition-colors"
             >
               Imprint
             </Link>
             <Link
               href="/privacy-policy/"
               title="Privacy Policy"
-              className="hover:text-white/80 transition-colors"
+              className="hover:text-white transition-colors"
             >
               Privacy Policy
             </Link>

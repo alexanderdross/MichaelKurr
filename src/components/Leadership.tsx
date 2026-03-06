@@ -128,7 +128,7 @@ export default function Leadership() {
           <div className="space-y-6">
             {rules.map((rule, i) => (
               <div key={i} className="flex items-start gap-5">
-                <span className="shrink-0 text-3xl font-heading font-bold text-gold/40">
+                <span className="shrink-0 text-3xl font-heading font-bold text-gold/60">
                   0{i + 1}
                 </span>
                 <blockquote className="text-lg text-charcoal/80 font-heading italic leading-relaxed pt-1">
