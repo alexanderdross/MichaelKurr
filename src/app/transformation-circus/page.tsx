@@ -433,22 +433,22 @@ export default function TransformationCircusPage() {
           </p>
           <p className="text-charcoal text-base mb-2">
             Your Ringmaster:{" "}
-            <strong className="text-navy">Dr. Michael A. Kurr</strong>, Chief
+            <a href="/#about" className="text-navy font-bold hover:text-teal transition-colors underline underline-offset-2">Dr. Michael A. Kurr</a>, Chief
             Circus Officer
           </p>
           <p className="text-sm text-charcoal/80 mb-8">
             (Taming the Transformation Circus since 15+ Years.)
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-4">
             <a
               href="#showtime"
-              className="px-6 py-3 bg-navy text-white font-semibold rounded hover:bg-navy-light transition-colors duration-200"
+              className="px-6 py-3 bg-navy text-white font-semibold rounded hover:bg-navy-light transition-colors duration-200 text-center"
             >
               Enter the Ring
             </a>
             <a
               href="#takeaways"
-              className="px-6 py-3 border border-navy/30 text-navy rounded hover:border-navy hover:bg-navy/5 transition-all duration-200"
+              className="px-6 py-3 border border-navy/30 text-navy rounded hover:border-navy hover:bg-navy/5 transition-all duration-200 text-center"
             >
               Jump to Takeaways
             </a>
@@ -1682,19 +1682,19 @@ export default function TransformationCircusPage() {
               Want to discuss pharma transformation, AI strategy, or taming your
               own circus? Let&rsquo;s connect.
             </p>
-            <div className="fade-in flex flex-wrap justify-center gap-4">
+            <div className="fade-in flex flex-col sm:flex-row justify-center gap-4 w-full max-w-md mx-auto">
               <a
                 href="https://www.linkedin.com/in/michaelkurr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Connect with Dr. Michael Kurr on LinkedIn"
-                className="px-8 py-3 bg-navy text-white font-semibold rounded hover:bg-navy-light transition-colors duration-200"
+                className="flex-1 px-8 py-3 bg-navy text-white font-semibold rounded hover:bg-navy-light transition-colors duration-200 text-center"
               >
                 Connect on LinkedIn
               </a>
               <Link
                 href="/contact/"
-                className="px-8 py-3 border border-navy text-navy font-semibold rounded hover:bg-navy hover:text-white transition-all duration-200"
+                className="flex-1 px-8 py-3 border border-navy text-navy font-semibold rounded hover:bg-navy hover:text-white transition-all duration-200 text-center"
               >
                 Get in Touch
               </Link>
@@ -1714,49 +1714,33 @@ export default function TransformationCircusPage() {
       </main>
 
       {/* ── Footer ── */}
-      <footer className="py-8 bg-navy-dark text-white/80 border-t border-white/5">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <footer className="py-10 bg-navy-dark text-white/75 border-t border-white/5">
+        <div className="max-w-6xl mx-auto px-6 flex flex-col items-center gap-6">
           <nav
             aria-label="Footer navigation"
-            className="flex items-center gap-6 text-sm"
+            className="flex flex-wrap items-center justify-center gap-x-1 gap-y-2 text-sm"
           >
-            <Link
-              href="/"
-              title="Dr. Michael Kurr — Home"
-              className="hover:text-white transition-colors"
-            >
+            <Link href="/" title="Dr. Michael Kurr — Home" className="hover:text-white transition-colors px-2">
               Home
             </Link>
-            <Link
-              href="/advisory/"
-              title="Advisory Services"
-              className="hover:text-white transition-colors"
-            >
+            <span className="text-white/20" aria-hidden="true">·</span>
+            <Link href="/advisory/" title="Advisory Services" className="hover:text-white transition-colors px-2">
               Advisory
             </Link>
-            <Link
-              href="/contact/"
-              title="Get in touch with Dr. Michael Kurr"
-              className="hover:text-white transition-colors"
-            >
+            <span className="text-white/20" aria-hidden="true">·</span>
+            <Link href="/contact/" title="Get in touch with Dr. Michael Kurr" className="hover:text-white transition-colors px-2">
               Contact
             </Link>
-            <Link
-              href="/imprint/"
-              title="Imprint"
-              className="hover:text-white transition-colors"
-            >
+            <span className="text-white/20" aria-hidden="true">·</span>
+            <Link href="/imprint/" title="Imprint" className="hover:text-white transition-colors px-2">
               Imprint
             </Link>
-            <Link
-              href="/privacy-policy/"
-              title="Privacy Policy"
-              className="hover:text-white transition-colors"
-            >
+            <span className="text-white/20" aria-hidden="true">·</span>
+            <Link href="/privacy-policy/" title="Privacy Policy" className="hover:text-white transition-colors px-2">
               Privacy Policy
             </Link>
           </nav>
-          <p className="text-sm">
+          <p className="text-xs text-white/60">
             &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights
             reserved.
           </p>
