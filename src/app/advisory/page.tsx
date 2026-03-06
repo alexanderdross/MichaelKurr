@@ -964,8 +964,8 @@ export default function AdvisoryPage() {
               </div>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10">
                 <a
-                  href="mailto:info@michaelkurr.com"
-                  title="Send an email to Dr. Michael Kurr"
+                  href="/contact/"
+                  title="Contact Dr. Michael Kurr"
                   className="inline-flex items-center gap-2 text-charcoal/70 hover:text-navy transition-colors duration-200"
                 >
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} aria-hidden="true">
