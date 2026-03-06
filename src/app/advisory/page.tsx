@@ -78,6 +78,122 @@ export const metadata: Metadata = {
   category: "Business",
 };
 
+/* ─── SVG Icons ─── */
+const iconClass = "w-10 h-10 text-navy";
+const iconSmClass = "w-8 h-8 text-navy";
+
+function BriefcaseIcon({ className = iconClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="2" y="7" width="20" height="14" rx="2" />
+      <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+      <path d="M2 13h20" />
+    </svg>
+  );
+}
+
+function CogIcon({ className = iconClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="3" />
+      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+    </svg>
+  );
+}
+
+function CpuIcon({ className = iconClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="4" y="4" width="16" height="16" rx="2" />
+      <rect x="9" y="9" width="6" height="6" />
+      <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3" />
+    </svg>
+  );
+}
+
+function TargetIcon({ className = iconClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="10" />
+      <circle cx="12" cy="12" r="6" />
+      <circle cx="12" cy="12" r="2" />
+    </svg>
+  );
+}
+
+function LinkIcon({ className = iconClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+    </svg>
+  );
+}
+
+function UsersIcon({ className = iconClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+      <circle cx="9" cy="7" r="4" />
+      <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+    </svg>
+  );
+}
+
+function FlaskIcon({ className = iconSmClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M9 3h6M10 3v7.4a2 2 0 0 1-.6 1.4L4 17.2a2 2 0 0 0-.6 1.4V20a1 1 0 0 0 1 1h15.2a1 1 0 0 0 1-1v-1.4a2 2 0 0 0-.6-1.4l-5.4-5.4a2 2 0 0 1-.6-1.4V3" />
+    </svg>
+  );
+}
+
+function HeartPulseIcon({ className = iconSmClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M19.5 12.572l-7.5 7.428l-7.5-7.428A5 5 0 0 1 12 6.006a5 5 0 0 1 7.5 6.572" />
+      <path d="M3 12h4l2-4 4 8 2-4h6" />
+    </svg>
+  );
+}
+
+function BuildingIcon({ className = iconSmClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="4" y="2" width="16" height="20" rx="2" />
+      <path d="M9 22v-4h6v4" />
+      <path d="M8 6h.01M16 6h.01M8 10h.01M16 10h.01M8 14h.01M16 14h.01" />
+    </svg>
+  );
+}
+
+function MonitorIcon({ className = iconSmClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="2" y="3" width="20" height="14" rx="2" />
+      <path d="M8 21h8M12 17v4" />
+    </svg>
+  );
+}
+
+function BoltIcon({ className = iconClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+    </svg>
+  );
+}
+
+function LightbulbIcon({ className = iconClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M9 18h6M10 22h4" />
+      <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A7 7 0 1 0 7.5 11.5c.76.76 1.23 1.52 1.41 2.5" />
+    </svg>
+  );
+}
+
 /* ─── Service card ─── */
 function ServiceCard({
   icon,
@@ -85,16 +201,16 @@ function ServiceCard({
   description,
   offerings,
 }: {
-  icon: string;
+  icon: React.ReactNode;
   title: string;
   description: string;
   offerings: string[];
 }) {
   return (
     <div className="bg-white rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-md transition-shadow duration-200">
-      <span className="text-3xl mb-4 block" aria-hidden="true">
+      <div className="mb-4" aria-hidden="true">
         {icon}
-      </span>
+      </div>
       <h3 className="font-heading text-xl font-bold text-navy mb-3">
         {title}
       </h3>
@@ -102,9 +218,9 @@ function ServiceCard({
       <ul className="space-y-2">
         {offerings.map((item) => (
           <li key={item} className="flex items-start gap-2 text-sm text-charcoal">
-            <span className="text-gold mt-0.5 shrink-0" aria-hidden="true">
-              &#10003;
-            </span>
+            <svg className="w-4 h-4 text-gold-dark mt-0.5 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+            </svg>
             {item}
           </li>
         ))}
@@ -119,15 +235,15 @@ function IndustryCard({
   title,
   examples,
 }: {
-  icon: string;
+  icon: React.ReactNode;
   title: string;
   examples: string[];
 }) {
   return (
     <div className="bg-offwhite rounded-xl border border-gray-200 p-6">
-      <span className="text-2xl mb-3 block" aria-hidden="true">
+      <div className="mb-3" aria-hidden="true">
         {icon}
-      </span>
+      </div>
       <h3 className="font-heading text-lg font-bold text-navy mb-3">
         {title}
       </h3>
@@ -136,27 +252,6 @@ function IndustryCard({
           <li key={ex}>{ex}</li>
         ))}
       </ul>
-    </div>
-  );
-}
-
-/* ─── Engagement model ─── */
-function EngagementModel({
-  title,
-  subtitle,
-  description,
-}: {
-  title: string;
-  subtitle: string;
-  description: string;
-}) {
-  return (
-    <div className="text-center">
-      <h3 className="font-heading text-lg font-bold text-navy mb-1">
-        {title}
-      </h3>
-      <p className="text-gold text-sm font-medium mb-3">{subtitle}</p>
-      <p className="text-sm text-charcoal leading-relaxed">{description}</p>
     </div>
   );
 }
@@ -410,7 +505,7 @@ export default function AdvisoryPage() {
         <section className="py-20 lg:py-28 bg-offwhite">
           <div className="max-w-6xl mx-auto px-6">
             <div className="fade-in max-w-3xl mb-14">
-              <span className="block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+              <span className="block text-gold-dark text-sm font-semibold tracking-[0.2em] uppercase mb-3">
                 Why Dr. Kurr
               </span>
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-6">
@@ -471,7 +566,7 @@ export default function AdvisoryPage() {
         <section id="services" className="py-20 lg:py-28 bg-white scroll-mt-20">
           <div className="max-w-6xl mx-auto px-6">
             <div className="fade-in text-center mb-14">
-              <span className="block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+              <span className="block text-gold-dark text-sm font-semibold tracking-[0.2em] uppercase mb-3">
                 Advisory Services
               </span>
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
@@ -485,7 +580,7 @@ export default function AdvisoryPage() {
 
             <div className="fade-in grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <ServiceCard
-                icon="&#128188;"
+                icon={<BriefcaseIcon />}
                 title="Fractional C-Level Leadership"
                 description="Part-time CCO, CTO, or COO for organizations that need senior executive bandwidth without the full-time commitment. Ideal for scale-ups, portfolio companies, and organizations in transition."
                 offerings={[
@@ -497,7 +592,7 @@ export default function AdvisoryPage() {
                 ]}
               />
               <ServiceCard
-                icon="&#128736;"
+                icon={<CogIcon />}
                 title="Global Operating Model Design"
                 description="Designing and implementing scalable operating models that balance centralization with local agility — including shared services, offshoring, and nearshoring strategies."
                 offerings={[
@@ -509,7 +604,7 @@ export default function AdvisoryPage() {
                 ]}
               />
               <ServiceCard
-                icon="&#129302;"
+                icon={<CpuIcon />}
                 title="AI & Digital Strategy for Regulated Industries"
                 description="Practical AI adoption that works within pharma compliance frameworks. No hype — just AI that fits governed workflows, accelerates execution, and respects accountability."
                 offerings={[
@@ -521,7 +616,7 @@ export default function AdvisoryPage() {
                 ]}
               />
               <ServiceCard
-                icon="&#127919;"
+                icon={<TargetIcon />}
                 title="Commercial & Medical Operations Transformation"
                 description="Redesigning go-to-market and medical affairs operations for efficiency, scale, and omnichannel engagement — the same approach that built an industry-leading service organization."
                 offerings={[
@@ -533,7 +628,7 @@ export default function AdvisoryPage() {
                 ]}
               />
               <ServiceCard
-                icon="&#129309;"
+                icon={<LinkIcon />}
                 title="Strategic Partnerships & Alliances"
                 description="Structuring, launching, and managing strategic cooperations — from vendor partnerships to industry alliances. Based on published research and 20+ years of partnership management."
                 offerings={[
@@ -545,7 +640,7 @@ export default function AdvisoryPage() {
                 ]}
               />
               <ServiceCard
-                icon="&#128101;"
+                icon={<UsersIcon />}
                 title="Organizational Design & People Strategy"
                 description="Building high-performing global teams from the ground up. Designing organizations that attract talent, empower leaders, and scale without losing culture."
                 offerings={[
@@ -566,7 +661,7 @@ export default function AdvisoryPage() {
         <section className="py-20 lg:py-28 bg-offwhite">
           <div className="max-w-6xl mx-auto px-6">
             <div className="fade-in text-center mb-14">
-              <span className="block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+              <span className="block text-gold-dark text-sm font-semibold tracking-[0.2em] uppercase mb-3">
                 Industries Served
               </span>
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
@@ -581,7 +676,7 @@ export default function AdvisoryPage() {
 
             <div className="fade-in grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <IndustryCard
-                icon="&#128138;"
+                icon={<FlaskIcon />}
                 title="Pharma & Biotech"
                 examples={[
                   "Large pharma transformations",
@@ -591,7 +686,7 @@ export default function AdvisoryPage() {
                 ]}
               />
               <IndustryCard
-                icon="&#129658;"
+                icon={<HeartPulseIcon />}
                 title="MedTech & Diagnostics"
                 examples={[
                   "Commercial operations optimization",
@@ -601,7 +696,7 @@ export default function AdvisoryPage() {
                 ]}
               />
               <IndustryCard
-                icon="&#127981;"
+                icon={<BuildingIcon />}
                 title="Life Sciences Services"
                 examples={[
                   "CRO / CDMO optimization",
@@ -611,7 +706,7 @@ export default function AdvisoryPage() {
                 ]}
               />
               <IndustryCard
-                icon="&#128187;"
+                icon={<MonitorIcon />}
                 title="HealthTech & Digital Health"
                 examples={[
                   "Enterprise AI adoption",
@@ -630,7 +725,7 @@ export default function AdvisoryPage() {
         <section className="py-20 lg:py-28 bg-white">
           <div className="max-w-6xl mx-auto px-6">
             <div className="fade-in text-center mb-14">
-              <span className="block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+              <span className="block text-gold-dark text-sm font-semibold tracking-[0.2em] uppercase mb-3">
                 When to Engage
               </span>
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
@@ -734,9 +829,9 @@ export default function AdvisoryPage() {
 
             <div className="fade-in grid sm:grid-cols-3 gap-8">
               <div className="bg-white/5 rounded-2xl border border-white/10 p-8 text-center">
-                <span className="text-3xl mb-4 block" aria-hidden="true">
-                  &#128188;
-                </span>
+                <div className="flex justify-center mb-4" aria-hidden="true">
+                  <BriefcaseIcon className="w-10 h-10 text-gold" />
+                </div>
                 <h3 className="font-heading text-xl font-bold mb-2">
                   Fractional C-Level
                 </h3>
@@ -750,9 +845,9 @@ export default function AdvisoryPage() {
                 </p>
               </div>
               <div className="bg-white/5 rounded-2xl border border-white/10 p-8 text-center">
-                <span className="text-3xl mb-4 block" aria-hidden="true">
-                  &#9889;
-                </span>
+                <div className="flex justify-center mb-4" aria-hidden="true">
+                  <BoltIcon className="w-10 h-10 text-gold" />
+                </div>
                 <h3 className="font-heading text-xl font-bold mb-2">
                   Transformation Sprint
                 </h3>
@@ -766,9 +861,9 @@ export default function AdvisoryPage() {
                 </p>
               </div>
               <div className="bg-white/5 rounded-2xl border border-white/10 p-8 text-center">
-                <span className="text-3xl mb-4 block" aria-hidden="true">
-                  &#128161;
-                </span>
+                <div className="flex justify-center mb-4" aria-hidden="true">
+                  <LightbulbIcon className="w-10 h-10 text-gold" />
+                </div>
                 <h3 className="font-heading text-xl font-bold mb-2">
                   Board &amp; Strategic Advisory
                 </h3>
@@ -791,7 +886,7 @@ export default function AdvisoryPage() {
         <section className="py-20 lg:py-28 bg-offwhite">
           <div className="max-w-6xl mx-auto px-6">
             <div className="fade-in text-center mb-14">
-              <span className="block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+              <span className="block text-gold-dark text-sm font-semibold tracking-[0.2em] uppercase mb-3">
                 Current Roles
               </span>
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
@@ -804,7 +899,7 @@ export default function AdvisoryPage() {
                 <h3 className="font-heading text-lg font-bold text-navy mb-1">
                   Lemna Bio
                 </h3>
-                <p className="text-gold text-sm font-medium mb-3">
+                <p className="text-gold-dark text-sm font-medium mb-3">
                   Fractional CCO &middot; Strategy &amp; Partnerships
                 </p>
                 <p className="text-sm text-charcoal leading-relaxed">
@@ -817,7 +912,7 @@ export default function AdvisoryPage() {
                 <h3 className="font-heading text-lg font-bold text-navy mb-1">
                   THENA Capital
                 </h3>
-                <p className="text-gold text-sm font-medium mb-3">
+                <p className="text-gold-dark text-sm font-medium mb-3">
                   Fellow &middot; MedTech Investment
                 </p>
                 <p className="text-sm text-charcoal leading-relaxed">
@@ -830,7 +925,7 @@ export default function AdvisoryPage() {
                 <h3 className="font-heading text-lg font-bold text-navy mb-1">
                   Dr. Kurr Advisory
                 </h3>
-                <p className="text-gold text-sm font-medium mb-3">
+                <p className="text-gold-dark text-sm font-medium mb-3">
                   Founder &middot; Independent Advisory
                 </p>
                 <p className="text-sm text-charcoal leading-relaxed">

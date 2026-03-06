@@ -414,7 +414,7 @@ export default function TransformationCircusPage() {
           imagePlaceholder="&#127914;"
           imageAlt="Ringmaster Dr. Michael Kurr in front of a colorful circus tent — The Transformation Circus"
         >
-          <p className="text-navy/60 text-sm font-semibold tracking-[0.2em] uppercase mb-4">
+          <p className="text-navy/80 text-sm font-semibold tracking-[0.2em] uppercase mb-4">
             A Talk by Dr. Michael A. Kurr
           </p>
           <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-4 leading-[1.15]">
@@ -446,7 +446,7 @@ export default function TransformationCircusPage() {
               Jump to Takeaways
             </a>
           </div>
-          <p className="text-xs text-charcoal/60 italic mt-6">
+          <p className="text-xs text-charcoal/80 italic mt-6">
             The views expressed are solely my own. All examples provided are
             purely hypothetical.
           </p>
@@ -1068,7 +1068,7 @@ export default function TransformationCircusPage() {
                     </div>
                   </div>
                   <div className="w-full lg:w-[62%]">
-                    <p className="text-navy/60 text-sm font-semibold tracking-[0.15em] uppercase mb-2">
+                    <p className="text-navy/80 text-sm font-semibold tracking-[0.15em] uppercase mb-2">
                       Case 1
                     </p>
                     <h3 className="font-heading text-2xl sm:text-3xl font-bold italic text-navy mb-2">
@@ -1182,7 +1182,7 @@ export default function TransformationCircusPage() {
                     </div>
                   </div>
                   <div className="w-full lg:w-[62%]">
-                    <p className="text-navy/60 text-sm font-semibold tracking-[0.15em] uppercase mb-2">
+                    <p className="text-navy/80 text-sm font-semibold tracking-[0.15em] uppercase mb-2">
                       Case 2 &mdash; Before
                     </p>
                     <h3 className="font-heading text-2xl sm:text-3xl font-bold italic text-navy mb-2">
@@ -1257,7 +1257,7 @@ export default function TransformationCircusPage() {
                     </div>
                   </div>
                   <div className="w-full lg:w-[62%]">
-                    <p className="text-navy/60 text-sm font-semibold tracking-[0.15em] uppercase mb-2">
+                    <p className="text-navy/80 text-sm font-semibold tracking-[0.15em] uppercase mb-2">
                       Case 2 &mdash; After
                     </p>
                     <h3 className="font-heading text-2xl sm:text-3xl font-bold italic text-navy mb-2">
@@ -1362,7 +1362,7 @@ export default function TransformationCircusPage() {
                     </div>
                   </div>
                   <div className="w-full lg:w-[62%]">
-                    <p className="text-navy/60 text-sm font-semibold tracking-[0.15em] uppercase mb-2">
+                    <p className="text-navy/80 text-sm font-semibold tracking-[0.15em] uppercase mb-2">
                       Case 3 &mdash; Before
                     </p>
                     <h3 className="font-heading text-2xl sm:text-3xl font-bold italic text-navy mb-2">
@@ -1442,7 +1442,7 @@ export default function TransformationCircusPage() {
                     </div>
                   </div>
                   <div className="w-full lg:w-[62%]">
-                    <p className="text-navy/60 text-sm font-semibold tracking-[0.15em] uppercase mb-2">
+                    <p className="text-navy/80 text-sm font-semibold tracking-[0.15em] uppercase mb-2">
                       Case 3 &mdash; After
                     </p>
                     <h3 className="font-heading text-2xl sm:text-3xl font-bold italic text-navy mb-2">
