@@ -72,7 +72,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               title="Connect with Dr. Michael Kurr on LinkedIn"
-              className="inline-flex items-center gap-2 px-7 py-3 bg-gold text-navy font-semibold rounded hover:bg-gold-light transition-colors duration-200"
+              className="inline-flex items-center gap-2 px-7 py-3 bg-gold-light text-navy font-semibold rounded hover:bg-gold transition-colors duration-200"
             >
               <LinkedInIcon className="w-5 h-5" />
               LinkedIn
