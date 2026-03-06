@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import ScrollAnimations from "@/components/ScrollAnimations";
-import { makeProductSchema, makeNavigationSchema } from "@/data/schemas";
+import { makeProductSchema, makeNavigationSchema, howToEngageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
   title:
     "Advisory Services — Fractional C-Level & Transformation Advisory | Dr. Michael Kurr",
   description:
-    "Dr. Kurr Advisory offers fractional CCO, CTO, and COO mandates for Pharma & Life Sciences. Strategic clarity, scalable operating models, AI-ready organizations, and profitable growth — from a leader who built one of the industry's leading content supply chains from scratch.",
+    "Need a fractional CCO, CTO, or COO for your pharma organization? Dr. Kurr Advisory provides C-level leadership, transformation advisory, and operating model design for Pharma & Life Sciences — from a leader who built the #1 content supply chain in the industry.",
   keywords: [
     "fractional CCO",
     "fractional CTO",
@@ -448,6 +448,14 @@ export default function AdvisoryPage() {
               },
             ],
           }),
+        }}
+      />
+
+      {/* JSON-LD: HowTo — engagement process */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(howToEngageSchema),
         }}
       />
 

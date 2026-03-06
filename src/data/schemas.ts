@@ -580,6 +580,48 @@ export function makeServiceFaqSchema(
   };
 }
 
+export const howToEngageSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Engage Dr. Kurr Advisory for Pharma Transformation",
+  description:
+    "A step-by-step guide to working with Dr. Kurr Advisory for fractional C-level leadership, transformation advisory, or strategic consulting in Pharma & Life Sciences.",
+  totalTime: "P14D",
+  step: [
+    {
+      "@type": "HowToStep",
+      position: 1,
+      name: "Initial Discovery Call",
+      text: "Schedule a confidential discovery call to discuss your organization's challenges, transformation goals, and leadership needs. Dr. Kurr will assess strategic fit and identify the right engagement model.",
+      url: "https://michaelkurr.com/contact/",
+    },
+    {
+      "@type": "HowToStep",
+      position: 2,
+      name: "Diagnostic Assessment",
+      text: "A focused diagnostic phase to evaluate your current operating model, organizational readiness, and strategic priorities. This includes stakeholder interviews, process mapping, and capability assessment.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 3,
+      name: "Engagement Proposal",
+      text: "Based on the diagnostic, Dr. Kurr develops a tailored proposal — whether a fractional C-level mandate (2-3 days/week), a transformation sprint (3-6 months), or board-level strategic advisory.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 4,
+      name: "Embedded Execution",
+      text: "Dr. Kurr works as part of your leadership team — not as an external consultant. This means attending board meetings, owning strategic initiatives, managing direct reports, and driving execution alongside the CEO and founding team.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 5,
+      name: "Measurable Outcomes",
+      text: "Every engagement is designed to deliver measurable results: operational KPIs, organizational milestones, and strategic objectives. Regular reviews ensure alignment and course-correction as needed.",
+    },
+  ],
+};
+
 export const allSchemas = [
   personSchema,
   bookSchemas,

@@ -80,37 +80,38 @@ export default function Leadership() {
           </a>
         </h2>
 
-        {/* Traits grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+        {/* Traits grid — semantic <dl> for AI/AEO parsing */}
+        <dl className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
           {traits.map((trait) => (
-            <Link
-              key={trait.name}
-              href={`/leadership/${trait.slug}/`}
-              title={`${trait.name} — Dr. Kurr's leadership principle: ${trait.desc.toLowerCase()}`}
-              className="fade-in group p-7 rounded-xl bg-offwhite border border-gray-100 hover:border-gold/30 hover:shadow-lg transition-all duration-300"
-            >
-              <div className="text-gold mb-4">{trait.icon}</div>
-              <h3 className="font-heading text-xl font-semibold text-navy mb-2">
-                {trait.name}
-              </h3>
-              <p className="text-charcoal/70 leading-relaxed text-sm mb-3">
-                {trait.desc}
-              </p>
-              <span className="inline-flex items-center gap-1 text-xs font-medium text-teal group-hover:text-gold transition-colors duration-200">
-                Read more
-                <span className="sr-only"> about {trait.name}</span>
-                <svg
-                  className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </span>
-            </Link>
+            <div key={trait.name} className="fade-in">
+              <Link
+                href={`/leadership/${trait.slug}/`}
+                title={`${trait.name} — Dr. Kurr's leadership principle: ${trait.desc.toLowerCase()}`}
+                className="group block p-7 rounded-xl bg-offwhite border border-gray-100 hover:border-gold/30 hover:shadow-lg transition-all duration-300 h-full"
+              >
+                <div className="text-gold mb-4">{trait.icon}</div>
+                <dt className="font-heading text-xl font-semibold text-navy mb-2">
+                  {trait.name}
+                </dt>
+                <dd className="text-charcoal/70 leading-relaxed text-sm mb-3">
+                  {trait.desc}
+                </dd>
+                <span className="inline-flex items-center gap-1 text-xs font-medium text-teal group-hover:text-gold transition-colors duration-200">
+                  Read more
+                  <span className="sr-only"> about {trait.name}</span>
+                  <svg
+                    className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </Link>
+            </div>
           ))}
           {/* Extra cell for visual balance on 3-col */}
           <div className="fade-in p-7 rounded-xl bg-gradient-to-br from-navy to-navy-light flex items-center justify-center">
@@ -118,7 +119,7 @@ export default function Leadership() {
               &ldquo;Structure follows process follows strategy&rdquo;
             </p>
           </div>
-        </div>
+        </dl>
 
         {/* Management rules */}
         <div className="fade-in max-w-3xl mx-auto">
