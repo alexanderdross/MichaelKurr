@@ -102,7 +102,7 @@ function ServiceCard({
       <ul className="space-y-2">
         {offerings.map((item) => (
           <li key={item} className="flex items-start gap-2 text-sm text-charcoal">
-            <span className="text-gold mt-0.5 shrink-0" aria-hidden="true">
+            <span className="text-gold-dark mt-0.5 shrink-0" aria-hidden="true">
               &#10003;
             </span>
             {item}
@@ -410,7 +410,7 @@ export default function AdvisoryPage() {
         <section className="py-20 lg:py-28 bg-offwhite">
           <div className="max-w-6xl mx-auto px-6">
             <div className="fade-in max-w-3xl mb-14">
-              <span className="block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+              <span className="block text-gold-dark text-sm font-semibold tracking-[0.2em] uppercase mb-3">
                 Why Dr. Kurr
               </span>
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-6">
@@ -471,7 +471,7 @@ export default function AdvisoryPage() {
         <section id="services" className="py-20 lg:py-28 bg-white scroll-mt-20">
           <div className="max-w-6xl mx-auto px-6">
             <div className="fade-in text-center mb-14">
-              <span className="block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+              <span className="block text-gold-dark text-sm font-semibold tracking-[0.2em] uppercase mb-3">
                 Advisory Services
               </span>
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
@@ -566,7 +566,7 @@ export default function AdvisoryPage() {
         <section className="py-20 lg:py-28 bg-offwhite">
           <div className="max-w-6xl mx-auto px-6">
             <div className="fade-in text-center mb-14">
-              <span className="block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+              <span className="block text-gold-dark text-sm font-semibold tracking-[0.2em] uppercase mb-3">
                 Industries Served
               </span>
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
@@ -630,7 +630,7 @@ export default function AdvisoryPage() {
         <section className="py-20 lg:py-28 bg-white">
           <div className="max-w-6xl mx-auto px-6">
             <div className="fade-in text-center mb-14">
-              <span className="block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+              <span className="block text-gold-dark text-sm font-semibold tracking-[0.2em] uppercase mb-3">
                 When to Engage
               </span>
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
@@ -791,7 +791,7 @@ export default function AdvisoryPage() {
         <section className="py-20 lg:py-28 bg-offwhite">
           <div className="max-w-6xl mx-auto px-6">
             <div className="fade-in text-center mb-14">
-              <span className="block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+              <span className="block text-gold-dark text-sm font-semibold tracking-[0.2em] uppercase mb-3">
                 Current Roles
               </span>
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
@@ -804,7 +804,7 @@ export default function AdvisoryPage() {
                 <h3 className="font-heading text-lg font-bold text-navy mb-1">
                   Lemna Bio
                 </h3>
-                <p className="text-gold text-sm font-medium mb-3">
+                <p className="text-gold-dark text-sm font-medium mb-3">
                   Fractional CCO &middot; Strategy &amp; Partnerships
                 </p>
                 <p className="text-sm text-charcoal leading-relaxed">
@@ -817,7 +817,7 @@ export default function AdvisoryPage() {
                 <h3 className="font-heading text-lg font-bold text-navy mb-1">
                   THENA Capital
                 </h3>
-                <p className="text-gold text-sm font-medium mb-3">
+                <p className="text-gold-dark text-sm font-medium mb-3">
                   Fellow &middot; MedTech Investment
                 </p>
                 <p className="text-sm text-charcoal leading-relaxed">
@@ -830,7 +830,7 @@ export default function AdvisoryPage() {
                 <h3 className="font-heading text-lg font-bold text-navy mb-1">
                   Dr. Kurr Advisory
                 </h3>
-                <p className="text-gold text-sm font-medium mb-3">
+                <p className="text-gold-dark text-sm font-medium mb-3">
                   Founder &middot; Independent Advisory
                 </p>
                 <p className="text-sm text-charcoal leading-relaxed">
