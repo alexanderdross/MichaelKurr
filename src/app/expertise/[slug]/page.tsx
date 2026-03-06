@@ -340,10 +340,6 @@ export default async function ExpertisePage({
       {/* Footer */}
       <footer className="py-8 bg-navy-dark text-white/70 border-t border-white/5">
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm">
-            &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights
-            reserved.
-          </p>
           <nav aria-label="Footer navigation" className="flex items-center gap-6 text-sm">
             <Link href="/#about" title="Learn about Dr. Kurr's background" className="hover:text-white/80 transition-colors">
               About
@@ -377,6 +373,10 @@ export default async function ExpertisePage({
               Transformation Circus
             </Link>
           </nav>
+          <p className="text-sm">
+            &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights
+            reserved.
+          </p>
         </div>
       </footer>
 
