@@ -33,8 +33,8 @@ export default function Contact() {
 
         <div className="fade-in flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10">
           <a
-            href="mailto:info@michaelkurr.com"
-            title="Send an email to Dr. Michael Kurr"
+            href="/contact/"
+            title="Contact Dr. Michael Kurr"
             className="inline-flex items-center gap-2 text-white/80 hover:text-gold transition-colors duration-200"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} aria-hidden="true">

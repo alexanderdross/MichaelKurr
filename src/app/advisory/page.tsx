@@ -964,8 +964,8 @@ export default function AdvisoryPage() {
               </div>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10">
                 <a
-                  href="mailto:info@michaelkurr.com"
-                  title="Send an email to Dr. Michael Kurr"
+                  href="/contact/"
+                  title="Contact Dr. Michael Kurr"
                   className="inline-flex items-center gap-2 text-charcoal/70 hover:text-navy transition-colors duration-200"
                 >
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} aria-hidden="true">
@@ -992,10 +992,6 @@ export default function AdvisoryPage() {
       {/* ── Footer ── */}
       <footer className="py-8 bg-navy-dark text-white/80 border-t border-white/5">
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm">
-            &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights
-            reserved.
-          </p>
           <nav
             aria-label="Footer navigation"
             className="flex items-center gap-6 text-sm"
@@ -1029,6 +1025,10 @@ export default function AdvisoryPage() {
               Privacy Policy
             </Link>
           </nav>
+          <p className="text-sm">
+            &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights
+            reserved.
+          </p>
         </div>
       </footer>
 
