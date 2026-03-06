@@ -17,7 +17,8 @@ import Analytics from "@/components/Analytics";
 const inter = localFont({
   src: "../fonts/inter-latin-wght-normal.woff2",
   variable: "--font-inter",
-  display: "swap",
+  display: "optional",
+  preload: true,
 });
 
 const playfair = localFont({
@@ -32,7 +33,8 @@ const playfair = localFont({
     },
   ],
   variable: "--font-playfair",
-  display: "swap",
+  display: "optional",
+  preload: true,
 });
 
 export const metadata: Metadata = {
