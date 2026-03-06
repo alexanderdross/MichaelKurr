@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="py-10 bg-navy-dark text-white/60 border-t border-white/5">
+    <footer className="py-10 bg-navy-dark text-white/75 border-t border-white/5">
       <div className="max-w-6xl mx-auto px-6 flex flex-col items-center gap-6">
         <nav
           aria-label="Footer navigation"
@@ -54,7 +54,7 @@ export default function Footer() {
             Privacy
           </a>
         </nav>
-        <p className="text-xs text-white/40">
+        <p className="text-xs text-white/60">
           &copy; {new Date().getFullYear()} Dr. Michael A. Kurr. All rights reserved.
         </p>
       </div>
