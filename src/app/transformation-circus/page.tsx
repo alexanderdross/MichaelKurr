@@ -371,6 +371,13 @@ export default function TransformationCircusPage() {
               About
             </Link>
             <Link
+              href="/advisory/"
+              title="Advisory Services"
+              className="text-sm font-medium text-charcoal hover:text-navy transition-colors duration-200"
+            >
+              Advisory
+            </Link>
+            <Link
               href="/contact/"
               title="Get in touch with Dr. Michael Kurr"
               className="text-sm font-medium px-5 py-2 border border-navy text-navy rounded hover:bg-navy hover:text-white transition-all duration-200"
