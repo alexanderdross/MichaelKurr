@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
-import { SECTION_IDS, NAV_LINKS } from "@/constants/sections";
+import { SECTION_IDS, NAV_LINKS, NAV_FEATURED_LINKS } from "@/constants/sections";
 
 const links = NAV_LINKS;
+const featured = NAV_FEATURED_LINKS;
 
 // Map section IDs to the nav hash they should highlight
 const sectionToHash = (id: string): string => {
@@ -99,7 +100,6 @@ export default function Navigation() {
   }, [menuOpen, handleMenuKeyDown]);
 
   const isActive = (href: string) => activeHash === href;
-  const isContactActive = activeHash === "#contact";
 
   return (
     <nav
@@ -121,7 +121,7 @@ export default function Navigation() {
         </a>
 
         {/* Desktop links */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center gap-7">
           {links.map((link) => (
             <li key={link.href}>
               <a
@@ -138,20 +138,22 @@ export default function Navigation() {
               </a>
             </li>
           ))}
-          <li>
-            <a
-              href="#contact"
-              title="Get in touch with Dr. Michael Kurr"
-              aria-current={isContactActive ? "true" : undefined}
-              className={`text-sm font-medium px-5 py-2 border rounded transition-all duration-200 ${
-                isContactActive
-                  ? "border-gold bg-gold text-navy"
-                  : "border-gold text-gold hover:bg-gold hover:text-navy"
-              }`}
-            >
-              Connect
-            </a>
-          </li>
+
+          {/* Separator */}
+          <li aria-hidden="true" className="w-px h-5 bg-white/20" />
+
+          {/* Featured page links — framed */}
+          {featured.map((link) => (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                title={link.title}
+                className="text-sm font-medium px-4 py-1.5 border border-gold/50 text-gold rounded hover:bg-gold hover:text-navy transition-all duration-200"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
         </ul>
 
         {/* Mobile toggle */}
@@ -208,20 +210,21 @@ export default function Navigation() {
                 </a>
               </li>
             ))}
-            <li>
-              <a
-                href="#contact"
-                title="Get in touch with Dr. Michael Kurr"
-                onClick={() => setMenuOpen(false)}
-                className={`inline-block text-base px-5 py-3 border rounded transition-all mt-2 ${
-                  isContactActive
-                    ? "border-gold bg-gold text-navy"
-                    : "border-gold text-gold hover:bg-gold hover:text-navy"
-                }`}
-              >
-                Connect
-              </a>
-            </li>
+
+            {/* Featured page links — framed in mobile too */}
+            <li aria-hidden="true" className="h-px bg-white/10 my-2" />
+            {featured.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  title={link.title}
+                  onClick={() => setMenuOpen(false)}
+                  className="inline-block text-base px-5 py-3 border border-gold/50 text-gold rounded hover:bg-gold hover:text-navy transition-all"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       )}
