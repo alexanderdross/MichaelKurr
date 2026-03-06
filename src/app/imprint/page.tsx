@@ -119,9 +119,21 @@ export default function ImprintPage() {
                 Information according to &sect; 5 TMG
               </h2>
               <address className="not-italic text-lg leading-relaxed text-charcoal/80">
-                Dr. Michael A. Kurr
+                <Link
+                  href="/#about"
+                  title="About Dr. Michael A. Kurr"
+                  className="text-teal hover:text-teal-light transition-colors"
+                >
+                  Dr. Michael A. Kurr
+                </Link>
                 <br />
-                Dr. Kurr Advisory
+                <Link
+                  href="/advisory/"
+                  title="Dr. Kurr Advisory"
+                  className="text-teal hover:text-teal-light transition-colors"
+                >
+                  Dr. Kurr Advisory
+                </Link>
                 <br />
                 Germany
               </address>
