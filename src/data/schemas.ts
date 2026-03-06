@@ -255,6 +255,15 @@ export const websiteSchema = {
     "Personal website of Dr. Michael A. Kurr — Operator & Transformation Leader in Pharma & Life Sciences",
   publisher: { "@id": "https://michaelkurr.com/#person" },
   inLanguage: "en",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate:
+        "https://www.google.com/search?q=site%3Amichaelkurr.com+{search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
 };
 
 export const profilePageSchema = {
@@ -499,6 +508,119 @@ export function makeProductSchema(url: string, ratingCount: number) {
 }
 
 export const productSchema = makeProductSchema("https://michaelkurr.com/#contact", 148);
+
+export function makeBreadcrumbSchema(
+  items: { name: string; url: string }[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+}
+
+export function makeSpeakableSchema(url: string, cssSelectors: string[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    url,
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: cssSelectors,
+    },
+  };
+}
+
+export function makeServiceSchema(service: {
+  name: string;
+  description: string;
+  url: string;
+  offerings: string[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": `${service.url}#service`,
+    name: service.name,
+    description: service.description,
+    url: service.url,
+    provider: { "@id": "https://michaelkurr.com/#person" },
+    areaServed: { "@type": "GeoCircle", geoMidpoint: { "@type": "GeoCoordinates", latitude: 50.94, longitude: 6.96 }, geoRadius: "10000" },
+    serviceType: "Management Consulting",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: service.name,
+      itemListElement: service.offerings.map((o) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: o },
+      })),
+    },
+  };
+}
+
+export function makeServiceFaqSchema(
+  faqs: { question: string; answer: string }[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+}
+
+export const howToEngageSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Engage Dr. Kurr Advisory for Pharma Transformation",
+  description:
+    "A step-by-step guide to working with Dr. Kurr Advisory for fractional C-level leadership, transformation advisory, or strategic consulting in Pharma & Life Sciences.",
+  totalTime: "P14D",
+  step: [
+    {
+      "@type": "HowToStep",
+      position: 1,
+      name: "Initial Discovery Call",
+      text: "Schedule a confidential discovery call to discuss your organization's challenges, transformation goals, and leadership needs. Dr. Kurr will assess strategic fit and identify the right engagement model.",
+      url: "https://michaelkurr.com/contact/",
+    },
+    {
+      "@type": "HowToStep",
+      position: 2,
+      name: "Diagnostic Assessment",
+      text: "A focused diagnostic phase to evaluate your current operating model, organizational readiness, and strategic priorities. This includes stakeholder interviews, process mapping, and capability assessment.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 3,
+      name: "Engagement Proposal",
+      text: "Based on the diagnostic, Dr. Kurr develops a tailored proposal — whether a fractional C-level mandate (2-3 days/week), a transformation sprint (3-6 months), or board-level strategic advisory.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 4,
+      name: "Embedded Execution",
+      text: "Dr. Kurr works as part of your leadership team — not as an external consultant. This means attending board meetings, owning strategic initiatives, managing direct reports, and driving execution alongside the CEO and founding team.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 5,
+      name: "Measurable Outcomes",
+      text: "Every engagement is designed to deliver measurable results: operational KPIs, organizational milestones, and strategic objectives. Regular reviews ensure alignment and course-correction as needed.",
+    },
+  ],
+};
 
 export const allSchemas = [
   personSchema,

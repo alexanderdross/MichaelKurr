@@ -8,7 +8,7 @@ import {
 } from "@/data/expertise";
 import { LinkedInIcon } from "@/components/Icons";
 import ScrollAnimations from "@/components/ScrollAnimations";
-import { makeProductSchema, makeNavigationSchema } from "@/data/schemas";
+import { makeProductSchema, makeNavigationSchema, makeSpeakableSchema } from "@/data/schemas";
 
 export function generateStaticParams() {
   return getAllExpertiseSlugs().map((slug) => ({ slug }));
@@ -23,7 +23,7 @@ export async function generateMetadata({
   const item = getExpertiseBySlug(slug);
   if (!item) return {};
 
-  const description = `${item.tagline}. ${item.description.slice(0, 120)}...`;
+  const description = `How can ${item.title.toLowerCase()} transform your pharma organization? ${item.tagline}. Dr. Michael Kurr brings 20+ years of hands-on experience.`;
 
   return {
     title: `${item.title} — Dr. Michael Kurr | Expertise`,
@@ -31,10 +31,15 @@ export async function generateMetadata({
     keywords: [
       item.title,
       "Dr. Michael Kurr",
+      "Dr. Kurr Advisory",
       "pharma transformation",
       "life sciences advisory",
+      "fractional C-level",
       ...item.title.toLowerCase().split(/\s+&?\s*/),
     ],
+    authors: [{ name: "Dr. Michael A. Kurr", url: "https://michaelkurr.com" }],
+    creator: "Dr. Michael A. Kurr",
+    publisher: "Dr. Kurr Advisory",
     alternates: {
       canonical: `https://michaelkurr.com/expertise/${item.slug}/`,
     },
@@ -45,12 +50,38 @@ export async function generateMetadata({
       url: `https://michaelkurr.com/expertise/${item.slug}/`,
       siteName: "Dr. Michael Kurr",
       locale: "en_US",
+      images: [
+        {
+          url: "/images/profile.jpg",
+          width: 800,
+          height: 800,
+          alt: `Dr. Michael Kurr — ${item.title}`,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: `${item.title} — Dr. Michael Kurr`,
       description: item.tagline,
+      images: [
+        {
+          url: "/images/profile.jpg",
+          alt: `Dr. Michael Kurr — ${item.title}`,
+        },
+      ],
     },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    category: "Business",
   };
 }
 
@@ -77,6 +108,14 @@ export default async function ExpertisePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(makeProductSchema(`https://michaelkurr.com/expertise/${item.slug}/`, 156)),
+        }}
+      />
+
+      {/* JSON-LD: Speakable */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(makeSpeakableSchema(`https://michaelkurr.com/expertise/${item.slug}/`, ["h1", "[data-speakable]"])),
         }}
       />
 

@@ -94,38 +94,40 @@ export default function Expertise() {
           </a>
         </h2>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Semantic <dl> for AI/AEO parsing of expertise areas */}
+        <dl className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map((card) => (
-            <Link
-              key={card.title}
-              href={`/expertise/${card.slug}/`}
-              title={`${card.title} — Dr. Michael Kurr's expertise in ${card.desc.toLowerCase()}`}
-              className="fade-in group p-8 rounded-xl border border-gray-200 hover:border-gold/40 hover:shadow-lg transition-all duration-300 bg-offwhite/50"
-            >
-              <div className="text-navy/60 group-hover:text-gold transition-colors duration-300 mb-5">
-                {card.icon}
-              </div>
-              <h3 className="font-heading text-xl font-semibold text-navy mb-3">
-                {card.title}
-              </h3>
-              <p className="text-charcoal/70 leading-relaxed mb-4">{card.desc}</p>
-              <span className="inline-flex items-center gap-1 text-sm font-medium text-teal group-hover:text-gold transition-colors duration-200">
-                Learn more
-                <span className="sr-only"> about {card.title}</span>
-                <svg
-                  className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </span>
-            </Link>
+            <div key={card.title} className="fade-in">
+              <Link
+                href={`/expertise/${card.slug}/`}
+                title={`${card.title} — Dr. Michael Kurr's expertise in ${card.desc.toLowerCase()}`}
+                className="group block p-8 rounded-xl border border-gray-200 hover:border-gold/40 hover:shadow-lg transition-all duration-300 bg-offwhite/50 h-full"
+              >
+                <div className="text-navy/60 group-hover:text-gold transition-colors duration-300 mb-5">
+                  {card.icon}
+                </div>
+                <dt className="font-heading text-xl font-semibold text-navy mb-3">
+                  {card.title}
+                </dt>
+                <dd className="text-charcoal/70 leading-relaxed mb-4">{card.desc}</dd>
+                <span className="inline-flex items-center gap-1 text-sm font-medium text-teal group-hover:text-gold transition-colors duration-200">
+                  Learn more
+                  <span className="sr-only"> about {card.title}</span>
+                  <svg
+                    className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </Link>
+            </div>
           ))}
-        </div>
+        </dl>
       </div>
     </section>
   );

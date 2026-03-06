@@ -8,7 +8,14 @@ import {
 } from "@/data/advisory-services";
 import { LinkedInIcon } from "@/components/Icons";
 import ScrollAnimations from "@/components/ScrollAnimations";
-import { makeProductSchema, makeNavigationSchema } from "@/data/schemas";
+import {
+  makeProductSchema,
+  makeNavigationSchema,
+  makeBreadcrumbSchema,
+  makeSpeakableSchema,
+  makeServiceSchema,
+  makeServiceFaqSchema,
+} from "@/data/schemas";
 
 export function generateStaticParams() {
   return getAllAdvisoryServiceSlugs().map((slug) => ({ slug }));
@@ -23,7 +30,7 @@ export async function generateMetadata({
   const item = getAdvisoryServiceBySlug(slug);
   if (!item) return {};
 
-  const description = `${item.tagline}. ${item.description.slice(0, 120)}...`;
+  const description = `Looking for ${item.title.toLowerCase()} in pharma & life sciences? ${item.tagline}. Dr. Kurr Advisory delivers proven results.`;
 
   return {
     title: `${item.title} — Advisory Services | Dr. Michael Kurr`,
@@ -132,48 +139,52 @@ export default async function AdvisoryServicePage({
         }}
       />
 
-      {/* BreadcrumbList + Service JSON-LD */}
+      {/* JSON-LD: BreadcrumbList */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              itemListElement: [
-                {
-                  "@type": "ListItem",
-                  position: 1,
-                  name: "Dr. Michael Kurr",
-                  item: "https://michaelkurr.com/",
-                },
-                {
-                  "@type": "ListItem",
-                  position: 2,
-                  name: "Advisory Services",
-                  item: "https://michaelkurr.com/advisory/",
-                },
-                {
-                  "@type": "ListItem",
-                  position: 3,
-                  name: item.title,
-                  item: `https://michaelkurr.com/advisory/${item.slug}/`,
-                },
-              ],
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "Service",
-              name: item.title,
-              description: item.tagline,
-              provider: {
-                "@id": "https://michaelkurr.com/#person",
-              },
-              areaServed: ["Europe", "Global"],
-              serviceType: item.title,
-              url: `https://michaelkurr.com/advisory/${item.slug}/`,
-            },
-          ]),
+          __html: JSON.stringify(makeBreadcrumbSchema([
+            { name: "Dr. Michael Kurr", url: "https://michaelkurr.com/" },
+            { name: "Advisory Services", url: "https://michaelkurr.com/advisory/" },
+            { name: item.title, url: `https://michaelkurr.com/advisory/${item.slug}/` },
+          ])),
+        }}
+      />
+
+      {/* JSON-LD: ProfessionalService */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(makeServiceSchema({
+            name: item.title,
+            description: item.tagline,
+            url: `https://michaelkurr.com/advisory/${item.slug}/`,
+            offerings: item.offerings,
+          })),
+        }}
+      />
+
+      {/* JSON-LD: Speakable */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(makeSpeakableSchema(
+            `https://michaelkurr.com/advisory/${item.slug}/`,
+            ["h1", "[data-speakable]"],
+          )),
+        }}
+      />
+
+      {/* JSON-LD: FAQPage */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(makeServiceFaqSchema(
+            item.sections.map((s) => ({
+              question: s.heading.endsWith("?") ? s.heading : `How does Dr. Kurr approach ${s.heading.toLowerCase()}?`,
+              answer: s.content.slice(0, 300) + "...",
+            })),
+          )),
         }}
       />
 
@@ -256,7 +267,7 @@ export default async function AdvisoryServicePage({
             <h1 className="fade-in font-heading text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               {item.title}
             </h1>
-            <p className="fade-in text-xl sm:text-2xl text-white/80 font-light leading-relaxed max-w-3xl">
+            <p data-speakable className="fade-in text-xl sm:text-2xl text-white/80 font-light leading-relaxed max-w-3xl">
               {item.tagline}
             </p>
           </div>
@@ -377,6 +388,43 @@ export default async function AdvisoryServicePage({
             </div>
           </section>
         )}
+
+        {/* FAQ — visible section matching FAQPage schema */}
+        <section id={`${slug}-faq`} className="py-16 lg:py-24 bg-offwhite border-t border-gray-200">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="fade-in font-heading text-2xl sm:text-3xl font-bold text-navy mb-10">
+              <a
+                href={`#${slug}-faq`}
+                title={`Frequently asked questions about ${item.title.toLowerCase()} — Dr. Kurr Advisory`}
+                className="hover:text-navy/80 transition-colors"
+              >
+                Frequently Asked Questions
+              </a>
+            </h2>
+            <dl className="space-y-6">
+              {item.sections.map((s, i) => {
+                const faqId = `${slug}-faq-${i + 1}`;
+                const question = s.heading.endsWith("?") ? s.heading : `How does Dr. Kurr approach ${s.heading.toLowerCase()}?`;
+                return (
+                  <div key={i} id={faqId} className="fade-in border border-gray-200 rounded-xl bg-white p-6">
+                    <dt>
+                      <a
+                        href={`#${faqId}`}
+                        title={`${question} — ${item.title} advisory by Dr. Michael Kurr`}
+                        className="text-lg font-semibold text-navy hover:text-navy/80 transition-colors"
+                      >
+                        {question}
+                      </a>
+                    </dt>
+                    <dd className="text-charcoal/80 leading-relaxed mt-3">
+                      {s.content.length > 300 ? s.content.slice(0, 300) + "..." : s.content}
+                    </dd>
+                  </div>
+                );
+              })}
+            </dl>
+          </div>
+        </section>
 
         {/* Other services navigation */}
         <section className="py-12 bg-offwhite border-t border-gray-200">

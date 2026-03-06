@@ -4,8 +4,11 @@ Allow: /
 # Sitemap
 Sitemap: https://michaelkurr.com/sitemap.xml
 
-# AI Crawlers — allow for GEO (Generative Engine Optimization)
+# AI Crawlers — allow for GEO (Generative Engine Optimization) & AEO (Answer Engine Optimization)
 User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
 Allow: /
 
 User-agent: Google-Extended
@@ -14,8 +17,26 @@ Allow: /
 User-agent: Anthropic-AI
 Allow: /
 
+User-agent: ClaudeBot
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# LLM-readable site summary
+# See: https://michaelkurr.com/llms.txt

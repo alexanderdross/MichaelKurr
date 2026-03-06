@@ -7,6 +7,7 @@ import Publications from "@/components/Publications";
 import Leadership from "@/components/Leadership";
 import Featured from "@/components/Featured";
 import Contact from "@/components/Contact";
+import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import ScrollAnimations from "@/components/ScrollAnimations";
 import ServiceWorkerRegistration from "@/components/ServiceWorkerRegistration";
@@ -23,6 +24,7 @@ export default function Home() {
         <Publications />
         <Leadership />
         <Featured />
+        <FAQ />
         <Contact />
       </main>
       <Footer />

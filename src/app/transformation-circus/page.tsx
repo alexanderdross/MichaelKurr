@@ -296,6 +296,13 @@ export default function TransformationCircusPage() {
               "organizational design",
             ],
             articleSection: "Pharma Transformation",
+            wordCount: 8500,
+            articleBody:
+              "Leading the Transformation Circus in the Age of AI. Corporate transformation in pharma is a high-wire act \u2014 you are simultaneously redesigning processes, building global teams, integrating AI agents, managing chaos monkeys (the disruptors who emerge during change), and keeping executive sponsors engaged as lion tamers who protect your mandate. Dr. Michael Kurr shares lessons from 15+ years of leading pharma transformation at Boehringer Ingelheim and Novartis. Key insights: structure follows process follows strategy; AI scales execution but your operating model decides what gets scaled; build the right team of smart apes \u2014 trusted, strategic, adaptable, collaborative; without executive sponsorship you are just an appetizer; and a billion-dollar business case means nothing without ownership.",
+            speakable: {
+              "@type": "SpeakableSpecification",
+              cssSelector: ["h1", "[data-speakable]"],
+            },
             inLanguage: "en",
             isPartOf: {
               "@id": "https://michaelkurr.com/#website",

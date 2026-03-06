@@ -5,7 +5,7 @@ import { getAllAdvisoryServiceSlugs } from "@/data/advisory-services";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://michaelkurr.com";
-  const lastModified = new Date("2026-02-28");
+  const lastModified = new Date("2026-03-06");
 
   const sectionSlugs = [
     { slug: "about", priority: 0.9 },
