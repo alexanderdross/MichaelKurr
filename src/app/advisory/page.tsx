@@ -961,12 +961,6 @@ export default function AdvisoryPage() {
                 >
                   Connect on LinkedIn
                 </a>
-                <Link
-                  href="/#contact"
-                  className="px-8 py-3 border border-navy text-navy font-semibold rounded hover:bg-navy hover:text-white transition-all duration-200"
-                >
-                  Get in Touch
-                </Link>
               </div>
             </div>
           </div>
