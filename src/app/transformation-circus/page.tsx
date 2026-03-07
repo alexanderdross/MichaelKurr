@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import ScrollAnimations from "@/components/ScrollAnimations";
+import SubpageFAQ from "@/components/SubpageFAQ";
 import { makeProductSchema, makeNavigationSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
@@ -1725,6 +1726,29 @@ export default function TransformationCircusPage() {
             </div>
           </div>
         </section>
+
+        {/* FAQ — visible accordion matching FAQPage schema */}
+        <SubpageFAQ
+          slug="transformation-circus"
+          title="The Transformation Circus"
+          items={[
+            {
+              id: "what-is-the-transformation-circus",
+              question: "What is the Transformation Circus?",
+              answer: "The Transformation Circus is a framework by Dr. Michael Kurr that uses the circus metaphor to explain corporate pharma transformation. It features Smart Apes (your success team), Chaos Monkeys (disruptors), AI Agents (new performers), Lion Tamers (executive sponsors), and the Ringmaster (transformation leader) — all navigating change in the age of AI.",
+            },
+            {
+              id: "how-does-ai-fit-into-pharma-transformation",
+              question: "How does AI fit into pharma transformation?",
+              answer: "AI agents accelerate execution — they route tasks, analyze data, draft content, and flag compliance issues. But they don't replace leadership. In pharma's highly regulated environment, AI must operate inside governed workflows, and accountability cannot be delegated to algorithms. Your operating model decides what gets scaled.",
+            },
+            {
+              id: "key-takeaways-corporate-transformation",
+              question: "What are the key takeaways for leading corporate transformation?",
+              answer: "Six key takeaways: (1) AI won't tame the monkeys — manage disruption early, (2) Without executive sponsorship you're just an appetizer, (3) A billion-dollar business case means nothing without ownership, (4) Corporate transformation takes years — pace the change, (5) AI scales execution but your operating model decides what gets scaled, (6) Build the right team — trusted, strategic, adaptable, collaborative.",
+            },
+          ]}
+        />
 
         {/* Disclaimer */}
         <div className="py-4 bg-gray-100 text-center">
