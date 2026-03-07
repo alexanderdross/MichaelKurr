@@ -8,6 +8,7 @@ import {
 } from "@/data/advisory-services";
 import { LinkedInIcon } from "@/components/Icons";
 import ScrollAnimations from "@/components/ScrollAnimations";
+import SubpageFAQ from "@/components/SubpageFAQ";
 import {
   makeProductSchema,
   makeNavigationSchema,
@@ -389,42 +390,16 @@ export default async function AdvisoryServicePage({
           </section>
         )}
 
-        {/* FAQ — visible section matching FAQPage schema */}
-        <section id={`${slug}-faq`} className="py-16 lg:py-24 bg-offwhite border-t border-gray-200">
-          <div className="max-w-3xl mx-auto px-6">
-            <h2 className="fade-in font-heading text-2xl sm:text-3xl font-bold text-navy mb-10">
-              <a
-                href={`#${slug}-faq`}
-                title={`Frequently asked questions about ${item.title.toLowerCase()} — Dr. Kurr Advisory`}
-                className="hover:text-navy/80 transition-colors"
-              >
-                Frequently Asked Questions
-              </a>
-            </h2>
-            <dl className="space-y-6">
-              {item.sections.map((s, i) => {
-                const faqId = `${slug}-faq-${i + 1}`;
-                const question = s.heading.endsWith("?") ? s.heading : `How does Dr. Kurr approach ${s.heading.toLowerCase()}?`;
-                return (
-                  <div key={i} id={faqId} className="fade-in border border-gray-200 rounded-xl bg-white p-6">
-                    <dt>
-                      <a
-                        href={`#${faqId}`}
-                        title={`${question} — ${item.title} advisory by Dr. Michael Kurr`}
-                        className="text-lg font-semibold text-navy hover:text-navy/80 transition-colors"
-                      >
-                        {question}
-                      </a>
-                    </dt>
-                    <dd className="text-charcoal/80 leading-relaxed mt-3">
-                      {s.content.length > 300 ? s.content.slice(0, 300) + "..." : s.content}
-                    </dd>
-                  </div>
-                );
-              })}
-            </dl>
-          </div>
-        </section>
+        {/* FAQ — visible accordion section matching FAQPage schema */}
+        <SubpageFAQ
+          slug={slug}
+          title={item.title}
+          items={item.sections.map((s, i) => ({
+            id: `${slug}-faq-${i + 1}`,
+            question: s.heading.endsWith("?") ? s.heading : `How does Dr. Kurr approach ${s.heading.toLowerCase()}?`,
+            answer: s.content.length > 300 ? s.content.slice(0, 300) + "..." : s.content,
+          }))}
+        />
 
         {/* Other services navigation */}
         <section className="py-12 bg-offwhite border-t border-gray-200">
