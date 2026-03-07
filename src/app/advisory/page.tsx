@@ -401,7 +401,7 @@ export default function AdvisoryPage() {
               {
                 "@type": "ListItem",
                 position: 1,
-                name: "Home",
+                name: "Dr. Michael Kurr",
                 item: "https://michaelkurr.com/",
               },
               {
