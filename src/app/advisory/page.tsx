@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import ScrollAnimations from "@/components/ScrollAnimations";
+import SubpageFAQ from "@/components/SubpageFAQ";
 import { makeProductSchema, makeNavigationSchema, howToEngageSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
@@ -1013,6 +1014,29 @@ export default function AdvisoryPage() {
             </div>
           </div>
         </section>
+
+        {/* FAQ — visible accordion matching FAQPage schema */}
+        <SubpageFAQ
+          slug="advisory"
+          title="Advisory Services"
+          items={[
+            {
+              id: "what-advisory-services-does-dr-kurr-offer",
+              question: "What advisory services does Dr. Kurr offer?",
+              answer: "Dr. Kurr Advisory offers fractional C-level leadership (CCO, CTO, COO), corporate transformation advisory, global operating model design, AI and digital strategy for regulated industries, commercial and medical operations transformation, and organizational design and scaling — all focused on Pharma & Life Sciences.",
+            },
+            {
+              id: "what-industries-does-dr-kurr-advisory-serve",
+              question: "What industries does Dr. Kurr Advisory serve?",
+              answer: "Dr. Kurr Advisory primarily serves Pharma & Biotech companies (large pharma, specialty pharma, emerging biotech), MedTech & Diagnostics organizations, Life Sciences Services companies (CROs, CDMOs, CCOs), and Healthcare Technology firms. Dr. Kurr has direct experience at Boehringer Ingelheim, Novartis, Roche Diagnostics, Daimler, and Schott.",
+            },
+            {
+              id: "what-engagement-models-are-available",
+              question: "What engagement models are available?",
+              answer: "Dr. Kurr Advisory offers three engagement models: Fractional C-Level mandates (ongoing part-time executive leadership, typically 2-3 days per week), Transformation Sprints (focused 3-6 month engagements for specific challenges like operating model design or AI readiness), and Board & Strategic Advisory (periodic strategic counsel for boards, investors, and executive teams).",
+            },
+          ]}
+        />
 
         {/* ═══════════════════════════════════════════
             CTA
