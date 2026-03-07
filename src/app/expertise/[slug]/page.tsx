@@ -412,6 +412,10 @@ export default async function ExpertisePage({
               Transformation Circus
             </Link>
             <span className="text-white/20" aria-hidden="true">&middot;</span>
+            <a href="https://www.linkedin.com/in/michaelkurr/recent-activity/all/" title="Read Dr. Kurr's latest posts and articles on LinkedIn" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors px-2">
+              Blog
+            </a>
+            <span className="text-white/20" aria-hidden="true">&middot;</span>
             <Link href="/contact/" title="Get in touch with Dr. Michael Kurr" className="hover:text-white transition-colors px-2">
               Contact
             </Link>
