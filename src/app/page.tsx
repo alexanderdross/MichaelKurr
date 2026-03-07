@@ -10,8 +10,6 @@ import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import ScrollAnimations from "@/components/ScrollAnimations";
-import ServiceWorkerRegistration from "@/components/ServiceWorkerRegistration";
-
 export default function Home() {
   return (
     <>
@@ -29,7 +27,6 @@ export default function Home() {
       </main>
       <Footer />
       <ScrollAnimations />
-      <ServiceWorkerRegistration />
     </>
   );
 }

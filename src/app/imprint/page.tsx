@@ -7,8 +7,45 @@ export const metadata: Metadata = {
   title: "Imprint — Dr. Michael Kurr",
   description:
     "Legal notice (Impressum) for michaelkurr.com — the personal website of Dr. Michael A. Kurr, Founder of Dr. Kurr Advisory.",
+  keywords: [
+    "imprint",
+    "legal notice",
+    "Impressum",
+    "Dr. Michael Kurr",
+    "Dr. Kurr Advisory",
+    "michaelkurr.com",
+  ],
   alternates: {
     canonical: "https://michaelkurr.com/imprint/",
+  },
+  openGraph: {
+    title: "Imprint — Dr. Michael Kurr",
+    description:
+      "Legal notice (Impressum) for michaelkurr.com — the personal website of Dr. Michael A. Kurr, Founder of Dr. Kurr Advisory.",
+    type: "website",
+    url: "https://michaelkurr.com/imprint/",
+    siteName: "Dr. Michael Kurr",
+    locale: "en_US",
+    images: [
+      {
+        url: "/images/profile.jpg",
+        width: 800,
+        height: 800,
+        alt: "Dr. Michael Kurr — Imprint",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Imprint — Dr. Michael Kurr",
+    description:
+      "Legal notice (Impressum) for michaelkurr.com — Dr. Michael A. Kurr, Founder of Dr. Kurr Advisory.",
+    images: [
+      {
+        url: "/images/profile.jpg",
+        alt: "Dr. Michael Kurr — Imprint",
+      },
+    ],
   },
   robots: { index: true, follow: true },
 };

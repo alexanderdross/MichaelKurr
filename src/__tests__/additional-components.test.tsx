@@ -215,7 +215,7 @@ describe("Navigation component", () => {
     expect(hrefs).toContain("#impact");
     expect(hrefs).toContain("#publications");
     expect(hrefs).toContain("#leadership");
-    expect(hrefs).toContain("#contact");
+    expect(hrefs).toContain("#recommendations");
   });
 
   it("has aria-label on nav element", async () => {

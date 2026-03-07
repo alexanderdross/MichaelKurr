@@ -174,7 +174,7 @@ describe("Footer component", () => {
     const links = container.querySelectorAll("a");
     const hrefs = Array.from(links).map((l) => l.getAttribute("href"));
     expect(hrefs).toContain("#about");
-    expect(hrefs).toContain("#publications");
-    expect(hrefs).toContain("https://www.linkedin.com/in/michaelkurr/");
+    expect(hrefs).toContain("/advisory/");
+    expect(hrefs).toContain("/contact/");
   });
 });

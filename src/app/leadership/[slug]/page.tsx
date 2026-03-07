@@ -32,9 +32,14 @@ export async function generateMetadata({
       item.name,
       "leadership philosophy",
       "Dr. Michael Kurr",
+      "Dr. Kurr Advisory",
       "pharma leadership",
       "transformation leadership",
+      "executive leadership",
     ],
+    authors: [{ name: "Dr. Michael A. Kurr", url: "https://michaelkurr.com" }],
+    creator: "Dr. Michael A. Kurr",
+    publisher: "Dr. Kurr Advisory",
     alternates: {
       canonical: `https://michaelkurr.com/leadership/${item.slug}/`,
     },
@@ -45,12 +50,38 @@ export async function generateMetadata({
       url: `https://michaelkurr.com/leadership/${item.slug}/`,
       siteName: "Dr. Michael Kurr",
       locale: "en_US",
+      images: [
+        {
+          url: "/images/profile.jpg",
+          width: 800,
+          height: 800,
+          alt: `Dr. Michael Kurr — ${item.name}`,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: `${item.name} — Leadership Philosophy | Dr. Michael Kurr`,
       description: item.tagline,
+      images: [
+        {
+          url: "/images/profile.jpg",
+          alt: `Dr. Michael Kurr — ${item.name}`,
+        },
+      ],
     },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    category: "Business",
   };
 }
 

@@ -17,6 +17,35 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://michaelkurr.com/contact/",
   },
+  openGraph: {
+    title: "Contact — Dr. Michael Kurr",
+    description:
+      "Get in touch with Dr. Michael A. Kurr for fractional C-level mandates, transformation advisory, or strategic counsel in Pharma & Life Sciences.",
+    type: "website",
+    url: "https://michaelkurr.com/contact/",
+    siteName: "Dr. Michael Kurr",
+    locale: "en_US",
+    images: [
+      {
+        url: "/images/profile.jpg",
+        width: 800,
+        height: 800,
+        alt: "Dr. Michael Kurr — Contact",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact — Dr. Michael Kurr",
+    description:
+      "Get in touch for fractional C-level mandates, transformation advisory, or strategic counsel in Pharma & Life Sciences.",
+    images: [
+      {
+        url: "/images/profile.jpg",
+        alt: "Dr. Michael Kurr — Contact",
+      },
+    ],
+  },
   robots: { index: true, follow: true },
 };
 

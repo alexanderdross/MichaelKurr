@@ -7,8 +7,44 @@ export const metadata: Metadata = {
   title: "Privacy Policy — Dr. Michael Kurr",
   description:
     "Privacy policy for michaelkurr.com — learn how Dr. Michael A. Kurr handles your data and protects your privacy.",
+  keywords: [
+    "privacy policy",
+    "data protection",
+    "GDPR",
+    "Dr. Michael Kurr",
+    "michaelkurr.com",
+  ],
   alternates: {
     canonical: "https://michaelkurr.com/privacy-policy/",
+  },
+  openGraph: {
+    title: "Privacy Policy — Dr. Michael Kurr",
+    description:
+      "Privacy policy for michaelkurr.com — learn how Dr. Michael A. Kurr handles your data and protects your privacy.",
+    type: "website",
+    url: "https://michaelkurr.com/privacy-policy/",
+    siteName: "Dr. Michael Kurr",
+    locale: "en_US",
+    images: [
+      {
+        url: "/images/profile.jpg",
+        width: 800,
+        height: 800,
+        alt: "Dr. Michael Kurr — Privacy Policy",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Privacy Policy — Dr. Michael Kurr",
+    description:
+      "Privacy policy for michaelkurr.com — data protection and GDPR compliance.",
+    images: [
+      {
+        url: "/images/profile.jpg",
+        alt: "Dr. Michael Kurr — Privacy Policy",
+      },
+    ],
   },
   robots: { index: true, follow: true },
 };

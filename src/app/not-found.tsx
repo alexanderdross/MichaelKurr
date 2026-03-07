@@ -1,4 +1,12 @@
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Page Not Found — Dr. Michael Kurr",
+  description:
+    "The page you are looking for could not be found. Visit michaelkurr.com to learn about Dr. Michael Kurr's advisory services, expertise, and publications.",
+  robots: { index: false, follow: true },
+};
 
 const quickLinks = [
   { href: "/#about", label: "About", desc: "Background & career" },

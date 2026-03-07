@@ -1,11 +1,18 @@
 {
-  "name": "Dr. Michael Kurr",
-  "short_name": "MK",
-  "description": "Operator & Transformation Leader | Pharma & Life Sciences",
+  "name": "Dr. Michael Kurr — Pharma & Life Sciences Advisory",
+  "short_name": "Dr. Kurr",
+  "description": "Operator & Transformation Leader | Pharma & Life Sciences. Fractional C-level executive, published author, and expert in building world-class organizations.",
+  "id": "/",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "any",
   "background_color": "#1B2A4A",
   "theme_color": "#1B2A4A",
+  "dir": "ltr",
+  "lang": "en",
+  "categories": ["business", "education"],
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "/icon",
@@ -28,6 +35,26 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Advisory Services",
+      "short_name": "Advisory",
+      "url": "/advisory/",
+      "description": "Fractional C-level & transformation advisory services"
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "url": "/contact/",
+      "description": "Get in touch with Dr. Michael Kurr"
+    },
+    {
+      "name": "Expertise",
+      "short_name": "Expertise",
+      "url": "/#expertise",
+      "description": "Areas of expertise"
     }
   ]
 }

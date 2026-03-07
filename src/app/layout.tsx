@@ -13,11 +13,12 @@ import {
 } from "@/data/schemas";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import Analytics from "@/components/Analytics";
+import ServiceWorkerRegistration from "@/components/ServiceWorkerRegistration";
 
 const inter = localFont({
   src: "../fonts/inter-latin-wght-normal.woff2",
   variable: "--font-inter",
-  display: "optional",
+  display: "swap",
   preload: true,
 });
 
@@ -33,7 +34,7 @@ const playfair = localFont({
     },
   ],
   variable: "--font-playfair",
-  display: "optional",
+  display: "swap",
   preload: true,
 });
 
@@ -129,14 +130,23 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#1B2A4A" />
         <link rel="manifest" href="/manifest.json" />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(bookSchemas) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchemas) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(navigationSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+        <link rel="dns-prefetch" href="https://plausible.io" />
+        <link rel="preconnect" href="https://plausible.io" crossOrigin="anonymous" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              personSchema,
+              bookSchemas,
+              websiteSchema,
+              profilePageSchema,
+              articleSchemas,
+              navigationSchema,
+              faqSchema,
+              productSchema,
+            ].flat()),
+          }}
+        />
       </head>
       <body className="antialiased">
         <a
@@ -149,6 +159,7 @@ export default function RootLayout({
           {children}
         </ErrorBoundary>
         <Analytics />
+        <ServiceWorkerRegistration />
       </body>
     </html>
   );
