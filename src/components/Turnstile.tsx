@@ -92,5 +92,16 @@ export default function Turnstile({ onVerify, onExpire }: TurnstileProps) {
 
   if (!SITE_KEY) return null;
 
-  return <div ref={containerRef} className="mt-1" />;
+  return (
+    <div className="mt-2 mb-1">
+      <div
+        ref={containerRef}
+        className="min-h-[65px] flex items-center"
+      >
+        {!loaded && (
+          <p className="text-xs text-charcoal/40">Loading verification&hellip;</p>
+        )}
+      </div>
+    </div>
+  );
 }
