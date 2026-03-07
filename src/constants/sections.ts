@@ -32,7 +32,7 @@ export const NAV_FEATURED_LINKS = [
   { href: "/transformation-circus/", label: "Circus", title: "Leading the Transformation Circus in the Age of AI" },
 ] as const;
 
-/** Sections used for redirects in next.config.ts (excludes hero, recommendations). */
+/** Sections used for redirects in next.config.ts (excludes hero, recommendations, contact). */
 export const REDIRECT_SECTIONS = [
   "about",
   "expertise",
@@ -41,5 +41,4 @@ export const REDIRECT_SECTIONS = [
   "leadership",
   "featured",
   "recommendations",
-  "contact",
 ] as const;
