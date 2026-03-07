@@ -14,6 +14,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1,
     },
+    // Section redirects (302 → /#section) — keeps section keywords indexable
+    ...(
+      ["about", "expertise", "impact", "publications", "leadership", "featured", "recommendations"] as const
+    ).map((section) => ({
+      url: `${base}/${section}/`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: section === "about" || section === "expertise" ? 0.9 : 0.8,
+    })),
     {
       url: `${base}/contact/`,
       lastModified,
