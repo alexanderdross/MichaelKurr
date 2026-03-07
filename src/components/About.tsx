@@ -4,42 +4,56 @@ const timeline = [
     dateTime: "2026",
     title: "Founder — Dr. Kurr Advisory",
     org: "Fractional C-Level & Advisory | Pharma & Life Sciences",
+    href: "/advisory/",
+    titleAttr: "Dr. Michael Kurr – Founder of Dr. Kurr Advisory, Fractional C-Level Consulting in Pharma & Life Sciences",
   },
   {
     date: "2026 – Present",
     dateTime: "2026",
     title: "Fractional CCO, Lemna Bio",
     org: "Strategy & Partnerships | Computational Drug Design",
+    href: "https://www.lemnabio.com/",
+    titleAttr: "Michael Kurr – Fractional Chief Commercial Officer at Lemna Bio, Computational Drug Design",
   },
   {
     date: "2026 – Present",
     dateTime: "2026",
     title: "Fellow — THENA Capital",
     org: "MedTech Investment | Early-Stage Digital & Device Companies",
+    href: "https://www.thenacapital.com/",
+    titleAttr: "Michael Kurr – Fellow at THENA Capital, MedTech Investment & Early-Stage Digital Health",
   },
   {
     date: "2019 – 2025",
     dateTime: "2019/2025",
     title: "Global Head, Human Pharma Services",
     org: "Boehringer Ingelheim",
+    href: "https://www.boehringer-ingelheim.com/",
+    titleAttr: "Michael Kurr – Global Head of Human Pharma Services at Boehringer Ingelheim (2019–2025)",
   },
   {
     date: "2013 – 2019",
     dateTime: "2013/2019",
     title: "Head of Business Service Excellence & Senior Global Program Lead",
     org: "Novartis",
+    href: "https://www.novartis.com/",
+    titleAttr: "Michael Kurr – Head of Business Service Excellence & Senior Global Program Lead at Novartis (2013–2019)",
   },
   {
     date: "Earlier",
     dateTime: undefined,
     title: "Management Consultant",
     org: "Schuh & Co. GmbH",
+    href: "https://www.schuh-group.com/",
+    titleAttr: "Michael Kurr – Management Consultant at Schuh & Co. GmbH, Manufacturing & Process Consulting",
   },
   {
     date: "Doctorate",
     dateTime: "2000/2003",
     title: "Dr. oec. HSG — University of St. Gallen",
     org: "Economics, Technology Management",
+    href: "https://www.unisg.ch/",
+    titleAttr: "Dr. Michael Kurr – Doctorate in Economics & Technology Management, University of St. Gallen (HSG)",
   },
 ];
 
@@ -120,7 +134,14 @@ export default function About() {
                     </span>
                   )}
                   <h3 className="font-heading text-lg font-semibold text-navy mt-1">
-                    {item.title}
+                    <a
+                      href={item.href}
+                      title={item.titleAttr}
+                      {...(item.href.startsWith("/") ? {} : { target: "_blank", rel: "noopener noreferrer" })}
+                      className="hover:text-gold transition-colors duration-200"
+                    >
+                      {item.title}
+                    </a>
                   </h3>
                   <p className="text-charcoal/65 text-sm">{item.org}</p>
                 </li>
