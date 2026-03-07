@@ -5,18 +5,7 @@ import { getAllAdvisoryServiceSlugs } from "@/data/advisory-services";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://michaelkurr.com";
-  const lastModified = new Date("2026-03-06");
-
-  const sectionSlugs = [
-    { slug: "about", priority: 0.9 },
-    { slug: "expertise", priority: 0.9 },
-    { slug: "impact", priority: 0.8 },
-    { slug: "publications", priority: 0.8 },
-    { slug: "leadership", priority: 0.8 },
-    { slug: "featured", priority: 0.7 },
-    { slug: "recommendations", priority: 0.7 },
-    { slug: "contact", priority: 0.7 },
-  ];
+  const lastModified = new Date("2026-03-07");
 
   return [
     {
@@ -25,12 +14,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 1,
     },
-    ...sectionSlugs.map(({ slug, priority }) => ({
-      url: `${base}/${slug}/`,
+    // Section redirects (302 → /#section) — keeps section keywords indexable
+    ...(
+      ["about", "expertise", "impact", "publications", "leadership", "featured", "recommendations"] as const
+    ).map((section) => ({
+      url: `${base}/${section}/`,
       lastModified,
       changeFrequency: "monthly" as const,
-      priority,
+      priority: section === "about" || section === "expertise" ? 0.9 : 0.8,
     })),
+    {
+      url: `${base}/contact/`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
     ...getAllExpertiseSlugs().map((slug) => ({
       url: `${base}/expertise/${slug}/`,
       lastModified,
