@@ -45,7 +45,7 @@ export default function SubpageFAQ({ slug, title, items }: SubpageFAQProps) {
   return (
     <section id={`${slug}-faq`} className="py-16 lg:py-24 bg-offwhite border-t border-gray-200">
       <div className="max-w-3xl mx-auto px-6">
-        <span className="fade-in block text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+        <span className="fade-in block text-gold-dark text-sm font-semibold tracking-[0.2em] uppercase mb-3">
           Questions
         </span>
         <h2 className="fade-in font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-navy mb-10 group/heading">
@@ -102,7 +102,6 @@ export default function SubpageFAQ({ slug, title, items }: SubpageFAQProps) {
                 </dt>
                 <dd
                   id={`faq-answer-${faq.id}`}
-                  role="region"
                   className={`overflow-hidden transition-all duration-200 ${isOpen ? "max-h-96 pb-6" : "max-h-0"}`}
                 >
                   <p className="px-6 text-charcoal/80 leading-relaxed">

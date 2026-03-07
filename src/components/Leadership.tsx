@@ -80,8 +80,7 @@ export default function Leadership() {
           </a>
         </h2>
 
-        {/* Traits grid — semantic <dl> for AI/AEO parsing */}
-        <dl className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
           {traits.map((trait) => (
             <div key={trait.name} className="fade-in">
               <Link
@@ -90,12 +89,12 @@ export default function Leadership() {
                 className="group block p-7 rounded-xl bg-offwhite border border-gray-100 hover:border-gold/30 hover:shadow-lg transition-all duration-300 h-full"
               >
                 <div className="text-gold mb-4">{trait.icon}</div>
-                <dt className="font-heading text-xl font-semibold text-navy mb-2">
+                <h3 className="font-heading text-xl font-semibold text-navy mb-2">
                   {trait.name}
-                </dt>
-                <dd className="text-charcoal/70 leading-relaxed text-sm mb-3">
+                </h3>
+                <p className="text-charcoal/70 leading-relaxed text-sm mb-3">
                   {trait.desc}
-                </dd>
+                </p>
                 <span className="inline-flex items-center gap-1 text-xs font-medium text-teal group-hover:text-gold transition-colors duration-200">
                   Read more
                   <span className="sr-only"> about {trait.name}</span>
@@ -119,7 +118,7 @@ export default function Leadership() {
               &ldquo;Structure follows process follows strategy&rdquo;
             </p>
           </div>
-        </dl>
+        </div>
 
         {/* Management rules */}
         <div className="fade-in max-w-3xl mx-auto">

@@ -144,7 +144,6 @@ export default function FAQ() {
                 </dt>
                 <dd
                   id={`faq-answer-${faq.id}`}
-                  role="region"
                   className={`overflow-hidden transition-all duration-200 ${isOpen ? "max-h-96 pb-6" : "max-h-0"}`}
                 >
                   <p className="px-6 text-charcoal/80 leading-relaxed">

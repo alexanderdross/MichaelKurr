@@ -1669,7 +1669,7 @@ export default function TransformationCircusPage() {
                       <p className="font-heading font-bold text-lg mb-1">
                         AI scales execution.
                       </p>
-                      <p className="text-white/80">
+                      <p className="text-white/90">
                         Your <strong>operating model</strong> decides{" "}
                         <strong>what</strong> gets scaled. Get the model right
                         first.

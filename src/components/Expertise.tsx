@@ -94,8 +94,7 @@ export default function Expertise() {
           </a>
         </h2>
 
-        {/* Semantic <dl> for AI/AEO parsing of expertise areas */}
-        <dl className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map((card) => (
             <div key={card.title} className="fade-in">
               <Link
@@ -106,10 +105,10 @@ export default function Expertise() {
                 <div className="text-navy/60 group-hover:text-gold transition-colors duration-300 mb-5">
                   {card.icon}
                 </div>
-                <dt className="font-heading text-xl font-semibold text-navy mb-3">
+                <h3 className="font-heading text-xl font-semibold text-navy mb-3">
                   {card.title}
-                </dt>
-                <dd className="text-charcoal/70 leading-relaxed mb-4">{card.desc}</dd>
+                </h3>
+                <p className="text-charcoal/70 leading-relaxed mb-4">{card.desc}</p>
                 <span className="inline-flex items-center gap-1 text-sm font-medium text-teal group-hover:text-gold transition-colors duration-200">
                   Learn more
                   <span className="sr-only"> about {card.title}</span>
@@ -127,7 +126,7 @@ export default function Expertise() {
               </Link>
             </div>
           ))}
-        </dl>
+        </div>
       </div>
     </section>
   );
