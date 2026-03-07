@@ -39,7 +39,7 @@ const playfair = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://michaelkurr.com"),
+  metadataBase: new URL("https://dr.michaelkurr.com"),
   title: "Dr. Michael Kurr — Operator & Transformation Leader | Pharma & Life Sciences",
   description:
     "Dr. Michael A. Kurr — Founder of Dr. Kurr Advisory. Fractional C-level executive and transformation leader with 20+ years of experience across Boehringer Ingelheim, Novartis, and global pharma. Published author and expert in building world-class organizations.",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     "published author",
     "leadership development",
   ],
-  authors: [{ name: "Dr. Michael A. Kurr", url: "https://michaelkurr.com" }],
+  authors: [{ name: "Dr. Michael A. Kurr", url: "https://dr.michaelkurr.com" }],
   creator: "Dr. Michael A. Kurr",
   publisher: "Dr. Michael A. Kurr",
   alternates: {
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     description:
       "Founder of Dr. Kurr Advisory. Fractional C-level executive in Pharma & Life Sciences with 20+ years transforming global organizations at Boehringer Ingelheim, Novartis, and beyond. Published author and expert in corporate transformation, digital strategy, and cooperation management.",
     type: "profile",
-    url: "https://michaelkurr.com",
+    url: "https://dr.michaelkurr.com",
     locale: "en_US",
     siteName: "Dr. Michael Kurr",
     firstName: "Michael",

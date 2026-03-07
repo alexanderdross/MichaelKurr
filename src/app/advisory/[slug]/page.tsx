@@ -47,17 +47,17 @@ export async function generateMetadata({
       "corporate transformation",
       ...item.offerings.slice(0, 5),
     ],
-    authors: [{ name: "Dr. Michael A. Kurr", url: "https://michaelkurr.com" }],
+    authors: [{ name: "Dr. Michael A. Kurr", url: "https://dr.michaelkurr.com" }],
     creator: "Dr. Michael A. Kurr",
     publisher: "Dr. Kurr Advisory",
     alternates: {
-      canonical: `https://michaelkurr.com/advisory/${item.slug}/`,
+      canonical: `https://dr.michaelkurr.com/advisory/${item.slug}/`,
     },
     openGraph: {
       title: `${item.title} — Dr. Kurr Advisory`,
       description,
       type: "article",
-      url: `https://michaelkurr.com/advisory/${item.slug}/`,
+      url: `https://dr.michaelkurr.com/advisory/${item.slug}/`,
       siteName: "Dr. Michael Kurr",
       locale: "en_US",
       images: [
@@ -128,7 +128,7 @@ export default async function AdvisoryServicePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeProductSchema(`https://michaelkurr.com/advisory/${item.slug}/`, ratingCount)),
+          __html: JSON.stringify(makeProductSchema(`https://dr.michaelkurr.com/advisory/${item.slug}/`, ratingCount)),
         }}
       />
 
@@ -136,7 +136,7 @@ export default async function AdvisoryServicePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeNavigationSchema(`https://michaelkurr.com/advisory/${item.slug}/`, item.title)),
+          __html: JSON.stringify(makeNavigationSchema(`https://dr.michaelkurr.com/advisory/${item.slug}/`, item.title)),
         }}
       />
 
@@ -145,9 +145,9 @@ export default async function AdvisoryServicePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(makeBreadcrumbSchema([
-            { name: "Dr. Michael Kurr", url: "https://michaelkurr.com/" },
-            { name: "Advisory Services", url: "https://michaelkurr.com/advisory/" },
-            { name: item.title, url: `https://michaelkurr.com/advisory/${item.slug}/` },
+            { name: "Dr. Michael Kurr", url: "https://dr.michaelkurr.com/" },
+            { name: "Advisory Services", url: "https://dr.michaelkurr.com/advisory/" },
+            { name: item.title, url: `https://dr.michaelkurr.com/advisory/${item.slug}/` },
           ])),
         }}
       />
@@ -159,7 +159,7 @@ export default async function AdvisoryServicePage({
           __html: JSON.stringify(makeServiceSchema({
             name: item.title,
             description: item.tagline,
-            url: `https://michaelkurr.com/advisory/${item.slug}/`,
+            url: `https://dr.michaelkurr.com/advisory/${item.slug}/`,
             offerings: item.offerings,
           })),
         }}
@@ -170,7 +170,7 @@ export default async function AdvisoryServicePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(makeSpeakableSchema(
-            `https://michaelkurr.com/advisory/${item.slug}/`,
+            `https://dr.michaelkurr.com/advisory/${item.slug}/`,
             ["h1", "[data-speakable]"],
           )),
         }}

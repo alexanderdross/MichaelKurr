@@ -31,18 +31,18 @@ export const metadata: Metadata = {
     "corporate change management",
     "Dr. Kurr Advisory",
   ],
-  authors: [{ name: "Dr. Michael A. Kurr", url: "https://michaelkurr.com" }],
+  authors: [{ name: "Dr. Michael A. Kurr", url: "https://dr.michaelkurr.com" }],
   creator: "Dr. Michael A. Kurr",
   publisher: "Dr. Kurr Advisory",
   alternates: {
-    canonical: "https://michaelkurr.com/transformation-circus/",
+    canonical: "https://dr.michaelkurr.com/transformation-circus/",
   },
   openGraph: {
     title: "The Transformation Circus — Dr. Michael Kurr",
     description:
       "Big Pharma, Smart Machines, Same Old Chaos. Leading the Transformation Circus in the Age of AI. Lessons from 15+ years of pharma transformation.",
     type: "article",
-    url: "https://michaelkurr.com/transformation-circus/",
+    url: "https://dr.michaelkurr.com/transformation-circus/",
     locale: "en_US",
     siteName: "Dr. Michael Kurr",
     publishedTime: "2026-03-01T00:00:00Z",
@@ -242,7 +242,7 @@ export default function TransformationCircusPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeProductSchema("https://michaelkurr.com/transformation-circus/", 183)),
+          __html: JSON.stringify(makeProductSchema("https://dr.michaelkurr.com/transformation-circus/", 183)),
         }}
       />
 
@@ -250,7 +250,7 @@ export default function TransformationCircusPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeNavigationSchema("https://michaelkurr.com/transformation-circus/", "The Transformation Circus")),
+          __html: JSON.stringify(makeNavigationSchema("https://dr.michaelkurr.com/transformation-circus/", "The Transformation Circus")),
         }}
       />
 
@@ -262,21 +262,21 @@ export default function TransformationCircusPage() {
             "@context": "https://schema.org",
             "@type": "Article",
             "@id":
-              "https://michaelkurr.com/transformation-circus/#article",
+              "https://dr.michaelkurr.com/transformation-circus/#article",
             headline:
               "Big Pharma, Smart Machines, Same Old Chaos: Leading the Transformation Circus in the Age of AI",
             author: {
               "@type": "Person",
-              "@id": "https://michaelkurr.com/#person",
+              "@id": "https://dr.michaelkurr.com/#person",
               name: "Dr. Michael A. Kurr",
-              url: "https://michaelkurr.com",
+              url: "https://dr.michaelkurr.com",
               jobTitle: "Founder & Fractional C-Level Executive",
-              image: "https://michaelkurr.com/images/profile.jpg",
+              image: "https://dr.michaelkurr.com/images/profile.jpg",
             },
             publisher: {
               "@type": "Organization",
               name: "Dr. Kurr Advisory",
-              url: "https://michaelkurr.com",
+              url: "https://dr.michaelkurr.com",
             },
             datePublished: "2026-03-01",
             dateModified: "2026-03-06",
@@ -284,9 +284,9 @@ export default function TransformationCircusPage() {
               "Lessons from 15+ years of leading pharma transformation — taming chaos, building teams, and integrating AI without losing your mind.",
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": "https://michaelkurr.com/transformation-circus/",
+              "@id": "https://dr.michaelkurr.com/transformation-circus/",
             },
-            image: "https://michaelkurr.com/images/profile.jpg",
+            image: "https://dr.michaelkurr.com/images/profile.jpg",
             keywords: [
               "pharma transformation",
               "AI in pharma",
@@ -306,7 +306,7 @@ export default function TransformationCircusPage() {
             },
             inLanguage: "en",
             isPartOf: {
-              "@id": "https://michaelkurr.com/#website",
+              "@id": "https://dr.michaelkurr.com/#website",
             },
           }),
         }}
@@ -324,13 +324,13 @@ export default function TransformationCircusPage() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Dr. Michael Kurr",
-                item: "https://michaelkurr.com/",
+                item: "https://dr.michaelkurr.com/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "The Transformation Circus",
-                item: "https://michaelkurr.com/transformation-circus/",
+                item: "https://dr.michaelkurr.com/transformation-circus/",
               },
             ],
           }),

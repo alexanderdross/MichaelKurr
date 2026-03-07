@@ -37,17 +37,17 @@ export async function generateMetadata({
       "transformation leadership",
       "executive leadership",
     ],
-    authors: [{ name: "Dr. Michael A. Kurr", url: "https://michaelkurr.com" }],
+    authors: [{ name: "Dr. Michael A. Kurr", url: "https://dr.michaelkurr.com" }],
     creator: "Dr. Michael A. Kurr",
     publisher: "Dr. Kurr Advisory",
     alternates: {
-      canonical: `https://michaelkurr.com/leadership/${item.slug}/`,
+      canonical: `https://dr.michaelkurr.com/leadership/${item.slug}/`,
     },
     openGraph: {
       title: `${item.name} — Leadership Philosophy | Dr. Michael Kurr`,
       description,
       type: "article",
-      url: `https://michaelkurr.com/leadership/${item.slug}/`,
+      url: `https://dr.michaelkurr.com/leadership/${item.slug}/`,
       siteName: "Dr. Michael Kurr",
       locale: "en_US",
       images: [
@@ -107,7 +107,7 @@ export default async function LeadershipPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeProductSchema(`https://michaelkurr.com/leadership/${item.slug}/`, 127)),
+          __html: JSON.stringify(makeProductSchema(`https://dr.michaelkurr.com/leadership/${item.slug}/`, 127)),
         }}
       />
 
@@ -115,7 +115,7 @@ export default async function LeadershipPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeSpeakableSchema(`https://michaelkurr.com/leadership/${item.slug}/`, ["h1", "[data-speakable]"])),
+          __html: JSON.stringify(makeSpeakableSchema(`https://dr.michaelkurr.com/leadership/${item.slug}/`, ["h1", "[data-speakable]"])),
         }}
       />
 
@@ -123,7 +123,7 @@ export default async function LeadershipPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeNavigationSchema(`https://michaelkurr.com/leadership/${item.slug}/`, item.name)),
+          __html: JSON.stringify(makeNavigationSchema(`https://dr.michaelkurr.com/leadership/${item.slug}/`, item.name)),
         }}
       />
 
@@ -140,19 +140,19 @@ export default async function LeadershipPage({
                   "@type": "ListItem",
                   position: 1,
                   name: "Dr. Michael Kurr",
-                  item: "https://michaelkurr.com/",
+                  item: "https://dr.michaelkurr.com/",
                 },
                 {
                   "@type": "ListItem",
                   position: 2,
                   name: "Leadership",
-                  item: "https://michaelkurr.com/#leadership",
+                  item: "https://dr.michaelkurr.com/#leadership",
                 },
                 {
                   "@type": "ListItem",
                   position: 3,
                   name: item.name,
-                  item: `https://michaelkurr.com/leadership/${item.slug}/`,
+                  item: `https://dr.michaelkurr.com/leadership/${item.slug}/`,
                 },
               ],
             },
@@ -162,12 +162,12 @@ export default async function LeadershipPage({
               headline: `${item.name} — Leadership Philosophy | Dr. Michael Kurr`,
               description: item.tagline,
               author: {
-                "@id": "https://michaelkurr.com/#person",
+                "@id": "https://dr.michaelkurr.com/#person",
               },
               publisher: {
-                "@id": "https://michaelkurr.com/#person",
+                "@id": "https://dr.michaelkurr.com/#person",
               },
-              mainEntityOfPage: `https://michaelkurr.com/leadership/${item.slug}/`,
+              mainEntityOfPage: `https://dr.michaelkurr.com/leadership/${item.slug}/`,
               about: `${item.name} in Leadership`,
               articleSection: "Leadership Philosophy",
               inLanguage: "en",

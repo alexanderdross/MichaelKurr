@@ -91,7 +91,7 @@ export default async function OGImage({ params }: { params: Promise<{ slug: stri
               marginTop: "auto",
             }}
           >
-            Dr. Michael Kurr · michaelkurr.com
+            Dr. Michael Kurr · dr.michaelkurr.com
           </span>
         </div>
       </div>

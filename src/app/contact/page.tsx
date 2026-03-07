@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     "transformation advisory inquiry",
   ],
   alternates: {
-    canonical: "https://michaelkurr.com/contact/",
+    canonical: "https://dr.michaelkurr.com/contact/",
   },
   openGraph: {
     title: "Contact — Dr. Michael Kurr",
     description:
       "Get in touch with Dr. Michael A. Kurr for fractional C-level mandates, transformation advisory, or strategic counsel in Pharma & Life Sciences.",
     type: "website",
-    url: "https://michaelkurr.com/contact/",
+    url: "https://dr.michaelkurr.com/contact/",
     siteName: "Dr. Michael Kurr",
     locale: "en_US",
     images: [
@@ -56,7 +56,7 @@ export default function ContactPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeProductSchema("https://michaelkurr.com/contact/", 94)),
+          __html: JSON.stringify(makeProductSchema("https://dr.michaelkurr.com/contact/", 94)),
         }}
       />
 
@@ -64,7 +64,7 @@ export default function ContactPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeNavigationSchema("https://michaelkurr.com/contact/", "Contact")),
+          __html: JSON.stringify(makeNavigationSchema("https://dr.michaelkurr.com/contact/", "Contact")),
         }}
       />
 
@@ -80,13 +80,13 @@ export default function ContactPage() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Dr. Michael Kurr",
-                item: "https://michaelkurr.com/",
+                item: "https://dr.michaelkurr.com/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Contact",
-                item: "https://michaelkurr.com/contact/",
+                item: "https://dr.michaelkurr.com/contact/",
               },
             ],
           }),

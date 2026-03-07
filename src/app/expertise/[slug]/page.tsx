@@ -37,17 +37,17 @@ export async function generateMetadata({
       "fractional C-level",
       ...item.title.toLowerCase().split(/\s+&?\s*/),
     ],
-    authors: [{ name: "Dr. Michael A. Kurr", url: "https://michaelkurr.com" }],
+    authors: [{ name: "Dr. Michael A. Kurr", url: "https://dr.michaelkurr.com" }],
     creator: "Dr. Michael A. Kurr",
     publisher: "Dr. Kurr Advisory",
     alternates: {
-      canonical: `https://michaelkurr.com/expertise/${item.slug}/`,
+      canonical: `https://dr.michaelkurr.com/expertise/${item.slug}/`,
     },
     openGraph: {
       title: `${item.title} — Dr. Michael Kurr`,
       description,
       type: "article",
-      url: `https://michaelkurr.com/expertise/${item.slug}/`,
+      url: `https://dr.michaelkurr.com/expertise/${item.slug}/`,
       siteName: "Dr. Michael Kurr",
       locale: "en_US",
       images: [
@@ -107,7 +107,7 @@ export default async function ExpertisePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeProductSchema(`https://michaelkurr.com/expertise/${item.slug}/`, 156)),
+          __html: JSON.stringify(makeProductSchema(`https://dr.michaelkurr.com/expertise/${item.slug}/`, 156)),
         }}
       />
 
@@ -115,7 +115,7 @@ export default async function ExpertisePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeSpeakableSchema(`https://michaelkurr.com/expertise/${item.slug}/`, ["h1", "[data-speakable]"])),
+          __html: JSON.stringify(makeSpeakableSchema(`https://dr.michaelkurr.com/expertise/${item.slug}/`, ["h1", "[data-speakable]"])),
         }}
       />
 
@@ -123,7 +123,7 @@ export default async function ExpertisePage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeNavigationSchema(`https://michaelkurr.com/expertise/${item.slug}/`, item.title)),
+          __html: JSON.stringify(makeNavigationSchema(`https://dr.michaelkurr.com/expertise/${item.slug}/`, item.title)),
         }}
       />
 
@@ -140,19 +140,19 @@ export default async function ExpertisePage({
                   "@type": "ListItem",
                   position: 1,
                   name: "Dr. Michael Kurr",
-                  item: "https://michaelkurr.com/",
+                  item: "https://dr.michaelkurr.com/",
                 },
                 {
                   "@type": "ListItem",
                   position: 2,
                   name: "Expertise",
-                  item: "https://michaelkurr.com/#expertise",
+                  item: "https://dr.michaelkurr.com/#expertise",
                 },
                 {
                   "@type": "ListItem",
                   position: 3,
                   name: item.title,
-                  item: `https://michaelkurr.com/expertise/${item.slug}/`,
+                  item: `https://dr.michaelkurr.com/expertise/${item.slug}/`,
                 },
               ],
             },
@@ -162,12 +162,12 @@ export default async function ExpertisePage({
               headline: `${item.title} — Dr. Michael Kurr`,
               description: item.tagline,
               author: {
-                "@id": "https://michaelkurr.com/#person",
+                "@id": "https://dr.michaelkurr.com/#person",
               },
               publisher: {
-                "@id": "https://michaelkurr.com/#person",
+                "@id": "https://dr.michaelkurr.com/#person",
               },
-              mainEntityOfPage: `https://michaelkurr.com/expertise/${item.slug}/`,
+              mainEntityOfPage: `https://dr.michaelkurr.com/expertise/${item.slug}/`,
               about: item.title,
               articleSection: "Expertise",
               inLanguage: "en",

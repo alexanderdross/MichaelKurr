@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Page Not Found — Dr. Michael Kurr",
   description:
-    "The page you are looking for could not be found. Visit michaelkurr.com to learn about Dr. Michael Kurr's advisory services, expertise, and publications.",
+    "The page you are looking for could not be found. Visit dr.michaelkurr.com to learn about Dr. Michael Kurr's advisory services, expertise, and publications.",
   robots: { index: false, follow: true },
 };
 
@@ -77,7 +77,7 @@ export default function NotFound() {
 
         {/* Footer note */}
         <p className="text-white/50 text-xs mt-16">
-          michaelkurr.com &mdash; Dr. Michael Kurr
+          dr.michaelkurr.com &mdash; Dr. Michael Kurr
         </p>
       </div>
     </main>

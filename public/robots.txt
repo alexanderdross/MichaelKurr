@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://michaelkurr.com/sitemap.xml
+Sitemap: https://dr.michaelkurr.com/sitemap.xml
 
 # AI Crawlers — allow for GEO (Generative Engine Optimization) & AEO (Answer Engine Optimization)
 User-agent: GPTBot
@@ -39,4 +39,4 @@ User-agent: Bytespider
 Allow: /
 
 # LLM-readable site summary
-# See: https://michaelkurr.com/llms.txt
+# See: https://dr.michaelkurr.com/llms.txt

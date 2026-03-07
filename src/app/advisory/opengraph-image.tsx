@@ -91,7 +91,7 @@ export default async function OGImage() {
               marginTop: "auto",
             }}
           >
-            Dr. Kurr Advisory · michaelkurr.com
+            Dr. Kurr Advisory · dr.michaelkurr.com
           </span>
         </div>
       </div>
