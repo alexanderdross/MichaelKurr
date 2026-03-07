@@ -28,11 +28,11 @@ const securityHeaders = [
     // site generation (SSG). Nonce-based CSP requires server-side rendering.
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' https://plausible.io https://challenges.cloudflare.com",
+      "script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com",
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data:",
       "font-src 'self'",
-      "connect-src 'self' https://plausible.io https://formspree.io https://challenges.cloudflare.com",
+      "connect-src 'self' https://formspree.io https://challenges.cloudflare.com",
       "frame-src https://challenges.cloudflare.com",
       "frame-ancestors 'none'",
       "base-uri 'self'",
@@ -46,6 +46,13 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     remotePatterns: [],
+  },
+  turbopack: {
+    resolveAlias: {
+      // Remove legacy polyfills — all target browsers (Chrome 100+, Firefox 100+,
+      // Safari 15.4+) natively support Array.at, Object.hasOwn, Object.fromEntries, etc.
+      "next/dist/build/polyfills/polyfill-module.js": "./src/empty-polyfill.js",
+    },
   },
   async redirects() {
     return REDIRECT_SECTIONS.map((section) => ({

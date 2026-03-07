@@ -6,7 +6,7 @@ import {
   websiteSchema,
 } from "@/data/schemas";
 import ErrorBoundary from "@/components/ErrorBoundary";
-import Analytics from "@/components/Analytics";
+
 import ServiceWorkerRegistration from "@/components/ServiceWorkerRegistration";
 
 const inter = localFont({
@@ -123,9 +123,16 @@ export default function RootLayout({
     <html lang="en" dir="ltr" className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <meta name="theme-color" content="#1B2A4A" />
+        <link
+          rel="preload"
+          as="image"
+          type="image/webp"
+          imageSrcSet="/images/profile-256.webp 256w, /images/profile-512.webp 512w, /images/profile.webp 800w"
+          imageSizes="(max-width: 640px) 144px, (max-width: 1024px) 224px, 256px"
+        />
         <link rel="manifest" href="/manifest.json" />
-        <link rel="dns-prefetch" href="https://plausible.io" />
-        <link rel="preconnect" href="https://plausible.io" crossOrigin="anonymous" />
+
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -146,7 +153,7 @@ export default function RootLayout({
         <ErrorBoundary>
           {children}
         </ErrorBoundary>
-        <Analytics />
+
         <ServiceWorkerRegistration />
       </body>
     </html>

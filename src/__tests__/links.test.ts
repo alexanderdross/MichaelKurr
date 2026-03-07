@@ -23,8 +23,6 @@ const EXTERNAL_LINKS = [
   "https://share.google/5Cq7JCmzDsnMDtf1W",
   // CIOLook
   "https://ciolook.com/from-concept-to-reality-michael-kurr-building-internal-service-organizations-for-excellence-in-customer-experience/",
-  // Plausible
-  "https://plausible.io/js/script.js",
   // Collaborator
   "https://dross.net/alexander/",
   // Hanser (schema sameAs)
