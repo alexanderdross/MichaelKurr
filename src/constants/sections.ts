@@ -30,6 +30,7 @@ export const NAV_LINKS = [
 export const NAV_FEATURED_LINKS = [
   { href: "/advisory/", label: "Advisory", title: "Fractional C-Level & Transformation Advisory for Pharma & Life Sciences" },
   { href: "/transformation-circus/", label: "Circus", title: "Leading the Transformation Circus in the Age of AI" },
+  { href: "https://www.linkedin.com/in/michaelkurr/recent-activity/all/", label: "Blog", title: "Read Dr. Kurr's latest posts and articles on LinkedIn" },
 ] as const;
 
 /** Sections used for redirects in next.config.ts (excludes hero, recommendations, contact). */

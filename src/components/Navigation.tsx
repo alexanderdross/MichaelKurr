@@ -143,17 +143,21 @@ export default function Navigation() {
           <li aria-hidden="true" className="w-px h-5 bg-white/20" />
 
           {/* Featured page links — framed */}
-          {featured.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                title={link.title}
-                className="text-sm font-medium px-4 py-1.5 border border-gold/50 text-gold rounded hover:bg-gold hover:text-navy transition-all duration-200"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
+          {featured.map((link) => {
+            const isExternal = link.href.startsWith("http");
+            return (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  title={link.title}
+                  {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  className="text-sm font-medium px-4 py-1.5 border border-gold/50 text-gold rounded hover:bg-gold hover:text-navy transition-all duration-200"
+                >
+                  {link.label}
+                </a>
+              </li>
+            );
+          })}
         </ul>
 
         {/* Mobile toggle */}
@@ -214,17 +218,21 @@ export default function Navigation() {
             {/* Featured page links — framed in mobile too */}
             <li aria-hidden="true" className="h-px bg-white/10 my-2" />
             <li className="flex gap-3">
-              {featured.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  title={link.title}
-                  onClick={() => setMenuOpen(false)}
-                  className="flex-1 text-center text-base px-5 py-3 border border-gold/50 text-gold rounded hover:bg-gold hover:text-navy transition-all"
-                >
-                  {link.label}
-                </a>
-              ))}
+              {featured.map((link) => {
+                const isExternal = link.href.startsWith("http");
+                return (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    title={link.title}
+                    onClick={() => setMenuOpen(false)}
+                    {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    className="flex-1 text-center text-base px-5 py-3 border border-gold/50 text-gold rounded hover:bg-gold hover:text-navy transition-all"
+                  >
+                    {link.label}
+                  </a>
+                );
+              })}
             </li>
           </ul>
         </div>
