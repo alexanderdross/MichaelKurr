@@ -6,7 +6,7 @@ export default function Analytics() {
   return (
     <Script
       defer
-      data-domain="michaelkurr.com"
+      data-domain="dr.michaelkurr.com"
       src="https://plausible.io/js/script.js"
       strategy="afterInteractive"
     />

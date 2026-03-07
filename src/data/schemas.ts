@@ -1,14 +1,14 @@
 export const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "@id": "https://michaelkurr.com/#person",
+  "@id": "https://dr.michaelkurr.com/#person",
   name: "Dr. Michael A. Kurr",
   honorificPrefix: "Dr.",
   givenName: "Michael",
   additionalName: "A.",
   familyName: "Kurr",
-  url: "https://michaelkurr.com",
-  image: "https://michaelkurr.com/images/profile.jpg",
+  url: "https://dr.michaelkurr.com",
+  image: "https://dr.michaelkurr.com/images/profile.jpg",
   description:
     "Founder of Dr. Kurr Advisory. Fractional C-level executive and transformation leader with 20+ years of experience across Boehringer Ingelheim, Novartis, and global pharma. Published author and expert in building world-class organizations.",
   sameAs: [
@@ -22,16 +22,16 @@ export const personSchema = {
   worksFor: [
     {
       "@type": "Organization",
-      "@id": "https://michaelkurr.com/#drkurradvisory",
+      "@id": "https://dr.michaelkurr.com/#drkurradvisory",
       name: "Dr. Kurr Advisory",
       description:
         "Independent platform for fractional C-level and advisory mandates in Pharma & Life Sciences",
-      founder: { "@id": "https://michaelkurr.com/#person" },
+      founder: { "@id": "https://dr.michaelkurr.com/#person" },
       foundingDate: "2026-01",
     },
     {
       "@type": "Organization",
-      "@id": "https://michaelkurr.com/#lemnabio",
+      "@id": "https://dr.michaelkurr.com/#lemnabio",
       name: "Lemna Bio",
       description:
         "Computational drug design company developing complex mini-protein therapeutics",
@@ -46,7 +46,7 @@ export const personSchema = {
     },
     {
       "@type": "Organization",
-      "@id": "https://michaelkurr.com/#thenacapital",
+      "@id": "https://dr.michaelkurr.com/#thenacapital",
       name: "THENA Capital",
       description:
         "UK-based specialist MedTech investor focused on early-stage digital and device companies improving patient outcomes",
@@ -135,14 +135,14 @@ export const bookSchemas = [
   {
     "@context": "https://schema.org",
     "@type": "Book",
-    "@id": "https://michaelkurr.com/#book-reorganisation",
+    "@id": "https://dr.michaelkurr.com/#book-reorganisation",
     name: "Prozessorientierte Reorganisation",
     alternateName:
       "Prozessorientierte Reorganisation: Reengineering-Projekte professionell gestalten und umsetzen",
     author: [
       {
         "@type": "Person",
-        "@id": "https://michaelkurr.com/#author-schuh",
+        "@id": "https://dr.michaelkurr.com/#author-schuh",
         name: "Prof. Dr. Günther Schuh",
         honorificPrefix: "Prof. Dr.",
         givenName: "Günther",
@@ -155,7 +155,7 @@ export const bookSchemas = [
       },
       {
         "@type": "Person",
-        "@id": "https://michaelkurr.com/#author-friedli",
+        "@id": "https://dr.michaelkurr.com/#author-friedli",
         name: "Prof. Dr. Thomas Friedli",
         honorificPrefix: "Prof. Dr.",
         givenName: "Thomas",
@@ -168,17 +168,17 @@ export const bookSchemas = [
       },
       {
         "@type": "Person",
-        "@id": "https://michaelkurr.com/#person",
+        "@id": "https://dr.michaelkurr.com/#person",
         name: "Dr. Michael A. Kurr",
-        url: "https://michaelkurr.com",
-        image: "https://michaelkurr.com/images/profile.jpg",
+        url: "https://dr.michaelkurr.com",
+        image: "https://dr.michaelkurr.com/images/profile.jpg",
         sameAs: "https://www.amazon.com/Michael-A.-Kurr/e/B004597QVS",
       },
     ],
     isbn: "978-3-446-40720-6",
     publisher: {
       "@type": "Organization",
-      "@id": "https://michaelkurr.com/#hanser",
+      "@id": "https://dr.michaelkurr.com/#hanser",
       name: "Carl Hanser Verlag",
       url: "https://www.hanser-elibrary.com",
     },
@@ -195,39 +195,39 @@ export const bookSchemas = [
       "https://www.amazon.de/Prozessorientierte-Reorganisation-Reengineering-Projekte-professionell-gestalten/dp/3446407200",
       "https://www.hanser-elibrary.com/doi/10.3139/9783446410817",
     ],
-    image: "https://michaelkurr.com/images/book-reorganisation.jpg",
+    image: "https://dr.michaelkurr.com/images/book-reorganisation.jpg",
   },
   {
     "@context": "https://schema.org",
     "@type": "Book",
-    "@id": "https://michaelkurr.com/#book-kooperationsmanagement",
+    "@id": "https://dr.michaelkurr.com/#book-kooperationsmanagement",
     name: "Kooperationsmanagement",
     alternateName:
       "Kooperationsmanagement: Systematische Vorbereitung – Gezielter Auf- und Ausbau – Entscheidende Erfolgsfaktoren",
     author: [
       {
         "@type": "Person",
-        "@id": "https://michaelkurr.com/#author-schuh",
+        "@id": "https://dr.michaelkurr.com/#author-schuh",
         name: "Prof. Dr. Günther Schuh",
       },
       {
         "@type": "Person",
-        "@id": "https://michaelkurr.com/#author-friedli",
+        "@id": "https://dr.michaelkurr.com/#author-friedli",
         name: "Prof. Dr. Thomas Friedli",
       },
       {
         "@type": "Person",
-        "@id": "https://michaelkurr.com/#person",
+        "@id": "https://dr.michaelkurr.com/#person",
         name: "Dr. Michael A. Kurr",
-        url: "https://michaelkurr.com",
-        image: "https://michaelkurr.com/images/profile.jpg",
+        url: "https://dr.michaelkurr.com",
+        image: "https://dr.michaelkurr.com/images/profile.jpg",
         sameAs: "https://www.amazon.com/Michael-A.-Kurr/e/B004597QVS",
       },
     ],
     isbn: "978-3-446-40036-8",
     publisher: {
       "@type": "Organization",
-      "@id": "https://michaelkurr.com/#hanser",
+      "@id": "https://dr.michaelkurr.com/#hanser",
       name: "Carl Hanser Verlag",
     },
     datePublished: "2005",
@@ -248,19 +248,19 @@ export const bookSchemas = [
 export const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://michaelkurr.com/#website",
+  "@id": "https://dr.michaelkurr.com/#website",
   name: "Dr. Michael Kurr",
-  url: "https://michaelkurr.com",
+  url: "https://dr.michaelkurr.com",
   description:
     "Personal website of Dr. Michael A. Kurr — Operator & Transformation Leader in Pharma & Life Sciences",
-  publisher: { "@id": "https://michaelkurr.com/#person" },
+  publisher: { "@id": "https://dr.michaelkurr.com/#person" },
   inLanguage: "en",
   potentialAction: {
     "@type": "SearchAction",
     target: {
       "@type": "EntryPoint",
       urlTemplate:
-        "https://www.google.com/search?q=site%3Amichaelkurr.com+{search_term_string}",
+        "https://www.google.com/search?q=site%3Adr.michaelkurr.com+{search_term_string}",
     },
     "query-input": "required name=search_term_string",
   },
@@ -269,13 +269,13 @@ export const websiteSchema = {
 export const profilePageSchema = {
   "@context": "https://schema.org",
   "@type": "ProfilePage",
-  "@id": "https://michaelkurr.com/#profilepage",
+  "@id": "https://dr.michaelkurr.com/#profilepage",
   name: "Dr. Michael Kurr — Operator & Transformation Leader",
-  url: "https://michaelkurr.com",
+  url: "https://dr.michaelkurr.com",
   description:
     "Professional profile of Dr. Michael A. Kurr — Founder of Dr. Kurr Advisory, fractional C-level executive in Pharma & Life Sciences with 20+ years transforming global organizations.",
-  mainEntity: { "@id": "https://michaelkurr.com/#person" },
-  isPartOf: { "@id": "https://michaelkurr.com/#website" },
+  mainEntity: { "@id": "https://dr.michaelkurr.com/#person" },
+  isPartOf: { "@id": "https://dr.michaelkurr.com/#website" },
   inLanguage: "en",
   dateCreated: "2026-01-01",
   dateModified: "2026-02-28",
@@ -296,7 +296,7 @@ export const articleSchemas = [
     author: [
       {
         "@type": "Person",
-        "@id": "https://michaelkurr.com/#person",
+        "@id": "https://dr.michaelkurr.com/#person",
         name: "Dr. Michael A. Kurr",
       },
     ],
@@ -324,7 +324,7 @@ export const articleSchemas = [
     author: [
       {
         "@type": "Person",
-        "@id": "https://michaelkurr.com/#person",
+        "@id": "https://dr.michaelkurr.com/#person",
         name: "Dr. Michael A. Kurr",
       },
     ],
@@ -341,7 +341,7 @@ export const articleSchemas = [
     name: "Potentialorientiertes Kooperationsmanagement in der Zulieferindustrie",
     author: {
       "@type": "Person",
-      "@id": "https://michaelkurr.com/#person",
+      "@id": "https://dr.michaelkurr.com/#person",
       name: "Dr. Michael A. Kurr",
     },
     datePublished: "2003",
@@ -357,42 +357,42 @@ export const articleSchemas = [
 ];
 
 export const siteNavigationElements = [
-  { name: "Home", url: "https://michaelkurr.com/" },
-  { name: "About", url: "https://michaelkurr.com/#about" },
-  { name: "Expertise", url: "https://michaelkurr.com/#expertise" },
-  { name: "Impact", url: "https://michaelkurr.com/#impact" },
-  { name: "Publications", url: "https://michaelkurr.com/#publications" },
-  { name: "Leadership", url: "https://michaelkurr.com/#leadership" },
-  { name: "Recommendations", url: "https://michaelkurr.com/#recommendations" },
-  { name: "Contact", url: "https://michaelkurr.com/#contact" },
-  { name: "Advisory Services", url: "https://michaelkurr.com/advisory/" },
-  { name: "Fractional C-Level Leadership", url: "https://michaelkurr.com/advisory/fractional-c-level-leadership/" },
-  { name: "Global Operating Model Design", url: "https://michaelkurr.com/advisory/global-operating-model-design/" },
-  { name: "AI & Digital Strategy", url: "https://michaelkurr.com/advisory/ai-digital-strategy/" },
-  { name: "Commercial & Medical Operations", url: "https://michaelkurr.com/advisory/commercial-medical-operations/" },
-  { name: "Strategic Partnerships & Alliances", url: "https://michaelkurr.com/advisory/strategic-partnerships-alliances/" },
-  { name: "Organizational Design & People Strategy", url: "https://michaelkurr.com/advisory/organizational-design-people-strategy/" },
-  { name: "The Transformation Circus", url: "https://michaelkurr.com/transformation-circus/" },
-  { name: "Contact Page", url: "https://michaelkurr.com/contact/" },
-  { name: "Imprint", url: "https://michaelkurr.com/imprint/" },
-  { name: "Privacy Policy", url: "https://michaelkurr.com/privacy-policy/" },
-  { name: "Corporate Transformation", url: "https://michaelkurr.com/expertise/corporate-transformation/" },
-  { name: "Process Reengineering", url: "https://michaelkurr.com/expertise/process-reengineering/" },
-  { name: "Commercial & Medical Operations", url: "https://michaelkurr.com/expertise/commercial-medical-operations/" },
-  { name: "Cooperation Management", url: "https://michaelkurr.com/expertise/cooperation-management/" },
-  { name: "Digital & AI Strategy", url: "https://michaelkurr.com/expertise/digital-ai-strategy/" },
-  { name: "People & Leadership", url: "https://michaelkurr.com/expertise/people-leadership/" },
-  { name: "Transparency", url: "https://michaelkurr.com/leadership/transparency/" },
-  { name: "Respect", url: "https://michaelkurr.com/leadership/respect/" },
-  { name: "Empowerment", url: "https://michaelkurr.com/leadership/empowerment/" },
-  { name: "Fairness", url: "https://michaelkurr.com/leadership/fairness/" },
-  { name: "Vision", url: "https://michaelkurr.com/leadership/vision/" },
+  { name: "Home", url: "https://dr.michaelkurr.com/" },
+  { name: "About", url: "https://dr.michaelkurr.com/#about" },
+  { name: "Expertise", url: "https://dr.michaelkurr.com/#expertise" },
+  { name: "Impact", url: "https://dr.michaelkurr.com/#impact" },
+  { name: "Publications", url: "https://dr.michaelkurr.com/#publications" },
+  { name: "Leadership", url: "https://dr.michaelkurr.com/#leadership" },
+  { name: "Recommendations", url: "https://dr.michaelkurr.com/#recommendations" },
+  { name: "Contact", url: "https://dr.michaelkurr.com/#contact" },
+  { name: "Advisory Services", url: "https://dr.michaelkurr.com/advisory/" },
+  { name: "Fractional C-Level Leadership", url: "https://dr.michaelkurr.com/advisory/fractional-c-level-leadership/" },
+  { name: "Global Operating Model Design", url: "https://dr.michaelkurr.com/advisory/global-operating-model-design/" },
+  { name: "AI & Digital Strategy", url: "https://dr.michaelkurr.com/advisory/ai-digital-strategy/" },
+  { name: "Commercial & Medical Operations", url: "https://dr.michaelkurr.com/advisory/commercial-medical-operations/" },
+  { name: "Strategic Partnerships & Alliances", url: "https://dr.michaelkurr.com/advisory/strategic-partnerships-alliances/" },
+  { name: "Organizational Design & People Strategy", url: "https://dr.michaelkurr.com/advisory/organizational-design-people-strategy/" },
+  { name: "The Transformation Circus", url: "https://dr.michaelkurr.com/transformation-circus/" },
+  { name: "Contact Page", url: "https://dr.michaelkurr.com/contact/" },
+  { name: "Imprint", url: "https://dr.michaelkurr.com/imprint/" },
+  { name: "Privacy Policy", url: "https://dr.michaelkurr.com/privacy-policy/" },
+  { name: "Corporate Transformation", url: "https://dr.michaelkurr.com/expertise/corporate-transformation/" },
+  { name: "Process Reengineering", url: "https://dr.michaelkurr.com/expertise/process-reengineering/" },
+  { name: "Commercial & Medical Operations", url: "https://dr.michaelkurr.com/expertise/commercial-medical-operations/" },
+  { name: "Cooperation Management", url: "https://dr.michaelkurr.com/expertise/cooperation-management/" },
+  { name: "Digital & AI Strategy", url: "https://dr.michaelkurr.com/expertise/digital-ai-strategy/" },
+  { name: "People & Leadership", url: "https://dr.michaelkurr.com/expertise/people-leadership/" },
+  { name: "Transparency", url: "https://dr.michaelkurr.com/leadership/transparency/" },
+  { name: "Respect", url: "https://dr.michaelkurr.com/leadership/respect/" },
+  { name: "Empowerment", url: "https://dr.michaelkurr.com/leadership/empowerment/" },
+  { name: "Fairness", url: "https://dr.michaelkurr.com/leadership/fairness/" },
+  { name: "Vision", url: "https://dr.michaelkurr.com/leadership/vision/" },
 ];
 
 export const navigationSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "@id": "https://michaelkurr.com/#site-navigation",
+  "@id": "https://dr.michaelkurr.com/#site-navigation",
   name: "Site Navigation",
   itemListElement: siteNavigationElements.map((item, i) => ({
     "@type": "SiteNavigationElement",
@@ -507,7 +507,7 @@ export function makeProductSchema(url: string, ratingCount: number) {
   };
 }
 
-export const productSchema = makeProductSchema("https://michaelkurr.com/#contact", 148);
+export const productSchema = makeProductSchema("https://dr.michaelkurr.com/#contact", 148);
 
 export function makeBreadcrumbSchema(
   items: { name: string; url: string }[],
@@ -549,7 +549,7 @@ export function makeServiceSchema(service: {
     name: service.name,
     description: service.description,
     url: service.url,
-    provider: { "@id": "https://michaelkurr.com/#person" },
+    provider: { "@id": "https://dr.michaelkurr.com/#person" },
     areaServed: { "@type": "GeoCircle", geoMidpoint: { "@type": "GeoCoordinates", latitude: 50.94, longitude: 6.96 }, geoRadius: "10000" },
     serviceType: "Management Consulting",
     hasOfferCatalog: {
@@ -593,7 +593,7 @@ export const howToEngageSchema = {
       position: 1,
       name: "Initial Discovery Call",
       text: "Schedule a confidential discovery call to discuss your organization's challenges, transformation goals, and leadership needs. Dr. Kurr will assess strategic fit and identify the right engagement model.",
-      url: "https://michaelkurr.com/contact/",
+      url: "https://dr.michaelkurr.com/contact/",
     },
     {
       "@type": "HowToStep",

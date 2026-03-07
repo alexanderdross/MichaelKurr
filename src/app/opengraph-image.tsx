@@ -96,7 +96,7 @@ export default function OGImage() {
               marginTop: "auto",
             }}
           >
-            michaelkurr.com
+            dr.michaelkurr.com
           </span>
         </div>
       </div>

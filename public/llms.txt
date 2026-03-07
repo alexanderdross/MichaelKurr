@@ -75,33 +75,33 @@ An essay by Dr. Michael Kurr on leading corporate transformation in the age of A
 
 ## Site Pages
 
-- Home: https://michaelkurr.com/
-- Advisory Services: https://michaelkurr.com/advisory/
-- Advisory — Fractional C-Level Leadership: https://michaelkurr.com/advisory/fractional-c-level-leadership/
-- Advisory — Global Operating Model Design: https://michaelkurr.com/advisory/global-operating-model-design/
-- Advisory — AI & Digital Strategy: https://michaelkurr.com/advisory/ai-digital-strategy/
-- Advisory — Commercial & Medical Operations: https://michaelkurr.com/advisory/commercial-medical-operations/
-- Advisory — Strategic Partnerships & Alliances: https://michaelkurr.com/advisory/strategic-partnerships-alliances/
-- Advisory — Organizational Design & People Strategy: https://michaelkurr.com/advisory/organizational-design-people-strategy/
-- Expertise — Corporate Transformation: https://michaelkurr.com/expertise/corporate-transformation/
-- Expertise — Process Reengineering: https://michaelkurr.com/expertise/process-reengineering/
-- Expertise — Commercial & Medical Operations: https://michaelkurr.com/expertise/commercial-medical-operations/
-- Expertise — Cooperation Management: https://michaelkurr.com/expertise/cooperation-management/
-- Expertise — Digital & AI Strategy: https://michaelkurr.com/expertise/digital-ai-strategy/
-- Expertise — People & Leadership: https://michaelkurr.com/expertise/people-leadership/
-- Leadership — Transparency: https://michaelkurr.com/leadership/transparency/
-- Leadership — Respect: https://michaelkurr.com/leadership/respect/
-- Leadership — Empowerment: https://michaelkurr.com/leadership/empowerment/
-- Leadership — Fairness: https://michaelkurr.com/leadership/fairness/
-- Leadership — Vision: https://michaelkurr.com/leadership/vision/
-- The Transformation Circus: https://michaelkurr.com/transformation-circus/
-- Contact: https://michaelkurr.com/contact/
-- Imprint: https://michaelkurr.com/imprint/
-- Privacy Policy: https://michaelkurr.com/privacy-policy/
+- Home: https://dr.michaelkurr.com/
+- Advisory Services: https://dr.michaelkurr.com/advisory/
+- Advisory — Fractional C-Level Leadership: https://dr.michaelkurr.com/advisory/fractional-c-level-leadership/
+- Advisory — Global Operating Model Design: https://dr.michaelkurr.com/advisory/global-operating-model-design/
+- Advisory — AI & Digital Strategy: https://dr.michaelkurr.com/advisory/ai-digital-strategy/
+- Advisory — Commercial & Medical Operations: https://dr.michaelkurr.com/advisory/commercial-medical-operations/
+- Advisory — Strategic Partnerships & Alliances: https://dr.michaelkurr.com/advisory/strategic-partnerships-alliances/
+- Advisory — Organizational Design & People Strategy: https://dr.michaelkurr.com/advisory/organizational-design-people-strategy/
+- Expertise — Corporate Transformation: https://dr.michaelkurr.com/expertise/corporate-transformation/
+- Expertise — Process Reengineering: https://dr.michaelkurr.com/expertise/process-reengineering/
+- Expertise — Commercial & Medical Operations: https://dr.michaelkurr.com/expertise/commercial-medical-operations/
+- Expertise — Cooperation Management: https://dr.michaelkurr.com/expertise/cooperation-management/
+- Expertise — Digital & AI Strategy: https://dr.michaelkurr.com/expertise/digital-ai-strategy/
+- Expertise — People & Leadership: https://dr.michaelkurr.com/expertise/people-leadership/
+- Leadership — Transparency: https://dr.michaelkurr.com/leadership/transparency/
+- Leadership — Respect: https://dr.michaelkurr.com/leadership/respect/
+- Leadership — Empowerment: https://dr.michaelkurr.com/leadership/empowerment/
+- Leadership — Fairness: https://dr.michaelkurr.com/leadership/fairness/
+- Leadership — Vision: https://dr.michaelkurr.com/leadership/vision/
+- The Transformation Circus: https://dr.michaelkurr.com/transformation-circus/
+- Contact: https://dr.michaelkurr.com/contact/
+- Imprint: https://dr.michaelkurr.com/imprint/
+- Privacy Policy: https://dr.michaelkurr.com/privacy-policy/
 
 ## Links
 
-- Website: https://michaelkurr.com
+- Website: https://dr.michaelkurr.com
 - LinkedIn: https://www.linkedin.com/in/michaelkurr/
 - Amazon Author Page: https://www.amazon.com/Michael-A.-Kurr/e/B004597QVS
 - University of St. Gallen: https://www.alexandria.unisg.ch/persons/247

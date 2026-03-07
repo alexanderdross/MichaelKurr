@@ -2,7 +2,7 @@
 # Ping search engines with the sitemap URL after deploy
 # Usage: ./scripts/ping-sitemap.sh
 
-SITEMAP_URL="https://michaelkurr.com/sitemap.xml"
+SITEMAP_URL="https://dr.michaelkurr.com/sitemap.xml"
 
 echo "Pinging Google..."
 curl -s "https://www.google.com/ping?sitemap=${SITEMAP_URL}" > /dev/null 2>&1

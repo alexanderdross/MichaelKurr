@@ -6,23 +6,23 @@ import { makeProductSchema, makeNavigationSchema } from "@/data/schemas";
 export const metadata: Metadata = {
   title: "Privacy Policy — Dr. Michael Kurr",
   description:
-    "Privacy policy for michaelkurr.com — learn how Dr. Michael A. Kurr handles your data and protects your privacy.",
+    "Privacy policy for dr.michaelkurr.com — learn how Dr. Michael A. Kurr handles your data and protects your privacy.",
   keywords: [
     "privacy policy",
     "data protection",
     "GDPR",
     "Dr. Michael Kurr",
-    "michaelkurr.com",
+    "dr.michaelkurr.com",
   ],
   alternates: {
-    canonical: "https://michaelkurr.com/privacy-policy/",
+    canonical: "https://dr.dr.michaelkurr.com/privacy-policy/",
   },
   openGraph: {
     title: "Privacy Policy — Dr. Michael Kurr",
     description:
-      "Privacy policy for michaelkurr.com — learn how Dr. Michael A. Kurr handles your data and protects your privacy.",
+      "Privacy policy for dr.michaelkurr.com — learn how Dr. Michael A. Kurr handles your data and protects your privacy.",
     type: "website",
-    url: "https://michaelkurr.com/privacy-policy/",
+    url: "https://dr.dr.michaelkurr.com/privacy-policy/",
     siteName: "Dr. Michael Kurr",
     locale: "en_US",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Privacy Policy — Dr. Michael Kurr",
     description:
-      "Privacy policy for michaelkurr.com — data protection and GDPR compliance.",
+      "Privacy policy for dr.michaelkurr.com — data protection and GDPR compliance.",
     images: [
       {
         url: "/images/profile.jpg",
@@ -56,7 +56,7 @@ export default function PrivacyPolicyPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeProductSchema("https://michaelkurr.com/privacy-policy/", 90)),
+          __html: JSON.stringify(makeProductSchema("https://dr.dr.michaelkurr.com/privacy-policy/", 90)),
         }}
       />
 
@@ -64,7 +64,7 @@ export default function PrivacyPolicyPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeNavigationSchema("https://michaelkurr.com/privacy-policy/", "Privacy Policy")),
+          __html: JSON.stringify(makeNavigationSchema("https://dr.dr.michaelkurr.com/privacy-policy/", "Privacy Policy")),
         }}
       />
 
@@ -80,13 +80,13 @@ export default function PrivacyPolicyPage() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Dr. Michael Kurr",
-                item: "https://michaelkurr.com/",
+                item: "https://dr.dr.michaelkurr.com/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Privacy Policy",
-                item: "https://michaelkurr.com/privacy-policy/",
+                item: "https://dr.dr.michaelkurr.com/privacy-policy/",
               },
             ],
           }),
@@ -174,7 +174,7 @@ export default function PrivacyPolicyPage() {
               <p className="text-lg leading-relaxed text-charcoal/80">
                 The protection of your personal data is of particular concern to
                 us. This privacy policy informs you about how we handle your
-                personal data when you visit our website michaelkurr.com. We
+                personal data when you visit our website dr.michaelkurr.com. We
                 process your data in compliance with the applicable data
                 protection laws, in particular the EU General Data Protection
                 Regulation (GDPR) and the German Federal Data Protection Act
@@ -200,11 +200,11 @@ export default function PrivacyPolicyPage() {
                 <br />
                 Email:{" "}
                 <a
-                  href="mailto:info@michaelkurr.com"
+                  href="mailto:info@dr.michaelkurr.com"
                   title="Send an email to Dr. Michael Kurr"
                   className="text-teal hover:text-teal-light transition-colors"
                 >
-                  info@michaelkurr.com
+                  info@dr.michaelkurr.com
                 </a>
               </address>
             </section>
@@ -332,11 +332,11 @@ export default function PrivacyPolicyPage() {
               <p className="text-lg leading-relaxed text-charcoal/80">
                 To exercise any of these rights, please contact us at{" "}
                 <a
-                  href="mailto:info@michaelkurr.com"
+                  href="mailto:info@dr.michaelkurr.com"
                   title="Contact Dr. Michael Kurr about data protection"
                   className="text-teal hover:text-teal-light transition-colors"
                 >
-                  info@michaelkurr.com
+                  info@dr.michaelkurr.com
                 </a>
                 . You also have the right to lodge a complaint with a
                 supervisory authority.

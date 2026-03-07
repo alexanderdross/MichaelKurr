@@ -31,18 +31,18 @@ export const metadata: Metadata = {
     "market access advisory",
     "MLR optimization",
   ],
-  authors: [{ name: "Dr. Michael A. Kurr", url: "https://michaelkurr.com" }],
+  authors: [{ name: "Dr. Michael A. Kurr", url: "https://dr.michaelkurr.com" }],
   creator: "Dr. Michael A. Kurr",
   publisher: "Dr. Kurr Advisory",
   alternates: {
-    canonical: "https://michaelkurr.com/advisory/",
+    canonical: "https://dr.michaelkurr.com/advisory/",
   },
   openGraph: {
     title: "Advisory Services — Dr. Kurr Advisory",
     description:
       "Fractional C-level leadership and transformation advisory for Pharma & Life Sciences. Strategic clarity, scalable operating models, and profitable growth.",
     type: "website",
-    url: "https://michaelkurr.com/advisory/",
+    url: "https://dr.michaelkurr.com/advisory/",
     locale: "en_US",
     siteName: "Dr. Michael Kurr",
     images: [
@@ -280,7 +280,7 @@ export default function AdvisoryPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeProductSchema("https://michaelkurr.com/advisory/", 217)),
+          __html: JSON.stringify(makeProductSchema("https://dr.michaelkurr.com/advisory/", 217)),
         }}
       />
 
@@ -288,7 +288,7 @@ export default function AdvisoryPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeNavigationSchema("https://michaelkurr.com/advisory/", "Advisory Services")),
+          __html: JSON.stringify(makeNavigationSchema("https://dr.michaelkurr.com/advisory/", "Advisory Services")),
         }}
       />
 
@@ -299,17 +299,17 @@ export default function AdvisoryPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
-            "@id": "https://michaelkurr.com/advisory/#service",
+            "@id": "https://dr.michaelkurr.com/advisory/#service",
             name: "Dr. Kurr Advisory",
             description:
               "Fractional C-level leadership and transformation advisory for Pharma & Life Sciences organizations. Strategic clarity, scalable operating models, and profitable growth.",
-            url: "https://michaelkurr.com/advisory/",
+            url: "https://dr.michaelkurr.com/advisory/",
             provider: {
               "@type": "Person",
-              "@id": "https://michaelkurr.com/#person",
+              "@id": "https://dr.michaelkurr.com/#person",
               name: "Dr. Michael A. Kurr",
-              url: "https://michaelkurr.com",
-              image: "https://michaelkurr.com/images/profile.jpg",
+              url: "https://dr.michaelkurr.com",
+              image: "https://dr.michaelkurr.com/images/profile.jpg",
             },
             areaServed: ["Europe", "Global"],
             serviceType: [
@@ -331,7 +331,7 @@ export default function AdvisoryPage() {
                     name: "Fractional C-Level Leadership",
                     description:
                       "Part-time CCO, CTO, or COO mandates for pharma and life sciences organizations.",
-                    url: "https://michaelkurr.com/advisory/fractional-c-level-leadership/",
+                    url: "https://dr.michaelkurr.com/advisory/fractional-c-level-leadership/",
                   },
                 },
                 {
@@ -341,7 +341,7 @@ export default function AdvisoryPage() {
                     name: "Global Operating Model Design",
                     description:
                       "Scalable operating models balancing centralization with local agility.",
-                    url: "https://michaelkurr.com/advisory/global-operating-model-design/",
+                    url: "https://dr.michaelkurr.com/advisory/global-operating-model-design/",
                   },
                 },
                 {
@@ -351,7 +351,7 @@ export default function AdvisoryPage() {
                     name: "AI & Digital Strategy for Regulated Industries",
                     description:
                       "Practical AI adoption within pharma compliance frameworks.",
-                    url: "https://michaelkurr.com/advisory/ai-digital-strategy/",
+                    url: "https://dr.michaelkurr.com/advisory/ai-digital-strategy/",
                   },
                 },
                 {
@@ -361,7 +361,7 @@ export default function AdvisoryPage() {
                     name: "Commercial & Medical Operations Transformation",
                     description:
                       "Go-to-market and medical affairs operations redesign for efficiency and scale.",
-                    url: "https://michaelkurr.com/advisory/commercial-medical-operations/",
+                    url: "https://dr.michaelkurr.com/advisory/commercial-medical-operations/",
                   },
                 },
                 {
@@ -371,7 +371,7 @@ export default function AdvisoryPage() {
                     name: "Strategic Partnerships & Alliances",
                     description:
                       "Structuring, launching, and managing strategic cooperations and vendor ecosystems.",
-                    url: "https://michaelkurr.com/advisory/strategic-partnerships-alliances/",
+                    url: "https://dr.michaelkurr.com/advisory/strategic-partnerships-alliances/",
                   },
                 },
                 {
@@ -381,7 +381,7 @@ export default function AdvisoryPage() {
                     name: "Organizational Design & People Strategy",
                     description:
                       "Building high-performing global teams and designing organizations that scale.",
-                    url: "https://michaelkurr.com/advisory/organizational-design-people-strategy/",
+                    url: "https://dr.michaelkurr.com/advisory/organizational-design-people-strategy/",
                   },
                 },
               ],
@@ -402,13 +402,13 @@ export default function AdvisoryPage() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Dr. Michael Kurr",
-                item: "https://michaelkurr.com/",
+                item: "https://dr.michaelkurr.com/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Advisory Services",
-                item: "https://michaelkurr.com/advisory/",
+                item: "https://dr.michaelkurr.com/advisory/",
               },
             ],
           }),

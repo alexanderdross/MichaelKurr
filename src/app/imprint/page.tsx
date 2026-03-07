@@ -6,24 +6,24 @@ import { makeProductSchema, makeNavigationSchema } from "@/data/schemas";
 export const metadata: Metadata = {
   title: "Imprint — Dr. Michael Kurr",
   description:
-    "Legal notice (Impressum) for michaelkurr.com — the personal website of Dr. Michael A. Kurr, Founder of Dr. Kurr Advisory.",
+    "Legal notice (Impressum) for dr.michaelkurr.com — the personal website of Dr. Michael A. Kurr, Founder of Dr. Kurr Advisory.",
   keywords: [
     "imprint",
     "legal notice",
     "Impressum",
     "Dr. Michael Kurr",
     "Dr. Kurr Advisory",
-    "michaelkurr.com",
+    "dr.michaelkurr.com",
   ],
   alternates: {
-    canonical: "https://michaelkurr.com/imprint/",
+    canonical: "https://dr.dr.michaelkurr.com/imprint/",
   },
   openGraph: {
     title: "Imprint — Dr. Michael Kurr",
     description:
-      "Legal notice (Impressum) for michaelkurr.com — the personal website of Dr. Michael A. Kurr, Founder of Dr. Kurr Advisory.",
+      "Legal notice (Impressum) for dr.michaelkurr.com — the personal website of Dr. Michael A. Kurr, Founder of Dr. Kurr Advisory.",
     type: "website",
-    url: "https://michaelkurr.com/imprint/",
+    url: "https://dr.dr.michaelkurr.com/imprint/",
     siteName: "Dr. Michael Kurr",
     locale: "en_US",
     images: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Imprint — Dr. Michael Kurr",
     description:
-      "Legal notice (Impressum) for michaelkurr.com — Dr. Michael A. Kurr, Founder of Dr. Kurr Advisory.",
+      "Legal notice (Impressum) for dr.michaelkurr.com — Dr. Michael A. Kurr, Founder of Dr. Kurr Advisory.",
     images: [
       {
         url: "/images/profile.jpg",
@@ -57,7 +57,7 @@ export default function ImprintPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeProductSchema("https://michaelkurr.com/imprint/", 91)),
+          __html: JSON.stringify(makeProductSchema("https://dr.dr.michaelkurr.com/imprint/", 91)),
         }}
       />
 
@@ -65,7 +65,7 @@ export default function ImprintPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(makeNavigationSchema("https://michaelkurr.com/imprint/", "Imprint")),
+          __html: JSON.stringify(makeNavigationSchema("https://dr.dr.michaelkurr.com/imprint/", "Imprint")),
         }}
       />
 
@@ -81,13 +81,13 @@ export default function ImprintPage() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Dr. Michael Kurr",
-                item: "https://michaelkurr.com/",
+                item: "https://dr.dr.michaelkurr.com/",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Imprint",
-                item: "https://michaelkurr.com/imprint/",
+                item: "https://dr.dr.michaelkurr.com/imprint/",
               },
             ],
           }),
@@ -102,7 +102,7 @@ export default function ImprintPage() {
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "Dr. Michael Kurr",
-            url: "https://michaelkurr.com/",
+            url: "https://dr.dr.michaelkurr.com/",
             creator: {
               "@type": "Organization",
               "@id": "https://dross.net/#media",
@@ -224,7 +224,7 @@ export default function ImprintPage() {
                   title="Contact Dr. Michael Kurr"
                   className="text-teal hover:text-teal-light transition-colors"
                 >
-                  info@michaelkurr.com
+                  info@dr.michaelkurr.com
                 </a>
                 <br />
                 Phone:{" "}
