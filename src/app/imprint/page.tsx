@@ -220,8 +220,8 @@ export default function ImprintPage() {
               <p className="text-lg leading-relaxed text-charcoal/80">
                 Email:{" "}
                 <a
-                  href="mailto:info@michaelkurr.com"
-                  title="Send an email to Dr. Michael Kurr"
+                  href="/contact"
+                  title="Contact Dr. Michael Kurr"
                   className="text-teal hover:text-teal-light transition-colors"
                 >
                   info@michaelkurr.com
