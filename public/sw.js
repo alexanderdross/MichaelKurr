@@ -1,6 +1,6 @@
 /// <reference lib="webworker" />
 
-const CACHE_VERSION = 5;
+const CACHE_VERSION = 6;
 const CACHE_NAME = `mk-v${CACHE_VERSION}`;
 const OFFLINE_URL = "/offline.html";
 
@@ -37,6 +37,22 @@ const PRECACHE_URLS = [
   "/leadership/empowerment/",
   "/leadership/fairness/",
   "/leadership/vision/",
+  // Industries subpages
+  "/industries/pharma-biotech/",
+  "/industries/medtech-diagnostics/",
+  "/industries/life-sciences-services/",
+  "/industries/healthtech-digital-health/",
+  "/industries/automotive-mobility/",
+  "/industries/industrial-manufacturing/",
+  "/industries/technology-saas/",
+  "/industries/energy-chemicals/",
+  "/industries/consumer-goods/",
+  "/industries/financial-services/",
+  "/industries/investors-venture-capital/",
+  "/industries/boards-governance/",
+  "/industries/executive-education/",
+  "/industries/expert-networks/",
+  "/industries/interim-turnaround/",
 ];
 
 self.addEventListener("install", (event) => {
