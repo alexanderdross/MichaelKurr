@@ -858,7 +858,7 @@ export default function AdvisoryPage() {
               <span className="block text-gold-dark text-sm font-semibold tracking-[0.2em] uppercase mb-3">
                 Industries Served
               </span>
-              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">
+              <h2 id="industries" className="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4 scroll-mt-24">
                 Who This Is For
               </h2>
               <p className="text-lg text-charcoal max-w-2xl mx-auto">

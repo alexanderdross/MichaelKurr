@@ -58,11 +58,18 @@ const nextConfig: NextConfig = {
     },
   },
   async redirects() {
-    return REDIRECT_SECTIONS.map((section) => ({
-      source: `/${section}`,
-      destination: `/#${section}`,
-      permanent: false,
-    }));
+    return [
+      ...REDIRECT_SECTIONS.map((section) => ({
+        source: `/${section}`,
+        destination: `/#${section}`,
+        permanent: false,
+      })),
+      {
+        source: "/industries",
+        destination: "/advisory/#industries",
+        permanent: false,
+      },
+    ];
   },
   async headers() {
     return [
