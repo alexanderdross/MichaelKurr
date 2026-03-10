@@ -8,6 +8,7 @@ import {
 import ErrorBoundary from "@/components/ErrorBoundary";
 
 import ServiceWorkerRegistration from "@/components/ServiceWorkerRegistration";
+import InstallPrompt from "@/components/InstallPrompt";
 
 const inter = localFont({
   src: "../fonts/inter-latin-wght-normal.woff2",
@@ -123,13 +124,6 @@ export default function RootLayout({
     <html lang="en" dir="ltr" className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <meta name="theme-color" content="#1B2A4A" />
-        <link
-          rel="preload"
-          as="image"
-          type="image/webp"
-          imageSrcSet="/images/profile-256.webp 256w, /images/profile-512.webp 512w, /images/profile.webp 800w"
-          imageSizes="(max-width: 640px) 144px, (max-width: 1024px) 224px, 256px"
-        />
         <link rel="manifest" href="/manifest.json" />
 
 
@@ -155,6 +149,7 @@ export default function RootLayout({
         </ErrorBoundary>
 
         <ServiceWorkerRegistration />
+        <InstallPrompt />
       </body>
     </html>
   );

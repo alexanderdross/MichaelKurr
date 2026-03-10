@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const academicWorks = [
   {
     title:
@@ -52,30 +54,15 @@ export default function Publications() {
           {/* Book 1 */}
           <article className="fade-in flex flex-col sm:flex-row gap-8 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
             <div className="shrink-0 flex justify-center" aria-hidden="true">
-              <div className="w-40 h-56 rounded-lg overflow-hidden shadow-md">
-                <picture>
-                  <source
-                    type="image/webp"
-                    srcSet="/images/book-reorganisation-160.webp 160w, /images/book-reorganisation-320.webp 320w"
-                    sizes="160px"
-                  />
-                  <source
-                    type="image/jpeg"
-                    srcSet="/images/book-reorganisation-160.jpg 160w, /images/book-reorganisation-320.jpg 320w"
-                    sizes="160px"
-                  />
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/images/book-reorganisation-160.jpg"
-                    alt="Book cover: Prozessorientierte Reorganisation by Günther Schuh, Thomas Friedli, and Michael A. Kurr"
-                    title="Prozessorientierte Reorganisation — Carl Hanser Verlag, 2006"
-                    width={160}
-                    height={224}
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full h-full object-cover"
-                  />
-                </picture>
+              <div className="w-40 h-56 rounded-lg overflow-hidden shadow-md relative">
+                <Image
+                  src="/images/book-reorganisation.jpg"
+                  alt="Book cover: Prozessorientierte Reorganisation by Günther Schuh, Thomas Friedli, and Michael A. Kurr"
+                  title="Prozessorientierte Reorganisation — Carl Hanser Verlag, 2006"
+                  fill
+                  sizes="160px"
+                  className="object-cover"
+                />
               </div>
             </div>
             <div className="flex-1">

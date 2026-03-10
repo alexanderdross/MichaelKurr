@@ -32,12 +32,12 @@ const timeline = [
     titleAttr: "Michael Kurr – Global Head of Human Pharma Services at Boehringer Ingelheim (2019–2025)",
   },
   {
-    date: "2013 – 2019",
-    dateTime: "2013/2019",
+    date: "2011 – 2019",
+    dateTime: "2011/2019",
     title: "Head of Business Service Excellence & Senior Global Program Lead",
     org: "Novartis",
     href: "https://www.novartis.com/",
-    titleAttr: "Michael Kurr – Head of Business Service Excellence & Senior Global Program Lead at Novartis (2013–2019)",
+    titleAttr: "Michael Kurr – Head of Business Service Excellence & Senior Global Program Lead at Novartis (2011–2019)",
   },
   {
     date: "Earlier",

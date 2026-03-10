@@ -1707,19 +1707,19 @@ export default function TransformationCircusPage() {
               Want to discuss pharma transformation, AI strategy, or taming your
               own circus? Let&rsquo;s connect.
             </p>
-            <div className="fade-in flex flex-col sm:flex-row justify-center gap-4 w-full max-w-md mx-auto">
+            <div className="fade-in flex flex-col sm:flex-row justify-center items-center gap-4">
               <a
                 href="https://www.linkedin.com/in/michaelkurr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Connect with Dr. Michael Kurr on LinkedIn"
-                className="flex-1 px-8 py-3 bg-navy text-white font-semibold rounded hover:bg-navy-light transition-colors duration-200 text-center"
+                className="whitespace-nowrap px-8 py-3 bg-navy text-white font-semibold rounded hover:bg-navy-light transition-colors duration-200 text-center"
               >
                 Connect on LinkedIn
               </a>
               <Link
                 href="/contact/"
-                className="flex-1 px-8 py-3 border border-navy text-navy font-semibold rounded hover:bg-navy hover:text-white transition-all duration-200 text-center"
+                className="whitespace-nowrap px-8 py-3 border border-navy text-navy font-semibold rounded hover:bg-navy hover:text-white transition-all duration-200 text-center"
               >
                 Get in Touch
               </Link>

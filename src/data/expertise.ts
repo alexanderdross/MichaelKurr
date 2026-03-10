@@ -39,7 +39,7 @@ export const expertiseData: ExpertiseItem[] = [
       {
         heading: "Transforming at Novartis",
         content:
-          "During eight years at Novartis (2013–2019), Dr. Kurr led transformation initiatives across Global Business Services and Product Lifecycle Services in Europe. As Senior Global Program Lead for GBS, he drove cross-functional service integration across Basel and Milan. Later, as Head of Business Service Excellence for Region Europe, he standardized and scaled service delivery models across the continent.",
+          "During eight years at Novartis (2011–2019), Dr. Kurr led transformation initiatives across Global Business Services and Product Lifecycle Services in Europe. As Senior Global Program Lead for GBS, he drove cross-functional service integration across Basel and Milan. Later, as Head of Business Service Excellence for Region Europe, he standardized and scaled service delivery models across the continent.",
       },
     ],
     highlights: [
