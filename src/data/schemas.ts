@@ -396,6 +396,11 @@ export const siteNavigationElements = [
   { name: "Financial Services", url: "https://dr.michaelkurr.com/industries/financial-services/" },
   { name: "Technology & SaaS", url: "https://dr.michaelkurr.com/industries/technology-saas/" },
   { name: "Energy & Chemicals", url: "https://dr.michaelkurr.com/industries/energy-chemicals/" },
+  { name: "Investors & Venture Capital", url: "https://dr.michaelkurr.com/industries/investors-venture-capital/" },
+  { name: "Boards & Governance", url: "https://dr.michaelkurr.com/industries/boards-governance/" },
+  { name: "Executive Education & Speaking", url: "https://dr.michaelkurr.com/industries/executive-education/" },
+  { name: "Interim & Turnaround Management", url: "https://dr.michaelkurr.com/industries/interim-turnaround/" },
+  { name: "Expert Networks & Micro-Advisory", url: "https://dr.michaelkurr.com/industries/expert-networks/" },
 ];
 
 export const navigationSchema = {

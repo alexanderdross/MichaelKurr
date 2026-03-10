@@ -515,6 +515,266 @@ export const industriesData: Industry[] = [
       },
     ],
   },
+  {
+    slug: "investors-venture-capital",
+    title: "Investors & Venture Capital",
+    tagline:
+      "Commercial due diligence, portfolio company advisory, and strategic guidance for MedTech, biotech, and digital health investors",
+    description:
+      "Investors in life sciences — venture capital firms, private equity, family offices, and corporate venture arms — need deep commercial and operational insight to evaluate portfolio opportunities and support portfolio companies. Dr. Kurr provides the practitioner perspective that pure financial analysts cannot: having built and scaled global commercial organizations at Boehringer Ingelheim and Novartis, he can assess whether a company's commercial strategy, operating model, and organizational readiness will translate into sustainable growth. As Fellow at THENA Capital, a UK-based specialist MedTech investor, he applies this lens to early-stage digital and device companies daily.",
+    sections: [
+      {
+        heading: "Commercial Due Diligence",
+        content:
+          "When evaluating pharma, biotech, or MedTech investments, commercial viability is often the make-or-break factor. Dr. Kurr provides commercial due diligence that goes beyond market sizing and competitive landscape — assessing organizational readiness, go-to-market capability, content and channel operations maturity, and scalability of the commercial model. His 20+ years operating inside top pharma companies provides pattern recognition that identifies risks and opportunities invisible to desk-based analysis.",
+      },
+      {
+        heading: "Portfolio Company Advisory",
+        content:
+          "Post-investment, portfolio companies need hands-on commercial and operational guidance to achieve their growth targets. As an operating partner or venture partner model, Dr. Kurr embeds within portfolio companies to accelerate commercial readiness — from market access and pricing strategy to sales organization design and launch planning. His fractional CCO model at Lemna Bio demonstrates exactly this approach: providing C-level commercial capability to a computational drug design company without the overhead of a full-time hire.",
+      },
+      {
+        heading: "Market Access & Pricing Assessment",
+        content:
+          "For investors evaluating therapeutic or diagnostic assets, understanding the reimbursement landscape and pricing potential is critical to investment thesis validation. Dr. Kurr assesses market access strategies, payer engagement plans, and health economics positioning — translating complex regulatory and commercial dynamics into investor-friendly frameworks for decision-making.",
+      },
+      {
+        heading: "Board Service & Strategic Governance",
+        content:
+          "Investors increasingly seek board members who combine operational expertise with strategic perspective. Dr. Kurr serves on advisory boards providing governance, commercial strategy guidance, and operational oversight. His academic foundation — doctorate from University of St. Gallen and executive certifications from MIT Sloan and IMD — complements his practitioner experience, offering boards the rigorous, evidence-based perspective they need for critical decisions.",
+      },
+    ],
+    highlights: [
+      { value: "THENA", label: "Fellow at specialist MedTech investor" },
+      { value: "Lemna Bio", label: "Active fractional CCO engagement" },
+      { value: "180%", label: "Growth in fractional pharma placements since 2023" },
+    ],
+    offerings: [
+      "Commercial due diligence for pharma and MedTech assets",
+      "Operating partner / venture partner advisory",
+      "Market access and pricing assessment",
+      "Portfolio company board service",
+      "Post-acquisition integration advisory",
+    ],
+    relatedLinks: [
+      {
+        label: "THENA Capital — Specialist MedTech Investor",
+        href: "https://thenacapital.com/",
+      },
+      {
+        label: "Lemna Bio — Computational Drug Design",
+        href: "https://www.lemnabio.com/",
+      },
+    ],
+  },
+  {
+    slug: "boards-governance",
+    title: "Boards & Governance",
+    tagline:
+      "Independent non-executive director and supervisory board roles providing strategic oversight and industry expertise for life sciences and cross-industry companies",
+    description:
+      "Effective boards require directors who combine strategic vision with operational depth. Dr. Kurr brings over 20 years of C-level and VP experience across top pharma companies (Boehringer Ingelheim, Novartis), automotive (Daimler), and specialty materials (Schott) — complemented by a doctorate and executive MBA from University of St. Gallen, and executive education from MIT Sloan and IMD. His broad industry exposure, academic rigor, and published expertise in transformation and cooperation management make him a valuable addition to boards seeking experienced, independent governance.",
+    sections: [
+      {
+        heading: "Non-Executive Director Roles",
+        content:
+          "As a non-executive director, Dr. Kurr provides independent strategic oversight grounded in deep operational experience. Having built organizations from scratch and led enterprise-wide transformations, he brings the practitioner perspective that boards need to evaluate management proposals, challenge assumptions, and ensure strategic alignment. His experience spans pharma, MedTech, automotive, and manufacturing — providing the cross-industry lens that enriches board-level discussions.",
+      },
+      {
+        heading: "Supervisory Board Service",
+        content:
+          "In the German and Swiss corporate governance tradition, the supervisory board plays a critical role in overseeing management, approving strategy, and ensuring compliance. Dr. Kurr's German-Swiss professional background, combined with his academic foundation at University of St. Gallen, positions him uniquely for supervisory board roles at European companies. His expertise in corporate transformation, process reengineering, and cooperation management — documented in two published books — provides the structured, evidence-based approach that supervisory boards value.",
+      },
+      {
+        heading: "Strategic Governance Advisory",
+        content:
+          "Beyond formal board roles, Dr. Kurr advises companies on governance structure, board composition, and strategic oversight frameworks. For pre-IPO companies, this includes preparing for public company governance requirements. For private companies, this means designing governance structures that balance founder control with investor protection and strategic guidance.",
+      },
+      {
+        heading: "Pre-IPO Board Preparation",
+        content:
+          "Companies approaching IPO need board members with the credibility, experience, and governance skills that public markets demand. Dr. Kurr helps companies build board-ready governance structures, establish appropriate committees, and develop the reporting and compliance frameworks needed for public company status — while providing the pharma and life sciences domain expertise that sector-focused investors value.",
+      },
+    ],
+    highlights: [
+      { value: "20+", label: "Years of C-level and VP experience" },
+      { value: "5", label: "Major global organizations served" },
+      { value: "Dr. oec.", label: "Doctorate from University of St. Gallen" },
+    ],
+    offerings: [
+      "Independent non-executive director roles",
+      "Supervisory board membership (DACH region)",
+      "Strategic governance advisory",
+      "Pre-IPO board preparation",
+      "Board composition and structure advisory",
+    ],
+    relatedLinks: [
+      {
+        label: "Dr. Kurr Advisory — Strategic Clarity & Scalable Operating Models",
+        href: "https://dr.michaelkurr.com/advisory/",
+      },
+      {
+        label: "THENA Capital — MedTech Investment",
+        href: "https://thenacapital.com/",
+      },
+    ],
+  },
+  {
+    slug: "executive-education",
+    title: "Executive Education & Speaking",
+    tagline:
+      "Keynote speeches, corporate workshops, and executive education programs on transformation, leadership, and pharma innovation",
+    description:
+      "Dr. Kurr's combination of published methodology, hands-on transformation experience, and compelling personal story — building a tenfold organization from scratch in four years — makes him a sought-after speaker and educator. As co-author of two books on organizational transformation and cooperation management (Carl Hanser Verlag), former Head of Management Support at University of St. Gallen, and featured executive in CIOLook Magazine, he brings both academic rigor and practical insight to every engagement.",
+    sections: [
+      {
+        heading: "Conference Keynotes",
+        content:
+          "Dr. Kurr delivers keynote speeches on transformation, commercial operations, and leadership at pharma, digital health, and cross-industry conferences. His talks are built on real stories — not theory — from building Boehringer Ingelheim's global services organization, leading transformation at Novartis, and advising biotech companies through his fractional leadership model. Topics include: 'From Zero to Global Scale: Building World-Class Service Organizations,' 'Structure Follows Process Follows Strategy: A Practitioner's Guide to Transformation,' 'The Content Supply Chain Revolution in Pharma,' and 'Leading Through Uncertainty: Five Traits That Matter.'",
+      },
+      {
+        heading: "Corporate Executive Workshops",
+        content:
+          "Half-day and full-day workshops for leadership teams facing transformation challenges. Dr. Kurr facilitates structured sessions on operating model design, process reengineering, cooperation management, and organizational change — drawing on the frameworks from his published books and adapting them to each organization's specific context. These workshops are designed to produce actionable roadmaps, not just inspiration.",
+      },
+      {
+        heading: "University & MBA Guest Lectures",
+        content:
+          "With his academic roots at University of St. Gallen — where he served as Head of Management Support at the Institute for Technology Management — Dr. Kurr brings the rare combination of academic depth and executive experience to university settings. He delivers guest lectures for executive MBA, EMBA, and executive education programs at institutions such as IMD, University of St. Gallen, and MIT Sloan, covering corporate transformation, cooperation management, and AI strategy in regulated industries.",
+      },
+      {
+        heading: "Panel Moderation & Industry Events",
+        content:
+          "Dr. Kurr moderates panels at industry events including HLTH, Fierce Pharma Week, the Pharma Omnichannel HCP Engagement Conference, and the Digital Breakthrough for Pharma Summit. His deep industry knowledge and structured approach to discussion ensure panels that are substantive and actionable, not just performative.",
+      },
+    ],
+    highlights: [
+      { value: "2", label: "Published books (Carl Hanser Verlag)" },
+      { value: "CIOLook", label: "Featured in CIOLook Magazine" },
+      { value: "St. Gallen", label: "Academic roots at HSG" },
+    ],
+    offerings: [
+      "Conference keynote speeches",
+      "Corporate executive workshops (half-day / full-day)",
+      "University and MBA guest lectures",
+      "Panel moderation at industry events",
+      "Custom executive education programs",
+    ],
+    relatedLinks: [
+      {
+        label: "CIOLook Feature — From Concept to Reality",
+        href: "https://ciolook.com/from-concept-to-reality-michael-kurr-building-internal-service-organizations-for-excellence-in-customer-experience/",
+      },
+      {
+        label: "Book: Prozessorientierte Reorganisation — Hanser Verlag",
+        href: "https://www.hanser-elibrary.com/doi/10.3139/9783446410817",
+      },
+    ],
+  },
+  {
+    slug: "interim-turnaround",
+    title: "Interim & Turnaround Management",
+    tagline:
+      "Embedded executive leadership for post-merger integration, organizational turnaround, and commercial function stabilization",
+    description:
+      "When organizations face critical transitions — post-merger integration, executive departures, underperforming commercial operations, or regulatory crises — they need experienced leaders who can step in immediately and deliver results. Dr. Kurr's proven ability to build from zero (not just optimize existing operations), combined with his management consulting background at Schuh & Co. and his comfort with ambiguity and complex corporate environments, makes him uniquely suited for interim management and turnaround engagements.",
+    sections: [
+      {
+        heading: "Post-Merger Integration",
+        content:
+          "Integrating commercial operations after mergers and acquisitions is one of the highest-stakes challenges in corporate leadership. Overlapping organizations, conflicting processes, cultural differences, and customer uncertainty must be managed simultaneously while maintaining commercial momentum. Dr. Kurr brings the operating model design expertise — structure follows process follows strategy — needed to integrate commercial functions efficiently. His experience building organizations from scratch at Boehringer Ingelheim demonstrates the organizational design capability that M&A integration demands.",
+      },
+      {
+        heading: "Commercial Organization Turnaround",
+        content:
+          "When go-to-market organizations underperform — declining market share, inefficient operations, misaligned channel strategies, or talent gaps — the solution requires both diagnostic rigor and execution speed. Dr. Kurr applies his process-oriented reorganization methodology (published in his book with Carl Hanser Verlag) to identify root causes, redesign operating models, and rebuild commercial capability. His approach combines radical change with the human factor — ensuring that turnaround programs are sustainable, not just disruptive.",
+      },
+      {
+        heading: "Executive Transition Leadership",
+        content:
+          "When key executives depart — particularly in commercial, operations, or transformation roles — organizations need interim leaders who can maintain momentum and strategic direction while permanent replacements are recruited. Dr. Kurr's fractional leadership model provides this bridge: experienced C-level capability on flexible terms, with the credibility and track record to maintain stakeholder confidence during transitions.",
+      },
+      {
+        heading: "Crisis Management & Stabilization",
+        content:
+          "Regulatory challenges, market disruptions, or operational crises require leaders who can manage ambiguity and make decisions under pressure. Dr. Kurr's management philosophy — 'avoid assumptions, reality always looks different' — is purpose-built for crisis contexts. His experience across multiple industries (pharma, automotive, manufacturing) provides the pattern recognition needed to identify what matters most and act decisively when stakes are highest.",
+      },
+    ],
+    highlights: [
+      { value: "10x", label: "Built organization from scratch at Boehringer" },
+      { value: "4 yrs", label: "Zero to full global scale" },
+      { value: "Schuh & Co.", label: "Management consulting foundation" },
+    ],
+    offerings: [
+      "Post-merger commercial integration",
+      "Go-to-market organization turnaround",
+      "Interim C-level leadership",
+      "Crisis management and stabilization",
+      "Organizational restructuring and redesign",
+    ],
+    relatedLinks: [
+      {
+        label: "Book: Prozessorientierte Reorganisation — Amazon",
+        href: "https://www.amazon.de/Prozessorientierte-Reorganisation-Reengineering-Projekte-professionell-gestalten/dp/3446407200",
+      },
+      {
+        label: "Dr. Kurr Advisory — Fractional C-Level Leadership",
+        href: "https://dr.michaelkurr.com/advisory/fractional-c-level-leadership/",
+      },
+    ],
+  },
+  {
+    slug: "expert-networks",
+    title: "Expert Networks & Micro-Advisory",
+    tagline:
+      "High-value, short-format advisory consultations through premium expert networks for investors, corporations, and strategic decision-makers",
+    description:
+      "Expert networks connect decision-makers — investors, corporate strategists, and consultants — with industry practitioners who can provide rapid, high-value insight on specific topics. Dr. Kurr's 20+ years of operational experience across pharma commercial operations, content supply chains, omnichannel transformation, and cooperation management makes him a sought-after expert across multiple platforms. His combination of practitioner depth, published methodology, and current market activity (Fractional CCO at Lemna Bio, Fellow at THENA Capital) ensures that his insights are both authoritative and current.",
+    sections: [
+      {
+        heading: "Investment Research Consultations",
+        content:
+          "Institutional investors, hedge funds, and private equity firms frequently seek expert consultations to validate investment theses, assess competitive dynamics, and understand industry trends. Dr. Kurr provides insight on pharma commercial model transformation, content supply chain economics, omnichannel strategy maturity, CDMO and outsourcing trends, and the competitive landscape across Boehringer Ingelheim, Novartis, and the broader pharma sector. His perspective is uniquely valuable because it combines deep insider knowledge with current advisory market activity.",
+      },
+      {
+        heading: "Corporate Strategy Consultations",
+        content:
+          "Corporations evaluating strategic decisions — entering new markets, restructuring operations, building service organizations, or evaluating partnership strategies — benefit from rapid access to practitioners who have faced similar challenges. Dr. Kurr provides targeted, high-impact consultations on operating model design, cooperation management, content operations, and organizational transformation — distilling 20+ years of experience into actionable guidance within a single call or short engagement.",
+      },
+      {
+        heading: "Premium Expert Network Platforms",
+        content:
+          "Dr. Kurr is available through leading expert networks including GLG (Gerson Lehrman Group), AlphaSights, Guidepoint, Third Bridge, Tegus, Prosapient, and Dialectica. These platforms provide structured, compliance-screened engagements that connect his expertise with the specific questions decision-makers need answered — efficiently and at premium rates reflecting the depth and currency of his knowledge.",
+      },
+      {
+        heading: "Topics of Expertise",
+        content:
+          "Key topics Dr. Kurr is sought for include: pharma commercial model transformation, content supply chain design and optimization, omnichannel HCP engagement strategy, global business services (GBS) design, cooperation management and strategic alliances, digital factory and AI strategy in regulated industries, automotive and manufacturing operating model transformation, and organizational design for scale. Each topic is backed by hands-on experience — not just advisory perspective.",
+      },
+    ],
+    highlights: [
+      { value: "7+", label: "Expert network platforms available" },
+      { value: "$500–1K", label: "Hourly consultation rate" },
+      { value: "20+", label: "Years of practitioner expertise" },
+    ],
+    offerings: [
+      "Investment research consultations (VC, PE, hedge funds)",
+      "Corporate strategy micro-advisory",
+      "Expert calls via GLG, AlphaSights, Guidepoint",
+      "Third Bridge, Tegus, Prosapient, Dialectica availability",
+      "Rapid-turnaround industry insight briefings",
+    ],
+    relatedLinks: [
+      {
+        label: "GLG — Gerson Lehrman Group",
+        href: "https://glginsights.com/",
+      },
+      {
+        label: "AlphaSights — Expert Network",
+        href: "https://www.alphasights.com/",
+      },
+    ],
+  },
 ];
 
 export function getIndustryBySlug(slug: string): Industry | undefined {

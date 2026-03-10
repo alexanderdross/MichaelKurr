@@ -235,6 +235,54 @@ function ZapIcon({ className = iconSmClass }: { className?: string }) {
   );
 }
 
+function TrendingUpIcon({ className = iconSmClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+      <polyline points="17 6 23 6 23 12" />
+    </svg>
+  );
+}
+
+function ShieldIcon({ className = iconSmClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+    </svg>
+  );
+}
+
+function MicIcon({ className = iconSmClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" />
+      <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+      <line x1="12" y1="19" x2="12" y2="23" />
+      <line x1="8" y1="23" x2="16" y2="23" />
+    </svg>
+  );
+}
+
+function RefreshIcon({ className = iconSmClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="23 4 23 10 17 10" />
+      <polyline points="1 20 1 14 7 14" />
+      <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" />
+    </svg>
+  );
+}
+
+function GlobeIcon({ className = iconSmClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="10" />
+      <line x1="2" y1="12" x2="22" y2="12" />
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+    </svg>
+  );
+}
+
 function BoltIcon({ className = iconClass }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -940,6 +988,68 @@ export default function AdvisoryPage() {
                   "Joint venture & alliance advisory",
                   "Shared services optimization",
                   "Change management at scale",
+                ]}
+              />
+            </div>
+
+            {/* Specialized Engagements */}
+            <h3 className="fade-in font-heading text-xl font-semibold text-navy mb-4 mt-12">
+              Specialized Engagements
+            </h3>
+            <div className="fade-in grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <IndustryCard
+                icon={<TrendingUpIcon />}
+                title="Investors & Venture Capital"
+                slug="investors-venture-capital"
+                examples={[
+                  "Commercial due diligence",
+                  "Portfolio company advisory",
+                  "Market access & pricing assessment",
+                  "Operating partner / venture partner",
+                ]}
+              />
+              <IndustryCard
+                icon={<ShieldIcon />}
+                title="Boards & Governance"
+                slug="boards-governance"
+                examples={[
+                  "Non-executive director roles",
+                  "Supervisory board service (DACH)",
+                  "Strategic governance advisory",
+                  "Pre-IPO board preparation",
+                ]}
+              />
+              <IndustryCard
+                icon={<MicIcon />}
+                title="Executive Education & Speaking"
+                slug="executive-education"
+                examples={[
+                  "Conference keynote speeches",
+                  "Corporate executive workshops",
+                  "University & MBA guest lectures",
+                  "Panel moderation",
+                ]}
+              />
+              <IndustryCard
+                icon={<RefreshIcon />}
+                title="Interim & Turnaround Management"
+                slug="interim-turnaround"
+                examples={[
+                  "Post-merger integration",
+                  "Commercial organization turnaround",
+                  "Executive transition leadership",
+                  "Crisis management & stabilization",
+                ]}
+              />
+              <IndustryCard
+                icon={<GlobeIcon />}
+                title="Expert Networks & Micro-Advisory"
+                slug="expert-networks"
+                examples={[
+                  "GLG, AlphaSights, Guidepoint calls",
+                  "Investment research consultations",
+                  "Corporate strategy micro-advisory",
+                  "Rapid-turnaround industry briefings",
                 ]}
               />
             </div>
