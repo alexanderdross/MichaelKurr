@@ -364,7 +364,7 @@ function IndustryCard({
       href={`/industries/${slug}/`}
       title={`${title} — Dr. Kurr Advisory: Industry expertise and transformation services`}
       aria-label={`Learn more about Dr. Kurr's advisory services for ${title} organizations`}
-      className="group bg-offwhite rounded-xl border border-gray-200 p-6 hover:border-gold/40 hover:shadow-md transition-all duration-300"
+      className="group bg-white rounded-xl border border-gray-200 p-6 shadow-sm hover:border-gold/40 hover:shadow-md transition-all duration-300"
     >
       <div className="mb-3" aria-hidden="true">
         {icon}
