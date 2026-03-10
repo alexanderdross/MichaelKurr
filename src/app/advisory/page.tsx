@@ -179,6 +179,62 @@ function MonitorIcon({ className = iconSmClass }: { className?: string }) {
   );
 }
 
+function CarIcon({ className = iconSmClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M5 17h14M3 11l1.5-5h15L21 11" />
+      <rect x="3" y="11" width="18" height="6" rx="1" />
+      <circle cx="7" cy="17" r="2" />
+      <circle cx="17" cy="17" r="2" />
+    </svg>
+  );
+}
+
+function FactoryIcon({ className = iconSmClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M2 20h20M4 20V10l4 2V8l4 2V6l4 2V4h4v16" />
+      <path d="M6 16h.01M10 16h.01M14 16h.01M18 16h.01" />
+    </svg>
+  );
+}
+
+function ShoppingCartIcon({ className = iconSmClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="9" cy="21" r="1" />
+      <circle cx="20" cy="21" r="1" />
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+    </svg>
+  );
+}
+
+function BankIcon({ className = iconSmClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 21h18M3 10h18M12 3l9 7H3l9-7z" />
+      <path d="M5 10v8M9 10v8M15 10v8M19 10v8" />
+    </svg>
+  );
+}
+
+function CodeIcon({ className = iconSmClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="16 18 22 12 16 6" />
+      <polyline points="8 6 2 12 8 18" />
+    </svg>
+  );
+}
+
+function ZapIcon({ className = iconSmClass }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+    </svg>
+  );
+}
+
 function BoltIcon({ className = iconClass }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -247,18 +303,25 @@ function ServiceCard({
 function IndustryCard({
   icon,
   title,
+  slug,
   examples,
 }: {
   icon: React.ReactNode;
   title: string;
+  slug: string;
   examples: string[];
 }) {
   return (
-    <div className="bg-offwhite rounded-xl border border-gray-200 p-6">
+    <Link
+      href={`/industries/${slug}/`}
+      title={`${title} — Dr. Kurr Advisory: Industry expertise and transformation services`}
+      aria-label={`Learn more about Dr. Kurr's advisory services for ${title} organizations`}
+      className="group bg-offwhite rounded-xl border border-gray-200 p-6 hover:border-gold/40 hover:shadow-md transition-all duration-300"
+    >
       <div className="mb-3" aria-hidden="true">
         {icon}
       </div>
-      <h3 className="font-heading text-lg font-bold text-navy mb-3">
+      <h3 className="font-heading text-lg font-bold text-navy mb-3 group-hover:text-gold transition-colors duration-200">
         {title}
       </h3>
       <ul className="space-y-1 text-sm text-charcoal">
@@ -266,7 +329,13 @@ function IndustryCard({
           <li key={ex}>{ex}</li>
         ))}
       </ul>
-    </div>
+      <span className="inline-flex items-center gap-1 text-sm font-semibold text-teal group-hover:text-gold transition-colors duration-200 mt-4">
+        Learn more
+        <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </span>
+    </Link>
   );
 }
 
@@ -751,10 +820,15 @@ export default function AdvisoryPage() {
               </p>
             </div>
 
-            <div className="fade-in grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Core: Pharma & Life Sciences */}
+            <h3 className="fade-in font-heading text-xl font-semibold text-navy mb-4">
+              Pharma &amp; Life Sciences
+            </h3>
+            <div className="fade-in grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               <IndustryCard
                 icon={<FlaskIcon />}
                 title="Pharma & Biotech"
+                slug="pharma-biotech"
                 examples={[
                   "Large pharma transformations",
                   "Specialty pharma scale-up",
@@ -765,6 +839,7 @@ export default function AdvisoryPage() {
               <IndustryCard
                 icon={<HeartPulseIcon />}
                 title="MedTech & Diagnostics"
+                slug="medtech-diagnostics"
                 examples={[
                   "Commercial operations optimization",
                   "Digital health strategy",
@@ -775,6 +850,7 @@ export default function AdvisoryPage() {
               <IndustryCard
                 icon={<BuildingIcon />}
                 title="Life Sciences Services"
+                slug="life-sciences-services"
                 examples={[
                   "CRO / CDMO optimization",
                   "Contract commercialization (CCO)",
@@ -785,11 +861,85 @@ export default function AdvisoryPage() {
               <IndustryCard
                 icon={<MonitorIcon />}
                 title="HealthTech & Digital Health"
+                slug="healthtech-digital-health"
                 examples={[
                   "Enterprise AI adoption",
                   "Platform go-to-market strategy",
                   "Regulatory technology strategy",
                   "Health data analytics operations",
+                ]}
+              />
+            </div>
+
+            {/* Cross-Industry */}
+            <h3 className="fade-in font-heading text-xl font-semibold text-navy mb-4">
+              Cross-Industry
+            </h3>
+            <div className="fade-in grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <IndustryCard
+                icon={<CarIcon />}
+                title="Automotive & Mobility"
+                slug="automotive-mobility"
+                examples={[
+                  "Operating model redesign",
+                  "Supply chain cooperation management",
+                  "Shared services & GBS design",
+                  "Content & digital operations",
+                ]}
+              />
+              <IndustryCard
+                icon={<FactoryIcon />}
+                title="Industrial Manufacturing"
+                slug="industrial-manufacturing"
+                examples={[
+                  "Process-oriented reorganization",
+                  "Complexity management",
+                  "Industry 4.0 strategy",
+                  "Strategic alliance advisory",
+                ]}
+              />
+              <IndustryCard
+                icon={<ShoppingCartIcon />}
+                title="Consumer Goods (CPG)"
+                slug="consumer-goods"
+                examples={[
+                  "Content supply chain design",
+                  "Digital content factory setup",
+                  "Omnichannel content strategy",
+                  "Agency-to-in-house transition",
+                ]}
+              />
+              <IndustryCard
+                icon={<BankIcon />}
+                title="Financial Services"
+                slug="financial-services"
+                examples={[
+                  "GBS design & optimization",
+                  "Operating model transformation",
+                  "Process reengineering for compliance",
+                  "Fintech partnership governance",
+                ]}
+              />
+              <IndustryCard
+                icon={<CodeIcon />}
+                title="Technology & SaaS"
+                slug="technology-saas"
+                examples={[
+                  "Fractional COO/CCO for scale-ups",
+                  "Go-to-market operations design",
+                  "Partnership & alliance strategy",
+                  "Organizational design for scale",
+                ]}
+              />
+              <IndustryCard
+                icon={<ZapIcon />}
+                title="Energy & Chemicals"
+                slug="energy-chemicals"
+                examples={[
+                  "Energy transition transformation",
+                  "Joint venture & alliance advisory",
+                  "Shared services optimization",
+                  "Change management at scale",
                 ]}
               />
             </div>

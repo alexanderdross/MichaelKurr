@@ -2,10 +2,11 @@ import { MetadataRoute } from "next";
 import { getAllExpertiseSlugs } from "@/data/expertise";
 import { getAllLeadershipSlugs } from "@/data/leadership";
 import { getAllAdvisoryServiceSlugs } from "@/data/advisory-services";
+import { getAllIndustrySlugs } from "@/data/industries";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://dr.michaelkurr.com";
-  const lastModified = new Date("2026-03-07");
+  const lastModified = new Date("2026-03-10");
 
   return [
     {
@@ -43,6 +44,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly" as const,
       priority: 0.85,
+    })),
+    ...getAllIndustrySlugs().map((slug) => ({
+      url: `${base}/industries/${slug}/`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
     })),
     {
       url: `${base}/transformation-circus/`,
