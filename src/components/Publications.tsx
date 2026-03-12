@@ -3,7 +3,7 @@ import Image from "next/image";
 const academicWorks = [
   {
     title:
-      "Potentialorientiertes Kooperationsmanagement in der Zulieferindustrie — Vom strategischen Kooperationspotential zur operativen Umsetzung",
+      "Potentialorientiertes Kooperationsmanagement in der Zulieferindustrie - Vom strategischen Kooperationspotential zur operativen Umsetzung",
     venue: "Dissertation, University of St. Gallen (HSG)",
     isThesis: true,
     href: "https://www.alexandria.unisg.ch/persons/247",
@@ -17,7 +17,7 @@ const academicWorks = [
   },
   {
     title:
-      "Aufbau und Nutzen von Kooperationen: ApoKop — ein Erfahrungsbericht aus dem Gesundheitswesen",
+      "Aufbau und Nutzen von Kooperationen: ApoKop - ein Erfahrungsbericht aus dem Gesundheitswesen",
     venue: "Schuh & Co. Komplexitätsmanagement, 2007",
     href: "https://www.researchgate.net/publication/265078042_Prozessorientierte_Reorganisation",
   },
@@ -58,7 +58,7 @@ export default function Publications() {
                 <Image
                   src="/images/book-reorganisation.jpg"
                   alt="Book cover: Prozessorientierte Reorganisation by Günther Schuh, Thomas Friedli, and Michael A. Kurr"
-                  title="Prozessorientierte Reorganisation — Carl Hanser Verlag, 2006"
+                  title="Prozessorientierte Reorganisation - Carl Hanser Verlag, 2006"
                   fill
                   sizes="160px"
                   className="object-cover"
@@ -89,7 +89,7 @@ export default function Publications() {
                   href="https://amzn.to/4b4Ridf"
                   target="_blank"
                   rel="noopener noreferrer sponsored"
-                  title="Buy Prozessorientierte Reorganisation on Amazon — Reengineering-Projekte professionell gestalten und umsetzen by Schuh, Friedli & Kurr"
+                  title="Buy Prozessorientierte Reorganisation on Amazon - Reengineering-Projekte professionell gestalten und umsetzen by Schuh, Friedli & Kurr"
                   aria-label="Buy Prozessorientierte Reorganisation on Amazon"
                   className="inline-flex items-center gap-2 px-5 py-2 bg-navy text-white text-sm font-medium rounded hover:bg-navy-light transition-colors"
                 >
@@ -134,7 +134,7 @@ export default function Publications() {
                   href="https://amzn.to/3OOyTdn"
                   target="_blank"
                   rel="noopener noreferrer sponsored"
-                  title="Buy Kooperationsmanagement on Amazon — Systematische Vorbereitung, Gezielter Auf- und Ausbau by Schuh, Friedli & Kurr"
+                  title="Buy Kooperationsmanagement on Amazon - Systematische Vorbereitung, Gezielter Auf- und Ausbau by Schuh, Friedli & Kurr"
                   aria-label="Buy Kooperationsmanagement on Amazon"
                   className="inline-flex items-center gap-2 px-5 py-2 bg-navy text-white text-sm font-medium rounded hover:bg-navy-light transition-colors"
                 >

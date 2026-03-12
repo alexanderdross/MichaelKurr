@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 
 /**
  * Verifies that all external links referenced in the codebase are well-formed
- * URLs with valid protocols and domains. This does NOT make network requests —
+ * URLs with valid protocols and domains. This does NOT make network requests -
  * it validates URL structure only.
  */
 

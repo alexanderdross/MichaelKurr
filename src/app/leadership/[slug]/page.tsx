@@ -26,7 +26,7 @@ export async function generateMetadata({
   const description = `${item.tagline}. ${item.description.slice(0, 120)}...`;
 
   return {
-    title: `${item.name} — Leadership Philosophy | Dr. Michael Kurr`,
+    title: `${item.name} - Leadership Philosophy | Dr. Michael Kurr`,
     description,
     keywords: [
       item.name,
@@ -44,7 +44,7 @@ export async function generateMetadata({
       canonical: `https://dr.michaelkurr.com/leadership/${item.slug}/`,
     },
     openGraph: {
-      title: `${item.name} — Leadership Philosophy | Dr. Michael Kurr`,
+      title: `${item.name} - Leadership Philosophy | Dr. Michael Kurr`,
       description,
       type: "article",
       url: `https://dr.michaelkurr.com/leadership/${item.slug}/`,
@@ -55,18 +55,18 @@ export async function generateMetadata({
           url: "/images/profile.jpg",
           width: 800,
           height: 800,
-          alt: `Dr. Michael Kurr — ${item.name}`,
+          alt: `Dr. Michael Kurr - ${item.name}`,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${item.name} — Leadership Philosophy | Dr. Michael Kurr`,
+      title: `${item.name} - Leadership Philosophy | Dr. Michael Kurr`,
       description: item.tagline,
       images: [
         {
           url: "/images/profile.jpg",
-          alt: `Dr. Michael Kurr — ${item.name}`,
+          alt: `Dr. Michael Kurr - ${item.name}`,
         },
       ],
     },
@@ -159,7 +159,7 @@ export default async function LeadershipPage({
             {
               "@context": "https://schema.org",
               "@type": "Article",
-              headline: `${item.name} — Leadership Philosophy | Dr. Michael Kurr`,
+              headline: `${item.name} - Leadership Philosophy | Dr. Michael Kurr`,
               description: item.tagline,
               author: {
                 "@id": "https://dr.michaelkurr.com/#person",
@@ -181,7 +181,7 @@ export default async function LeadershipPage({
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <Link
             href="/"
-            title="Dr. Michael Kurr — Home"
+            title="Dr. Michael Kurr - Home"
             className="font-heading text-xl font-bold text-white tracking-wider"
           >
             MK
@@ -212,7 +212,7 @@ export default async function LeadershipPage({
             <nav aria-label="Breadcrumb" className="py-3">
               <ol className="flex items-center gap-2 text-sm text-white/75">
                 <li>
-                  <Link href="/" title="Dr. Michael Kurr — Home" className="hover:text-gold transition-colors">
+                  <Link href="/" title="Dr. Michael Kurr - Home" className="hover:text-gold transition-colors">
                     Home
                   </Link>
                 </li>
@@ -295,7 +295,7 @@ export default async function LeadershipPage({
                   <Link
                     key={t.slug}
                     href={`/leadership/${t.slug}/`}
-                    title={`${t.name} — Dr. Kurr's leadership principle`}
+                    title={`${t.name} - Dr. Kurr's leadership principle`}
                     className="fade-in group p-4 rounded-xl border border-gray-200 hover:border-gold/40 hover:shadow-md transition-all duration-300 bg-white text-center"
                   >
                     <span className="block font-heading text-sm font-semibold text-navy group-hover:text-gold transition-colors">

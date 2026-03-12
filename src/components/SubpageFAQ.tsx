@@ -51,7 +51,7 @@ export default function SubpageFAQ({ slug, title, items }: SubpageFAQProps) {
         <h2 className="fade-in font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-navy mb-10 group/heading">
           <a
             href={`#${slug}-faq`}
-            title={`Frequently asked questions about ${title.toLowerCase()} — Dr. Michael Kurr`}
+            title={`Frequently asked questions about ${title.toLowerCase()} - Dr. Michael Kurr`}
             className="hover:text-navy/80 transition-colors"
           >
             Frequently Asked Questions
@@ -76,7 +76,7 @@ export default function SubpageFAQ({ slug, title, items }: SubpageFAQProps) {
                   <button
                     type="button"
                     onClick={() => handleToggle(i)}
-                    title={`${faq.question} — ${title} by Dr. Michael Kurr`}
+                    title={`${faq.question} - ${title} by Dr. Michael Kurr`}
                     className="w-full flex items-center justify-between gap-4 p-6 text-left cursor-pointer"
                     aria-expanded={isOpen}
                     aria-controls={`faq-answer-${faq.id}`}

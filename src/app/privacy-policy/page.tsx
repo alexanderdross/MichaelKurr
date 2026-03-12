@@ -4,9 +4,9 @@ import ScrollAnimations from "@/components/ScrollAnimations";
 import { makeProductSchema, makeNavigationSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Dr. Michael Kurr",
+  title: "Privacy Policy - Dr. Michael Kurr",
   description:
-    "Privacy policy for dr.michaelkurr.com — learn how Dr. Michael A. Kurr handles your data and protects your privacy.",
+    "Privacy policy for dr.michaelkurr.com - learn how Dr. Michael A. Kurr handles your data and protects your privacy.",
   keywords: [
     "privacy policy",
     "data protection",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "https://dr.michaelkurr.com/privacy-policy/",
   },
   openGraph: {
-    title: "Privacy Policy — Dr. Michael Kurr",
+    title: "Privacy Policy - Dr. Michael Kurr",
     description:
-      "Privacy policy for dr.michaelkurr.com — learn how Dr. Michael A. Kurr handles your data and protects your privacy.",
+      "Privacy policy for dr.michaelkurr.com - learn how Dr. Michael A. Kurr handles your data and protects your privacy.",
     type: "website",
     url: "https://dr.michaelkurr.com/privacy-policy/",
     siteName: "Dr. Michael Kurr",
@@ -30,19 +30,19 @@ export const metadata: Metadata = {
         url: "/images/profile.jpg",
         width: 800,
         height: 800,
-        alt: "Dr. Michael Kurr — Privacy Policy",
+        alt: "Dr. Michael Kurr - Privacy Policy",
       },
     ],
   },
   twitter: {
     card: "summary",
-    title: "Privacy Policy — Dr. Michael Kurr",
+    title: "Privacy Policy - Dr. Michael Kurr",
     description:
-      "Privacy policy for dr.michaelkurr.com — data protection and GDPR compliance.",
+      "Privacy policy for dr.michaelkurr.com - data protection and GDPR compliance.",
     images: [
       {
         url: "/images/profile.jpg",
-        alt: "Dr. Michael Kurr — Privacy Policy",
+        alt: "Dr. Michael Kurr - Privacy Policy",
       },
     ],
   },
@@ -101,7 +101,7 @@ export default function PrivacyPolicyPage() {
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <Link
             href="/"
-            title="Dr. Michael Kurr — Home"
+            title="Dr. Michael Kurr - Home"
             className="font-heading text-xl font-bold text-white tracking-wider"
           >
             MK
@@ -134,7 +134,7 @@ export default function PrivacyPolicyPage() {
                 <li>
                   <Link
                     href="/"
-                    title="Dr. Michael Kurr — Home"
+                    title="Dr. Michael Kurr - Home"
                     className="hover:text-gold transition-colors"
                   >
                     Home

@@ -252,7 +252,7 @@ export const websiteSchema = {
   name: "Dr. Michael Kurr",
   url: "https://dr.michaelkurr.com",
   description:
-    "Personal website of Dr. Michael A. Kurr — Operator & Transformation Leader in Pharma & Life Sciences",
+    "Personal website of Dr. Michael A. Kurr - Operator & Transformation Leader in Pharma & Life Sciences",
   publisher: { "@id": "https://dr.michaelkurr.com/#person" },
   creator: {
     "@type": "Organization",
@@ -276,10 +276,10 @@ export const profilePageSchema = {
   "@context": "https://schema.org",
   "@type": "ProfilePage",
   "@id": "https://dr.michaelkurr.com/#profilepage",
-  name: "Dr. Michael Kurr — Operator & Transformation Leader",
+  name: "Dr. Michael Kurr - Operator & Transformation Leader",
   url: "https://dr.michaelkurr.com",
   description:
-    "Professional profile of Dr. Michael A. Kurr — Founder of Dr. Kurr Advisory, fractional C-level executive in Pharma & Life Sciences with 20+ years transforming global organizations.",
+    "Professional profile of Dr. Michael A. Kurr - Founder of Dr. Kurr Advisory, fractional C-level executive in Pharma & Life Sciences with 20+ years transforming global organizations.",
   mainEntity: { "@id": "https://dr.michaelkurr.com/#person" },
   isPartOf: { "@id": "https://dr.michaelkurr.com/#website" },
   inLanguage: "en",
@@ -326,7 +326,7 @@ export const articleSchemas = [
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
     headline:
-      "Aufbau und Nutzen von Kooperationen: ApoKop — ein Erfahrungsbericht aus dem Gesundheitswesen",
+      "Aufbau und Nutzen von Kooperationen: ApoKop - ein Erfahrungsbericht aus dem Gesundheitswesen",
     author: [
       {
         "@type": "Person",
@@ -420,7 +420,7 @@ export function makeNavigationSchema(currentUrl: string, currentName: string) {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: `${currentName} — Site Navigation`,
+    name: `${currentName} - Site Navigation`,
     url: currentUrl,
     itemListElement: siteNavigationElements.map((item, i) => ({
       "@type": "SiteNavigationElement",
@@ -498,7 +498,7 @@ export function makeProductSchema(url: string, ratingCount: number) {
   return {
     "@context": "https://schema.org",
     "@type": "Product",
-    name: "Dr. Kurr Advisory — Fractional C-Level & Transformation Advisory",
+    name: "Dr. Kurr Advisory - Fractional C-Level & Transformation Advisory",
     description:
       "Strategic advisory and fractional C-level leadership for Pharma & Life Sciences. Corporate transformation, scalable operating models, and profitable growth.",
     brand: {
@@ -619,13 +619,13 @@ export const howToEngageSchema = {
       "@type": "HowToStep",
       position: 3,
       name: "Engagement Proposal",
-      text: "Based on the diagnostic, Dr. Kurr develops a tailored proposal — whether a fractional C-level mandate (2-3 days/week), a transformation sprint (3-6 months), or board-level strategic advisory.",
+      text: "Based on the diagnostic, Dr. Kurr develops a tailored proposal - whether a fractional C-level mandate (2-3 days/week), a transformation sprint (3-6 months), or board-level strategic advisory.",
     },
     {
       "@type": "HowToStep",
       position: 4,
       name: "Embedded Execution",
-      text: "Dr. Kurr works as part of your leadership team — not as an external consultant. This means attending board meetings, owning strategic initiatives, managing direct reports, and driving execution alongside the CEO and founding team.",
+      text: "Dr. Kurr works as part of your leadership team - not as an external consultant. This means attending board meetings, owning strategic initiatives, managing direct reports, and driving execution alongside the CEO and founding team.",
     },
     {
       "@type": "HowToStep",

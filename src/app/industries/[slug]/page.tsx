@@ -34,7 +34,7 @@ export async function generateMetadata({
   const description = `Dr. Kurr Advisory serves ${item.title} organizations with fractional C-level leadership and transformation advisory. ${item.tagline}.`;
 
   return {
-    title: `${item.title} — Industries Served | Dr. Michael Kurr`,
+    title: `${item.title} - Industries Served | Dr. Michael Kurr`,
     description,
     keywords: [
       item.title,
@@ -53,7 +53,7 @@ export async function generateMetadata({
       canonical: `https://dr.michaelkurr.com/industries/${item.slug}/`,
     },
     openGraph: {
-      title: `${item.title} — Dr. Kurr Advisory`,
+      title: `${item.title} - Dr. Kurr Advisory`,
       description,
       type: "article",
       url: `https://dr.michaelkurr.com/industries/${item.slug}/`,
@@ -64,18 +64,18 @@ export async function generateMetadata({
           url: "/images/profile.jpg",
           width: 800,
           height: 800,
-          alt: `Dr. Michael Kurr — ${item.title} Advisory`,
+          alt: `Dr. Michael Kurr - ${item.title} Advisory`,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${item.title} — Dr. Kurr Advisory`,
+      title: `${item.title} - Dr. Kurr Advisory`,
       description: item.tagline,
       images: [
         {
           url: "/images/profile.jpg",
-          alt: `Dr. Michael Kurr — ${item.title} Advisory`,
+          alt: `Dr. Michael Kurr - ${item.title} Advisory`,
         },
       ],
     },
@@ -193,7 +193,7 @@ export default async function IndustryPage({
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <Link
             href="/"
-            title="Dr. Michael Kurr — Home"
+            title="Dr. Michael Kurr - Home"
             className="font-heading text-xl font-bold text-white tracking-wider"
           >
             MK
@@ -226,7 +226,7 @@ export default async function IndustryPage({
                 <li>
                   <Link
                     href="/"
-                    title="Dr. Michael Kurr — Home"
+                    title="Dr. Michael Kurr - Home"
                     className="hover:text-gold transition-colors"
                   >
                     Home
@@ -410,7 +410,7 @@ export default async function IndustryPage({
                   <Link
                     key={i.slug}
                     href={`/industries/${i.slug}/`}
-                    title={`${i.title} — Dr. Kurr Advisory`}
+                    title={`${i.title} - Dr. Kurr Advisory`}
                     className="fade-in group p-4 rounded-xl border border-gray-200 hover:border-gold/40 hover:shadow-md transition-all duration-300 bg-white"
                   >
                     <span className="block font-heading text-sm font-semibold text-navy group-hover:text-gold transition-colors">

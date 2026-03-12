@@ -6,9 +6,9 @@ import { makeProductSchema, makeNavigationSchema, howToEngageSchema } from "@/da
 
 export const metadata: Metadata = {
   title:
-    "Advisory Services — Fractional C-Level & Transformation Advisory | Dr. Michael Kurr",
+    "Advisory Services - Fractional C-Level & Transformation Advisory | Dr. Michael Kurr",
   description:
-    "Need a fractional CCO, CTO, or COO for your pharma organization? Dr. Kurr Advisory provides C-level leadership, transformation advisory, and operating model design for Pharma & Life Sciences — from a leader who built the #1 content supply chain in the industry.",
+    "Need a fractional CCO, CTO, or COO for your pharma organization? Dr. Kurr Advisory provides C-level leadership, transformation advisory, and operating model design for Pharma & Life Sciences - from a leader who built the #1 content supply chain in the industry.",
   keywords: [
     "fractional CCO",
     "fractional CTO",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     canonical: "https://dr.michaelkurr.com/advisory/",
   },
   openGraph: {
-    title: "Advisory Services — Dr. Kurr Advisory",
+    title: "Advisory Services - Dr. Kurr Advisory",
     description:
       "Fractional C-level leadership and transformation advisory for Pharma & Life Sciences. Strategic clarity, scalable operating models, and profitable growth.",
     type: "website",
@@ -50,19 +50,19 @@ export const metadata: Metadata = {
         url: "/images/profile.jpg",
         width: 800,
         height: 800,
-        alt: "Dr. Michael Kurr — Advisory Services",
+        alt: "Dr. Michael Kurr - Advisory Services",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Advisory Services — Dr. Kurr Advisory",
+    title: "Advisory Services - Dr. Kurr Advisory",
     description:
       "Fractional C-level leadership and transformation advisory for Pharma & Life Sciences.",
     images: [
       {
         url: "/images/profile.jpg",
-        alt: "Dr. Michael Kurr — Advisory Services",
+        alt: "Dr. Michael Kurr - Advisory Services",
       },
     ],
   },
@@ -317,7 +317,7 @@ function ServiceCard({
   return (
     <Link
       href={`/advisory/${slug}/`}
-      title={`${title} — Dr. Kurr Advisory`}
+      title={`${title} - Dr. Kurr Advisory`}
       className="group bg-gray-100 rounded-2xl border border-gray-200 p-8 shadow-sm hover:shadow-lg hover:border-gold/40 transition-all duration-300 block"
     >
       <div className="mb-4" aria-hidden="true">
@@ -362,7 +362,7 @@ function IndustryCard({
   return (
     <Link
       href={`/industries/${slug}/`}
-      title={`${title} — Dr. Kurr Advisory: Industry expertise and transformation services`}
+      title={`${title} - Dr. Kurr Advisory: Industry expertise and transformation services`}
       aria-label={`Learn more about Dr. Kurr's advisory services for ${title} organizations`}
       className="group bg-white rounded-xl border border-gray-300 p-6 shadow-sm hover:border-gold/40 hover:shadow-md transition-all duration-300"
     >
@@ -545,7 +545,7 @@ export default function AdvisoryPage() {
                 name: "What advisory services does Dr. Kurr offer?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Dr. Kurr Advisory offers fractional C-level leadership (CCO, CTO, COO), corporate transformation advisory, global operating model design, AI and digital strategy for regulated industries, commercial and medical operations transformation, and organizational design and scaling — all focused on Pharma & Life Sciences.",
+                  text: "Dr. Kurr Advisory offers fractional C-level leadership (CCO, CTO, COO), corporate transformation advisory, global operating model design, AI and digital strategy for regulated industries, commercial and medical operations transformation, and organizational design and scaling - all focused on Pharma & Life Sciences.",
                 },
               },
               {
@@ -569,7 +569,7 @@ export default function AdvisoryPage() {
         }}
       />
 
-      {/* JSON-LD: HowTo — engagement process */}
+      {/* JSON-LD: HowTo - engagement process */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -585,7 +585,7 @@ export default function AdvisoryPage() {
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <Link
             href="/"
-            title="Dr. Michael Kurr — Home"
+            title="Dr. Michael Kurr - Home"
             className="font-heading text-xl font-bold text-white tracking-wider"
           >
             MK
@@ -663,7 +663,7 @@ export default function AdvisoryPage() {
               </h1>
               <p className="fade-in text-xl text-white/80 mb-8 leading-relaxed max-w-2xl">
                 Fractional C-level leadership and transformation advisory for
-                Pharma &amp; Life Sciences — from a leader who built one of the
+                Pharma &amp; Life Sciences - from a leader who built one of the
                 industry&rsquo;s leading service organizations from scratch.
               </p>
               <div className="fade-in flex flex-wrap gap-4">
@@ -702,7 +702,7 @@ export default function AdvisoryPage() {
               <p className="text-lg text-charcoal leading-relaxed">
                 Most advisors consult. I&rsquo;ve{" "}
                 <strong>built and operated</strong> the organizations I now
-                advise on. Every recommendation comes from having done it —
+                advise on. Every recommendation comes from having done it -
                 at scale, under pressure, in regulated environments.
               </p>
             </div>
@@ -713,7 +713,7 @@ export default function AdvisoryPage() {
                   10x
                 </p>
                 <p className="text-sm text-charcoal">
-                  Organization growth at Boehringer Ingelheim — built from zero
+                  Organization growth at Boehringer Ingelheim - built from zero
                   to full global scale
                 </p>
               </div>
@@ -740,7 +740,7 @@ export default function AdvisoryPage() {
                   5
                 </p>
                 <p className="text-sm text-charcoal">
-                  Major global organizations transformed — BI, Novartis, Roche,
+                  Major global organizations transformed - BI, Novartis, Roche,
                   Daimler, Schott
                 </p>
               </div>
@@ -784,7 +784,7 @@ export default function AdvisoryPage() {
                 icon={<CogIcon />}
                 title="Global Operating Model Design"
                 slug="global-operating-model-design"
-                description="Designing and implementing scalable operating models that balance centralization with local agility — including shared services, offshoring, and nearshoring strategies."
+                description="Designing and implementing scalable operating models that balance centralization with local agility - including shared services, offshoring, and nearshoring strategies."
                 offerings={[
                   "Insource vs. outsource strategy",
                   "Off- and nearshoring center design",
@@ -797,7 +797,7 @@ export default function AdvisoryPage() {
                 icon={<CpuIcon />}
                 title="AI & Digital Strategy for Regulated Industries"
                 slug="ai-digital-strategy"
-                description="Practical AI adoption that works within pharma compliance frameworks. No hype — just AI that fits governed workflows, accelerates execution, and respects accountability."
+                description="Practical AI adoption that works within pharma compliance frameworks. No hype - just AI that fits governed workflows, accelerates execution, and respects accountability."
                 offerings={[
                   "AI readiness assessment and roadmap",
                   "Agentic AI strategy for commercial operations",
@@ -810,7 +810,7 @@ export default function AdvisoryPage() {
                 icon={<TargetIcon />}
                 title="Commercial & Medical Operations Transformation"
                 slug="commercial-medical-operations"
-                description="Redesigning go-to-market and medical affairs operations for efficiency, scale, and omnichannel engagement — the same approach that built an industry-leading service organization."
+                description="Redesigning go-to-market and medical affairs operations for efficiency, scale, and omnichannel engagement - the same approach that built an industry-leading service organization."
                 offerings={[
                   "Go-to-market operating model redesign",
                   "Content factory and creative services build",
@@ -823,7 +823,7 @@ export default function AdvisoryPage() {
                 icon={<LinkIcon />}
                 title="Strategic Partnerships & Alliances"
                 slug="strategic-partnerships-alliances"
-                description="Structuring, launching, and managing strategic cooperations — from vendor partnerships to industry alliances. Based on published research and 20+ years of partnership management."
+                description="Structuring, launching, and managing strategic cooperations - from vendor partnerships to industry alliances. Based on published research and 20+ years of partnership management."
                 offerings={[
                   "Strategic partner selection and due diligence",
                   "Partnership governance design",
@@ -850,7 +850,7 @@ export default function AdvisoryPage() {
         </section>
 
         {/* ═══════════════════════════════════════════
-            WHO THIS IS FOR — Industries
+            WHO THIS IS FOR - Industries
             ═══════════════════════════════════════════ */}
         <section className="py-20 lg:py-28 bg-offwhite">
           <div className="max-w-6xl mx-auto px-6">
@@ -862,7 +862,7 @@ export default function AdvisoryPage() {
                 Who This Is For
               </h2>
               <p className="text-lg text-charcoal max-w-2xl mx-auto">
-                Deep domain expertise across Pharma &amp; Life Sciences — with
+                Deep domain expertise across Pharma &amp; Life Sciences - with
                 cross-industry perspective from automotive, diagnostics, and
                 manufacturing.
               </p>
@@ -1077,7 +1077,7 @@ export default function AdvisoryPage() {
             <div className="fade-in grid sm:grid-cols-2 gap-5">
               <div className="bg-offwhite rounded-xl border border-gray-200 p-6">
                 <h3 className="font-heading font-semibold text-navy mb-2">
-                  &ldquo;We need to build a global services organization — but
+                  &ldquo;We need to build a global services organization - but
                   we&rsquo;ve never done it.&rdquo;
                 </h3>
                 <p className="text-sm text-charcoal">
@@ -1088,7 +1088,7 @@ export default function AdvisoryPage() {
               </div>
               <div className="bg-offwhite rounded-xl border border-gray-200 p-6">
                 <h3 className="font-heading font-semibold text-navy mb-2">
-                  &ldquo;Our content supply chain is broken — we&rsquo;re slow,
+                  &ldquo;Our content supply chain is broken - we&rsquo;re slow,
                   expensive, and inconsistent.&rdquo;
                 </h3>
                 <p className="text-sm text-charcoal">
@@ -1100,18 +1100,18 @@ export default function AdvisoryPage() {
               </div>
               <div className="bg-offwhite rounded-xl border border-gray-200 p-6">
                 <h3 className="font-heading font-semibold text-navy mb-2">
-                  &ldquo;We want to adopt AI — but we&rsquo;re in a regulated
+                  &ldquo;We want to adopt AI - but we&rsquo;re in a regulated
                   industry and don&rsquo;t know where to start.&rdquo;
                 </h3>
                 <p className="text-sm text-charcoal">
                   AI in pharma requires compliance-first thinking. I help
                   organizations find the practical use cases that deliver value
-                  inside governed workflows — without the hype.
+                  inside governed workflows - without the hype.
                 </p>
               </div>
               <div className="bg-offwhite rounded-xl border border-gray-200 p-6">
                 <h3 className="font-heading font-semibold text-navy mb-2">
-                  &ldquo;We have a great strategy — but our operating model
+                  &ldquo;We have a great strategy - but our operating model
                   can&rsquo;t execute it.&rdquo;
                 </h3>
                 <p className="text-sm text-charcoal">
@@ -1122,12 +1122,12 @@ export default function AdvisoryPage() {
               </div>
               <div className="bg-offwhite rounded-xl border border-gray-200 p-6">
                 <h3 className="font-heading font-semibold text-navy mb-2">
-                  &ldquo;We&rsquo;re a biotech scaling to commercial — we need
+                  &ldquo;We&rsquo;re a biotech scaling to commercial - we need
                   C-level experience without a full-time hire.&rdquo;
                 </h3>
                 <p className="text-sm text-charcoal">
                   Fractional leadership gives you seasoned executive guidance
-                  2-3 days per week — the strategic depth of a full-time hire at
+                  2-3 days per week - the strategic depth of a full-time hire at
                   a fraction of the cost. Currently serving as Fractional CCO at
                   Lemna Bio.
                 </p>
@@ -1160,7 +1160,7 @@ export default function AdvisoryPage() {
                 Engagement Models
               </h2>
               <p className="text-lg text-white/80 max-w-2xl mx-auto">
-                Flexible formats designed around your needs — not mine.
+                Flexible formats designed around your needs - not mine.
               </p>
             </div>
 
@@ -1275,7 +1275,7 @@ export default function AdvisoryPage() {
           </div>
         </section>
 
-        {/* FAQ — visible accordion matching FAQPage schema */}
+        {/* FAQ - visible accordion matching FAQPage schema */}
         <SubpageFAQ
           slug="advisory"
           title="Advisory Services"
@@ -1283,7 +1283,7 @@ export default function AdvisoryPage() {
             {
               id: "what-advisory-services-does-dr-kurr-offer",
               question: "What advisory services does Dr. Kurr offer?",
-              answer: "Dr. Kurr Advisory offers fractional C-level leadership (CCO, CTO, COO), corporate transformation advisory, global operating model design, AI and digital strategy for regulated industries, commercial and medical operations transformation, and organizational design and scaling — all focused on Pharma & Life Sciences.",
+              answer: "Dr. Kurr Advisory offers fractional C-level leadership (CCO, CTO, COO), corporate transformation advisory, global operating model design, AI and digital strategy for regulated industries, commercial and medical operations transformation, and organizational design and scaling - all focused on Pharma & Life Sciences.",
             },
             {
               id: "what-industries-does-dr-kurr-advisory-serve",
@@ -1356,7 +1356,7 @@ export default function AdvisoryPage() {
             aria-label="Footer navigation"
             className="flex flex-wrap items-center justify-center gap-x-1 gap-y-2 text-sm"
           >
-            <Link href="/" title="Dr. Michael Kurr — Home" className="hover:text-white transition-colors px-2">
+            <Link href="/" title="Dr. Michael Kurr - Home" className="hover:text-white transition-colors px-2">
               Home
             </Link>
             <span className="text-white/20" aria-hidden="true">·</span>

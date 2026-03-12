@@ -4,7 +4,7 @@
 
 ## About
 
-Dr. Michael A. Kurr is a Germany-based executive who founded Dr. Kurr Advisory in January 2026 — an independent platform for fractional C-level and advisory mandates in Pharma & Life Sciences. He currently serves as Fractional Chief Commercial Officer at Lemna Bio (computational drug design, Lausanne) and as Fellow at THENA Capital (UK-based MedTech investor).
+Dr. Michael A. Kurr is a Germany-based executive who founded Dr. Kurr Advisory in January 2026 - an independent platform for fractional C-level and advisory mandates in Pharma & Life Sciences. He currently serves as Fractional Chief Commercial Officer at Lemna Bio (computational drug design, Lausanne) and as Fellow at THENA Capital (UK-based MedTech investor).
 
 Previously, Dr. Kurr was Global Head of Human Pharma Services at Boehringer Ingelheim (2019-2025), where he built the entire go-to-market services organization from scratch, scaling it tenfold within four years to full geographical coverage. External benchmarking studies recognized it as one of the leading content supply chains in the pharmaceutical industry.
 
@@ -12,11 +12,11 @@ His career includes senior roles at Novartis (Head of Business Service Excellenc
 
 ## Education
 
-- Doctorate (Dr. oec. HSG) — University of St. Gallen, Economics & Technology Management (2000-2003)
-- Executive MBA — University of St. Gallen (2005-2006)
-- Dipl.-Ing. — RWTH Aachen University, Production Management (1992-1999)
-- Executive Certificate in Digital Business — MIT Sloan School of Management (2024)
-- Leading Digital Business Transformation, TransformTECH, Digital Strategy and Analytics — IMD (2019-2020)
+- Doctorate (Dr. oec. HSG) - University of St. Gallen, Economics & Technology Management (2000-2003)
+- Executive MBA - University of St. Gallen (2005-2006)
+- Dipl.-Ing. - RWTH Aachen University, Production Management (1992-1999)
+- Executive Certificate in Digital Business - MIT Sloan School of Management (2024)
+- Leading Digital Business Transformation, TransformTECH, Digital Strategy and Analytics - IMD (2019-2020)
 
 ## Core Expertise
 
@@ -34,12 +34,12 @@ His career includes senior roles at Novartis (Head of Business Service Excellenc
 
 Dr. Kurr Advisory offers six core service areas:
 
-1. **Fractional C-Level Leadership** — Part-time CCO, CTO, or COO mandates with embedded executive presence (2-3 days/week)
-2. **Global Operating Model Design** — Scalable models balancing centralization with local agility, including shared services and offshoring
-3. **AI & Digital Strategy** — Practical AI adoption within pharma compliance frameworks, agentic AI, content supply chain automation
-4. **Commercial & Medical Operations** — Go-to-market redesign, content factories, omnichannel engagement at scale
-5. **Strategic Partnerships & Alliances** — Research-backed cooperation management, vendor consolidation, partnership governance
-6. **Organizational Design & People Strategy** — Building global teams, talent strategy, change management, leadership development
+1. **Fractional C-Level Leadership** - Part-time CCO, CTO, or COO mandates with embedded executive presence (2-3 days/week)
+2. **Global Operating Model Design** - Scalable models balancing centralization with local agility, including shared services and offshoring
+3. **AI & Digital Strategy** - Practical AI adoption within pharma compliance frameworks, agentic AI, content supply chain automation
+4. **Commercial & Medical Operations** - Go-to-market redesign, content factories, omnichannel engagement at scale
+5. **Strategic Partnerships & Alliances** - Research-backed cooperation management, vendor consolidation, partnership governance
+6. **Organizational Design & People Strategy** - Building global teams, talent strategy, change management, leadership development
 
 ## Leadership Philosophy
 
@@ -50,16 +50,16 @@ Three pillars: People, Process, Technology.
 ## Publications
 
 ### Books (Carl Hanser Verlag, co-authored with Prof. Schuh & Prof. Friedli)
-- "Prozessorientierte Reorganisation" (2006) — ISBN 978-3-446-40720-6
-- "Kooperationsmanagement" (2005) — ISBN 978-3-446-40036-8
+- "Prozessorientierte Reorganisation" (2006) - ISBN 978-3-446-40720-6
+- "Kooperationsmanagement" (2005) - ISBN 978-3-446-40036-8
 
 ### Academic Papers
-- "Success factors for collaboration management in manufacturing companies" — IJSOM Vol. 2(3), 2006
-- "Aufbau und Nutzen von Kooperationen: ApoKop" — Schuh & Co., 2007
-- "Netzwerke in Virtuellen Fabriken" — SATW-Bulletin, 2004
+- "Success factors for collaboration management in manufacturing companies" - IJSOM Vol. 2(3), 2006
+- "Aufbau und Nutzen von Kooperationen: ApoKop" - Schuh & Co., 2007
+- "Netzwerke in Virtuellen Fabriken" - SATW-Bulletin, 2004
 
 ### Dissertation
-- "Potentialorientiertes Kooperationsmanagement in der Zulieferindustrie" — University of St. Gallen, 2003
+- "Potentialorientiertes Kooperationsmanagement in der Zulieferindustrie" - University of St. Gallen, 2003
 
 ## Key Achievements
 
@@ -71,29 +71,29 @@ Three pillars: People, Process, Technology.
 
 ## The Transformation Circus
 
-An essay by Dr. Michael Kurr on leading corporate transformation in the age of AI. Drawing on 15+ years of pharma transformation experience at Boehringer Ingelheim and Novartis, it explores the metaphor of a circus — where leaders juggle processes, build teams of "smart apes," tame chaos monkeys, and keep executive lion tamers engaged. Key thesis: AI scales execution, but your operating model decides what gets scaled.
+An essay by Dr. Michael Kurr on leading corporate transformation in the age of AI. Drawing on 15+ years of pharma transformation experience at Boehringer Ingelheim and Novartis, it explores the metaphor of a circus - where leaders juggle processes, build teams of "smart apes," tame chaos monkeys, and keep executive lion tamers engaged. Key thesis: AI scales execution, but your operating model decides what gets scaled.
 
 ## Site Pages
 
 - Home: https://dr.michaelkurr.com/
 - Advisory Services: https://dr.michaelkurr.com/advisory/
-- Advisory — Fractional C-Level Leadership: https://dr.michaelkurr.com/advisory/fractional-c-level-leadership/
-- Advisory — Global Operating Model Design: https://dr.michaelkurr.com/advisory/global-operating-model-design/
-- Advisory — AI & Digital Strategy: https://dr.michaelkurr.com/advisory/ai-digital-strategy/
-- Advisory — Commercial & Medical Operations: https://dr.michaelkurr.com/advisory/commercial-medical-operations/
-- Advisory — Strategic Partnerships & Alliances: https://dr.michaelkurr.com/advisory/strategic-partnerships-alliances/
-- Advisory — Organizational Design & People Strategy: https://dr.michaelkurr.com/advisory/organizational-design-people-strategy/
-- Expertise — Corporate Transformation: https://dr.michaelkurr.com/expertise/corporate-transformation/
-- Expertise — Process Reengineering: https://dr.michaelkurr.com/expertise/process-reengineering/
-- Expertise — Commercial & Medical Operations: https://dr.michaelkurr.com/expertise/commercial-medical-operations/
-- Expertise — Cooperation Management: https://dr.michaelkurr.com/expertise/cooperation-management/
-- Expertise — Digital & AI Strategy: https://dr.michaelkurr.com/expertise/digital-ai-strategy/
-- Expertise — People & Leadership: https://dr.michaelkurr.com/expertise/people-leadership/
-- Leadership — Transparency: https://dr.michaelkurr.com/leadership/transparency/
-- Leadership — Respect: https://dr.michaelkurr.com/leadership/respect/
-- Leadership — Empowerment: https://dr.michaelkurr.com/leadership/empowerment/
-- Leadership — Fairness: https://dr.michaelkurr.com/leadership/fairness/
-- Leadership — Vision: https://dr.michaelkurr.com/leadership/vision/
+- Advisory - Fractional C-Level Leadership: https://dr.michaelkurr.com/advisory/fractional-c-level-leadership/
+- Advisory - Global Operating Model Design: https://dr.michaelkurr.com/advisory/global-operating-model-design/
+- Advisory - AI & Digital Strategy: https://dr.michaelkurr.com/advisory/ai-digital-strategy/
+- Advisory - Commercial & Medical Operations: https://dr.michaelkurr.com/advisory/commercial-medical-operations/
+- Advisory - Strategic Partnerships & Alliances: https://dr.michaelkurr.com/advisory/strategic-partnerships-alliances/
+- Advisory - Organizational Design & People Strategy: https://dr.michaelkurr.com/advisory/organizational-design-people-strategy/
+- Expertise - Corporate Transformation: https://dr.michaelkurr.com/expertise/corporate-transformation/
+- Expertise - Process Reengineering: https://dr.michaelkurr.com/expertise/process-reengineering/
+- Expertise - Commercial & Medical Operations: https://dr.michaelkurr.com/expertise/commercial-medical-operations/
+- Expertise - Cooperation Management: https://dr.michaelkurr.com/expertise/cooperation-management/
+- Expertise - Digital & AI Strategy: https://dr.michaelkurr.com/expertise/digital-ai-strategy/
+- Expertise - People & Leadership: https://dr.michaelkurr.com/expertise/people-leadership/
+- Leadership - Transparency: https://dr.michaelkurr.com/leadership/transparency/
+- Leadership - Respect: https://dr.michaelkurr.com/leadership/respect/
+- Leadership - Empowerment: https://dr.michaelkurr.com/leadership/empowerment/
+- Leadership - Fairness: https://dr.michaelkurr.com/leadership/fairness/
+- Leadership - Vision: https://dr.michaelkurr.com/leadership/vision/
 - The Transformation Circus: https://dr.michaelkurr.com/transformation-circus/
 - Contact: https://dr.michaelkurr.com/contact/
 - Imprint: https://dr.michaelkurr.com/imprint/

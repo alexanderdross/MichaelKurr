@@ -26,7 +26,7 @@ export async function generateMetadata({
   const description = `How can ${item.title.toLowerCase()} transform your pharma organization? ${item.tagline}. Dr. Michael Kurr brings 20+ years of hands-on experience.`;
 
   return {
-    title: `${item.title} — Dr. Michael Kurr | Expertise`,
+    title: `${item.title} - Dr. Michael Kurr | Expertise`,
     description,
     keywords: [
       item.title,
@@ -44,7 +44,7 @@ export async function generateMetadata({
       canonical: `https://dr.michaelkurr.com/expertise/${item.slug}/`,
     },
     openGraph: {
-      title: `${item.title} — Dr. Michael Kurr`,
+      title: `${item.title} - Dr. Michael Kurr`,
       description,
       type: "article",
       url: `https://dr.michaelkurr.com/expertise/${item.slug}/`,
@@ -55,18 +55,18 @@ export async function generateMetadata({
           url: "/images/profile.jpg",
           width: 800,
           height: 800,
-          alt: `Dr. Michael Kurr — ${item.title}`,
+          alt: `Dr. Michael Kurr - ${item.title}`,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${item.title} — Dr. Michael Kurr`,
+      title: `${item.title} - Dr. Michael Kurr`,
       description: item.tagline,
       images: [
         {
           url: "/images/profile.jpg",
-          alt: `Dr. Michael Kurr — ${item.title}`,
+          alt: `Dr. Michael Kurr - ${item.title}`,
         },
       ],
     },
@@ -159,7 +159,7 @@ export default async function ExpertisePage({
             {
               "@context": "https://schema.org",
               "@type": "Article",
-              headline: `${item.title} — Dr. Michael Kurr`,
+              headline: `${item.title} - Dr. Michael Kurr`,
               description: item.tagline,
               author: {
                 "@id": "https://dr.michaelkurr.com/#person",
@@ -181,7 +181,7 @@ export default async function ExpertisePage({
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <Link
             href="/"
-            title="Dr. Michael Kurr — Home"
+            title="Dr. Michael Kurr - Home"
             className="font-heading text-xl font-bold text-white tracking-wider"
           >
             MK
@@ -212,7 +212,7 @@ export default async function ExpertisePage({
             <nav aria-label="Breadcrumb" className="py-3">
               <ol className="flex items-center gap-2 text-sm text-white/75">
                 <li>
-                  <Link href="/" title="Dr. Michael Kurr — Home" className="hover:text-gold transition-colors">
+                  <Link href="/" title="Dr. Michael Kurr - Home" className="hover:text-gold transition-colors">
                     Home
                   </Link>
                 </li>

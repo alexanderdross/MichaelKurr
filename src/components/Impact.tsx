@@ -13,7 +13,7 @@ export default function Impact() {
           Results
         </span>
         <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-16 group/heading">
-          <a href="#impact" title="Career Highlights & Impact — 10x Organization Growth at Boehringer Ingelheim" className="hover:text-white/80 transition-colors">
+          <a href="#impact" title="Career Highlights & Impact - 10x Organization Growth at Boehringer Ingelheim" className="hover:text-white/80 transition-colors">
             From Concept to Reality
             <span className="text-gold/0 group-hover/heading:text-gold/60 transition-colors ml-2 text-2xl" aria-hidden="true">#</span>
           </a>
@@ -48,7 +48,7 @@ export default function Impact() {
               leading content supply chains in the industry
             </strong>{" "}
             at Boehringer Ingelheim, according to external benchmarking studies
-            — scaling from a small delivery unit to a comprehensive global
+            - scaling from a small delivery unit to a comprehensive global
             services organization spanning every market worldwide.
           </p>
         </div>
@@ -58,7 +58,7 @@ export default function Impact() {
             From his academic roots at the University of St. Gallen and RWTH
             Aachen, through eight years of progressive leadership at Novartis, to
             building one of the pharma industry&rsquo;s leading service
-            organizations at Boehringer Ingelheim — Dr. Kurr&rsquo;s career is
+            organizations at Boehringer Ingelheim - Dr. Kurr&rsquo;s career is
             defined by turning ambitious visions into operational reality. Now, as
             an independent advisor and fractional C-level executive, he brings
             this proven track record to help organizations across Pharma &amp;

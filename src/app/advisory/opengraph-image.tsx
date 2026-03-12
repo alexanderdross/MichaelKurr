@@ -3,7 +3,7 @@ import { readFileSync } from "fs";
 import { join } from "path";
 
 export const alt =
-  "Dr. Kurr Advisory — Fractional C-Level & Transformation Advisory for Pharma & Life Sciences";
+  "Dr. Kurr Advisory - Fractional C-Level & Transformation Advisory for Pharma & Life Sciences";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

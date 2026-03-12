@@ -17,7 +17,7 @@ function loadScript(): Promise<void> {
 
     const existing = document.getElementById(SCRIPT_ID);
     if (existing) {
-      // Script tag exists but hasn't loaded yet — wait for it
+      // Script tag exists but hasn't loaded yet - wait for it
       existing.addEventListener("load", () => resolve());
       existing.addEventListener("error", () => reject());
       return;
@@ -46,7 +46,7 @@ export default function Turnstile({ onVerify, onExpire }: TurnstileProps) {
   const handleVerify = useCallback((token: string) => onVerify(token), [onVerify]);
   const handleExpire = useCallback(() => onExpire?.(), [onExpire]);
 
-  // Lazy-load script via IntersectionObserver — only when widget scrolls into view
+  // Lazy-load script via IntersectionObserver - only when widget scrolls into view
   useEffect(() => {
     if (!SITE_KEY || !containerRef.current) return;
 

@@ -114,8 +114,8 @@ export default function Navigation() {
         <a
           href="#hero"
           className="font-heading text-xl font-bold text-white tracking-wider"
-          aria-label="Dr. Michael Kurr — Home"
-          title="Dr. Michael Kurr — Back to top"
+          aria-label="Dr. Michael Kurr - Home"
+          title="Dr. Michael Kurr - Back to top"
         >
           MK
         </a>
@@ -142,7 +142,7 @@ export default function Navigation() {
           {/* Separator */}
           <li aria-hidden="true" className="w-px h-5 bg-white/20" />
 
-          {/* Featured page links — framed */}
+          {/* Featured page links - framed */}
           {featured.map((link) => {
             const isExternal = link.href.startsWith("http");
             return (
@@ -215,7 +215,7 @@ export default function Navigation() {
               </li>
             ))}
 
-            {/* Featured page links — framed in mobile too */}
+            {/* Featured page links - framed in mobile too */}
             <li aria-hidden="true" className="h-px bg-white/10 my-2" />
             <li className="flex gap-3">
               {featured.map((link) => {

@@ -26,7 +26,7 @@ export const NAV_LINKS = [
   { href: "#recommendations", label: "Testimonials", title: "Read LinkedIn recommendations and colleague testimonials" },
 ] as const;
 
-/** Featured page links — shown framed/bordered in the nav bar. */
+/** Featured page links - shown framed/bordered in the nav bar. */
 export const NAV_FEATURED_LINKS = [
   { href: "/advisory/", label: "Advisory", title: "Fractional C-Level & Transformation Advisory for Pharma & Life Sciences" },
   { href: "/transformation-circus/", label: "Circus", title: "Leading the Transformation Circus in the Age of AI" },

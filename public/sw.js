@@ -4,7 +4,7 @@ const CACHE_VERSION = 6;
 const CACHE_NAME = `mk-v${CACHE_VERSION}`;
 const OFFLINE_URL = "/offline.html";
 
-// Core assets to precache on install — all pages for full offline support
+// Core assets to precache on install - all pages for full offline support
 const PRECACHE_URLS = [
   "/",
   "/offline.html",

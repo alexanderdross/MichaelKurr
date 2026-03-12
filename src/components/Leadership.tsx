@@ -27,7 +27,7 @@ const traits = [
   {
     slug: "empowerment",
     name: "Empowerment",
-    desc: "Enabling teams to make decisions with accountability — no micromanagement",
+    desc: "Enabling teams to make decisions with accountability - no micromanagement",
     icon: (
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8" aria-hidden="true">
         <path d="M16 4v12" />
@@ -39,7 +39,7 @@ const traits = [
   {
     slug: "fairness",
     name: "Fairness",
-    desc: '"One of the most important things in life" — the foundation of everything',
+    desc: '"One of the most important things in life" - the foundation of everything',
     icon: (
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8" aria-hidden="true">
         <path d="M4 16h24" />
@@ -61,7 +61,7 @@ const traits = [
 ];
 
 const rules = [
-  "Avoid assumptions — reality always looks different.",
+  "Avoid assumptions - reality always looks different.",
   "Practice patience and strategic thinking in corporate environments.",
   "Stay current and relevant by embracing change proactively.",
 ];
@@ -74,7 +74,7 @@ export default function Leadership() {
           Philosophy
         </span>
         <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-16 group/heading">
-          <a href="#leadership" title="Leadership Philosophy — Transparency, Respect, Empowerment, Fairness & Vision" className="hover:text-navy/80 transition-colors">
+          <a href="#leadership" title="Leadership Philosophy - Transparency, Respect, Empowerment, Fairness & Vision" className="hover:text-navy/80 transition-colors">
             How I Lead
             <span className="text-gold/0 group-hover/heading:text-gold/60 transition-colors ml-2 text-2xl" aria-hidden="true">#</span>
           </a>
@@ -85,7 +85,7 @@ export default function Leadership() {
             <div key={trait.name} className="fade-in">
               <Link
                 href={`/leadership/${trait.slug}/`}
-                title={`${trait.name} — Dr. Kurr's leadership principle: ${trait.desc.toLowerCase()}`}
+                title={`${trait.name} - Dr. Kurr's leadership principle: ${trait.desc.toLowerCase()}`}
                 className="group block p-7 rounded-xl bg-offwhite border border-gray-100 hover:border-gold/30 hover:shadow-lg transition-all duration-300 h-full"
               >
                 <div className="text-gold mb-4">{trait.icon}</div>

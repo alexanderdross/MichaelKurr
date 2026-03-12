@@ -6,7 +6,7 @@ export default function ServiceWorkerRegistration() {
   useEffect(() => {
     if (navigator.serviceWorker) {
       navigator.serviceWorker.register("/sw.js").catch(() => {
-        // Registration failed silently — non-critical
+        // Registration failed silently - non-critical
       });
     }
   }, []);

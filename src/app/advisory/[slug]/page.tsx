@@ -34,7 +34,7 @@ export async function generateMetadata({
   const description = `Looking for ${item.title.toLowerCase()} in pharma & life sciences? ${item.tagline}. Dr. Kurr Advisory delivers proven results.`;
 
   return {
-    title: `${item.title} — Advisory Services | Dr. Michael Kurr`,
+    title: `${item.title} - Advisory Services | Dr. Michael Kurr`,
     description,
     keywords: [
       item.title,
@@ -54,7 +54,7 @@ export async function generateMetadata({
       canonical: `https://dr.michaelkurr.com/advisory/${item.slug}/`,
     },
     openGraph: {
-      title: `${item.title} — Dr. Kurr Advisory`,
+      title: `${item.title} - Dr. Kurr Advisory`,
       description,
       type: "article",
       url: `https://dr.michaelkurr.com/advisory/${item.slug}/`,
@@ -65,18 +65,18 @@ export async function generateMetadata({
           url: "/images/profile.jpg",
           width: 800,
           height: 800,
-          alt: `Dr. Michael Kurr — ${item.title}`,
+          alt: `Dr. Michael Kurr - ${item.title}`,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${item.title} — Dr. Kurr Advisory`,
+      title: `${item.title} - Dr. Kurr Advisory`,
       description: item.tagline,
       images: [
         {
           url: "/images/profile.jpg",
-          alt: `Dr. Michael Kurr — ${item.title}`,
+          alt: `Dr. Michael Kurr - ${item.title}`,
         },
       ],
     },
@@ -197,7 +197,7 @@ export default async function AdvisoryServicePage({
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <Link
             href="/"
-            title="Dr. Michael Kurr — Home"
+            title="Dr. Michael Kurr - Home"
             className="font-heading text-xl font-bold text-white tracking-wider"
           >
             MK
@@ -230,7 +230,7 @@ export default async function AdvisoryServicePage({
                 <li>
                   <Link
                     href="/"
-                    title="Dr. Michael Kurr — Home"
+                    title="Dr. Michael Kurr - Home"
                     className="hover:text-gold transition-colors"
                   >
                     Home
@@ -390,7 +390,7 @@ export default async function AdvisoryServicePage({
           </section>
         )}
 
-        {/* FAQ — visible accordion section matching FAQPage schema */}
+        {/* FAQ - visible accordion section matching FAQPage schema */}
         <SubpageFAQ
           slug={slug}
           title={item.title}
@@ -414,7 +414,7 @@ export default async function AdvisoryServicePage({
                   <Link
                     key={s.slug}
                     href={`/advisory/${s.slug}/`}
-                    title={`${s.title} — Dr. Kurr Advisory`}
+                    title={`${s.title} - Dr. Kurr Advisory`}
                     className="fade-in group p-4 rounded-xl border border-gray-200 hover:border-gold/40 hover:shadow-md transition-all duration-300 bg-white"
                   >
                     <span className="block font-heading text-sm font-semibold text-navy group-hover:text-gold transition-colors">

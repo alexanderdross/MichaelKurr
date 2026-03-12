@@ -3,7 +3,7 @@ import { readFileSync } from "fs";
 import { join } from "path";
 import { getExpertiseBySlug, getAllExpertiseSlugs } from "@/data/expertise";
 
-export const alt = "Dr. Michael Kurr — Expertise";
+export const alt = "Dr. Michael Kurr - Expertise";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

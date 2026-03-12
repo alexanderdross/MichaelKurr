@@ -99,7 +99,7 @@ export default function Expertise() {
             <div key={card.title} className="fade-in">
               <Link
                 href={`/expertise/${card.slug}/`}
-                title={`${card.title} — Dr. Michael Kurr's expertise in ${card.desc.toLowerCase()}`}
+                title={`${card.title} - Dr. Michael Kurr's expertise in ${card.desc.toLowerCase()}`}
                 className="group block p-8 rounded-xl border border-gray-200 shadow-sm hover:border-gold/40 hover:shadow-lg transition-all duration-300 bg-gray-100 h-full"
               >
                 <div className="text-navy/60 group-hover:text-gold transition-colors duration-300 mb-5">

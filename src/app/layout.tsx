@@ -35,9 +35,9 @@ const playfair = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dr.michaelkurr.com"),
-  title: "Dr. Michael Kurr — Operator & Transformation Leader | Pharma & Life Sciences",
+  title: "Dr. Michael Kurr - Operator & Transformation Leader | Pharma & Life Sciences",
   description:
-    "Dr. Michael A. Kurr — Founder of Dr. Kurr Advisory. Fractional C-level executive and transformation leader with 20+ years of experience across Boehringer Ingelheim, Novartis, and global pharma. Published author and expert in building world-class organizations.",
+    "Dr. Michael A. Kurr - Founder of Dr. Kurr Advisory. Fractional C-level executive and transformation leader with 20+ years of experience across Boehringer Ingelheim, Novartis, and global pharma. Published author and expert in building world-class organizations.",
   keywords: [
     "Dr. Michael Kurr",
     "Michael Kurr",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Dr. Michael Kurr — Operator & Transformation Leader",
+    title: "Dr. Michael Kurr - Operator & Transformation Leader",
     description:
       "Founder of Dr. Kurr Advisory. Fractional C-level executive in Pharma & Life Sciences with 20+ years transforming global organizations at Boehringer Ingelheim, Novartis, and beyond. Published author and expert in corporate transformation, digital strategy, and cooperation management.",
     type: "profile",
@@ -85,19 +85,19 @@ export const metadata: Metadata = {
         url: "/images/profile.jpg",
         width: 800,
         height: 800,
-        alt: "Dr. Michael Kurr — professional headshot",
+        alt: "Dr. Michael Kurr - professional headshot",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Michael Kurr — Operator & Transformation Leader",
+    title: "Dr. Michael Kurr - Operator & Transformation Leader",
     description:
       "Founder of Dr. Kurr Advisory. Fractional C-level executive in Pharma & Life Sciences with 20+ years transforming global organizations.",
     images: [
       {
         url: "/images/profile.jpg",
-        alt: "Dr. Michael Kurr — professional headshot",
+        alt: "Dr. Michael Kurr - professional headshot",
       },
     ],
   },

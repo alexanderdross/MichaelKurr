@@ -176,7 +176,7 @@ export default function RecommendationsCarousel() {
                   href={rec.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  title={`${rec.name} — ${rec.title}`}
+                  title={`${rec.name} - ${rec.title}`}
                   className="hover:text-gold transition-colors duration-200 underline decoration-gold/30 underline-offset-2"
                 >
                   {rec.name}

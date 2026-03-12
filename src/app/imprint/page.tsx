@@ -4,9 +4,9 @@ import ScrollAnimations from "@/components/ScrollAnimations";
 import { makeProductSchema, makeNavigationSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
-  title: "Imprint — Dr. Michael Kurr",
+  title: "Imprint - Dr. Michael Kurr",
   description:
-    "Legal notice (Impressum) for dr.michaelkurr.com — the personal website of Dr. Michael A. Kurr, Founder of Dr. Kurr Advisory.",
+    "Legal notice (Impressum) for dr.michaelkurr.com - the personal website of Dr. Michael A. Kurr, Founder of Dr. Kurr Advisory.",
   keywords: [
     "imprint",
     "legal notice",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     canonical: "https://dr.michaelkurr.com/imprint/",
   },
   openGraph: {
-    title: "Imprint — Dr. Michael Kurr",
+    title: "Imprint - Dr. Michael Kurr",
     description:
-      "Legal notice (Impressum) for dr.michaelkurr.com — the personal website of Dr. Michael A. Kurr, Founder of Dr. Kurr Advisory.",
+      "Legal notice (Impressum) for dr.michaelkurr.com - the personal website of Dr. Michael A. Kurr, Founder of Dr. Kurr Advisory.",
     type: "website",
     url: "https://dr.michaelkurr.com/imprint/",
     siteName: "Dr. Michael Kurr",
@@ -31,19 +31,19 @@ export const metadata: Metadata = {
         url: "/images/profile.jpg",
         width: 800,
         height: 800,
-        alt: "Dr. Michael Kurr — Imprint",
+        alt: "Dr. Michael Kurr - Imprint",
       },
     ],
   },
   twitter: {
     card: "summary",
-    title: "Imprint — Dr. Michael Kurr",
+    title: "Imprint - Dr. Michael Kurr",
     description:
-      "Legal notice (Impressum) for dr.michaelkurr.com — Dr. Michael A. Kurr, Founder of Dr. Kurr Advisory.",
+      "Legal notice (Impressum) for dr.michaelkurr.com - Dr. Michael A. Kurr, Founder of Dr. Kurr Advisory.",
     images: [
       {
         url: "/images/profile.jpg",
-        alt: "Dr. Michael Kurr — Imprint",
+        alt: "Dr. Michael Kurr - Imprint",
       },
     ],
   },
@@ -103,7 +103,7 @@ export default function ImprintPage() {
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <Link
             href="/"
-            title="Dr. Michael Kurr — Home"
+            title="Dr. Michael Kurr - Home"
             className="font-heading text-xl font-bold text-white tracking-wider"
           >
             MK
@@ -136,7 +136,7 @@ export default function ImprintPage() {
                 <li>
                   <Link
                     href="/"
-                    title="Dr. Michael Kurr — Home"
+                    title="Dr. Michael Kurr - Home"
                     className="hover:text-gold transition-colors"
                   >
                     Home
@@ -235,7 +235,7 @@ export default function ImprintPage() {
                   href="https://dross.net/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  title="Dross:Media — Web Design & Development"
+                  title="Dross:Media - Web Design & Development"
                   className="text-teal hover:text-teal-light font-semibold transition-colors"
                 >
                   Dross:Media

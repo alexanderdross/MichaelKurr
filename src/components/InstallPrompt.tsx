@@ -40,7 +40,7 @@ export default function InstallPrompt() {
     const ios = /iPad|iPhone|iPod/.test(ua) && !("MSStream" in window);
     setIsIOS(ios);
 
-    // On iOS, there's no beforeinstallprompt — show manual instructions after a delay
+    // On iOS, there's no beforeinstallprompt - show manual instructions after a delay
     if (ios) {
       const timer = setTimeout(() => setShowBanner(true), 4000);
       return () => clearTimeout(timer);

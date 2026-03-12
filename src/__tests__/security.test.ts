@@ -8,7 +8,7 @@ describe("Security: manifest.json", () => {
   it("exists and is valid JSON", () => {
     const raw = fs.readFileSync(manifestPath, "utf-8");
     const manifest = JSON.parse(raw);
-    expect(manifest.name).toBe("Dr. Michael Kurr — Pharma & Life Sciences Advisory");
+    expect(manifest.name).toBe("Dr. Michael Kurr - Pharma & Life Sciences Advisory");
     expect(manifest.short_name).toBe("Dr. Kurr");
     expect(manifest.display).toBe("standalone");
     expect(manifest.theme_color).toBe("#1B2A4A");

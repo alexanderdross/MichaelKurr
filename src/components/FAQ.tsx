@@ -6,7 +6,7 @@ const faqs = [
   {
     id: "who-is-dr-michael-kurr",
     question: "Who is Dr. Michael Kurr?",
-    title: "Learn about Dr. Michael Kurr — Founder of Dr. Kurr Advisory, Fractional CCO at Lemna Bio, and Fellow at THENA Capital",
+    title: "Learn about Dr. Michael Kurr - Founder of Dr. Kurr Advisory, Fractional CCO at Lemna Bio, and Fellow at THENA Capital",
     answer:
       "Dr. Michael A. Kurr is the Founder of Dr. Kurr Advisory, an independent platform for fractional C-level and advisory mandates in Pharma & Life Sciences. He also serves as Fractional Chief Commercial Officer at Lemna Bio and as a Fellow at THENA Capital. Previously, he was Global Head of Human Pharma Services at Boehringer Ingelheim (2019\u20132025), where he built the entire global services organization from scratch, scaling it tenfold within four years.",
   },
@@ -20,35 +20,35 @@ const faqs = [
   {
     id: "dr-kurr-books-publications",
     question: "What books has Dr. Michael Kurr published?",
-    title: "Published books by Dr. Michael Kurr — Prozessorientierte Reorganisation and Kooperationsmanagement (Carl Hanser Verlag)",
+    title: "Published books by Dr. Michael Kurr - Prozessorientierte Reorganisation and Kooperationsmanagement (Carl Hanser Verlag)",
     answer:
       "Dr. Kurr co-authored two books published by Carl Hanser Verlag: \u2018Prozessorientierte Reorganisation: Reengineering-Projekte professionell gestalten und umsetzen\u2019 (2006, 204 pages, ISBN 978-3-446-40720-6) and \u2018Kooperationsmanagement: Systematische Vorbereitung \u2013 Gezielter Auf- und Ausbau \u2013 Entscheidende Erfolgsfaktoren\u2019 (2005, 207 pages, ISBN 978-3-446-40036-8), both with Prof. G\u00fcnther Schuh and Prof. Thomas Friedli.",
   },
   {
     id: "dr-kurr-education",
     question: "What is Dr. Kurr\u2019s educational background?",
-    title: "Dr. Michael Kurr\u2019s education — University of St. Gallen, RWTH Aachen, MIT Sloan, and IMD Business School",
+    title: "Dr. Michael Kurr\u2019s education - University of St. Gallen, RWTH Aachen, MIT Sloan, and IMD Business School",
     answer:
       "Dr. Kurr holds a Doctorate (Dr. oec. HSG) and an Executive MBA from the University of St. Gallen, a Dipl.-Ing. from RWTH Aachen University in Production Management and Manufacturing Technology, an Executive Certificate in Digital Business from MIT Sloan School of Management (2024), and completed three programs at IMD Business School in digital transformation, strategy, and analytics.",
   },
   {
     id: "dr-kurr-advisory-services",
     question: "What services does Dr. Kurr Advisory offer?",
-    title: "Dr. Kurr Advisory services — fractional C-level leadership, transformation consulting, AI readiness, and operating model design for Pharma & Life Sciences",
+    title: "Dr. Kurr Advisory services - fractional C-level leadership, transformation consulting, AI readiness, and operating model design for Pharma & Life Sciences",
     answer:
       "Dr. Kurr Advisory provides strategic clarity, scalable operating model design, and profitable growth advisory for Pharma & Life Sciences organizations. Services include fractional C-level leadership (CCO, CTO, COO), corporate transformation consulting, go-to-market strategy, digital operations design, AI readiness, and organizational development.",
   },
   {
     id: "dr-kurr-boehringer-ingelheim",
     question: "What did Dr. Kurr achieve at Boehringer Ingelheim?",
-    title: "Dr. Michael Kurr\u2019s achievements at Boehringer Ingelheim — building the #1 content supply chain in pharma from scratch",
+    title: "Dr. Michael Kurr\u2019s achievements at Boehringer Ingelheim - building the #1 content supply chain in pharma from scratch",
     answer:
       "At Boehringer Ingelheim (2019\u20132025), Dr. Kurr built the Global Human Pharma Services organization from scratch over 4 years, expanding it tenfold to full geographical scale. The organization included a Global Services Delivery Unit, Digital Content Factory in India, Creative Factory, and a Global Service Layer. External benchmarking studies recognized it as one of the leading content supply chains in the pharmaceutical industry.",
   },
   {
     id: "dr-kurr-leadership-philosophy",
     question: "What is Dr. Kurr\u2019s leadership philosophy?",
-    title: "Dr. Michael Kurr\u2019s leadership philosophy — Transparency, Respect, Empowerment, Fairness, and Vision",
+    title: "Dr. Michael Kurr\u2019s leadership philosophy - Transparency, Respect, Empowerment, Fairness, and Vision",
     answer:
       "Dr. Kurr\u2019s leadership is anchored in five core traits: Transparency, Respect, Empowerment, Fairness, and Vision. His core equation is \u2018Structure follows process follows strategy,\u2019 anchored in the three pillars of People, Process, and Technology. He operates by three management rules: avoid assumptions, practice patience and strategic thinking, and stay current by embracing change proactively.",
   },
@@ -92,7 +92,7 @@ export default function FAQ() {
         <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-16 group/heading">
           <a
             href="#faq"
-            title="Frequently Asked Questions about Dr. Michael Kurr — expertise, advisory services, publications, education, and leadership philosophy"
+            title="Frequently Asked Questions about Dr. Michael Kurr - expertise, advisory services, publications, education, and leadership philosophy"
             className="hover:text-navy/80 transition-colors"
           >
             Frequently Asked Questions

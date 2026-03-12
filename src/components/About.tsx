@@ -2,7 +2,7 @@ const timeline = [
   {
     date: "2026 – Present",
     dateTime: "2026",
-    title: "Founder — Dr. Kurr Advisory",
+    title: "Founder - Dr. Kurr Advisory",
     org: "Fractional C-Level & Advisory | Pharma & Life Sciences",
     href: "/advisory/",
     titleAttr: "Dr. Michael Kurr – Founder of Dr. Kurr Advisory, Fractional C-Level Consulting in Pharma & Life Sciences",
@@ -18,7 +18,7 @@ const timeline = [
   {
     date: "2026 – Present",
     dateTime: "2026",
-    title: "Fellow — THENA Capital",
+    title: "Fellow - THENA Capital",
     org: "MedTech Investment | Early-Stage Digital & Device Companies",
     href: "https://www.thenacapital.com/",
     titleAttr: "Michael Kurr – Fellow at THENA Capital, MedTech Investment & Early-Stage Digital Health",
@@ -50,7 +50,7 @@ const timeline = [
   {
     date: "Doctorate",
     dateTime: "2000/2003",
-    title: "Dr. oec. HSG — University of St. Gallen",
+    title: "Dr. oec. HSG - University of St. Gallen",
     org: "Economics, Technology Management",
     href: "https://www.unisg.ch/",
     titleAttr: "Dr. Michael Kurr – Doctorate in Economics & Technology Management, University of St. Gallen (HSG)",
@@ -65,7 +65,7 @@ export default function About() {
           Background
         </span>
         <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-16 max-w-3xl group/heading">
-          <a href="#about" title="About Dr. Michael Kurr — Two Decades of Global Corporate Transformation" className="hover:text-navy/80 transition-colors">
+          <a href="#about" title="About Dr. Michael Kurr - Two Decades of Global Corporate Transformation" className="hover:text-navy/80 transition-colors">
             Two Decades of Transforming Global Organizations
             <span className="text-gold/0 group-hover/heading:text-gold/60 transition-colors ml-2 text-2xl" aria-hidden="true">#</span>
           </a>
@@ -94,7 +94,7 @@ export default function About() {
               </strong>{" "}
               at <strong className="text-charcoal">Boehringer Ingelheim</strong>{" "}
               (2019–2025), where he built the entire global services organization
-              from scratch — scaling it tenfold to full geographical coverage
+              from scratch - scaling it tenfold to full geographical coverage
               within four years. Before that, he spent eight years at{" "}
               <strong className="text-charcoal">Novartis</strong> in senior
               leadership roles across global business services and product
@@ -113,7 +113,7 @@ export default function About() {
               transformation and AI.
             </p>
             <p className="fade-in text-xl font-heading italic text-navy/70 border-l-4 border-gold pl-6 mt-8">
-              &ldquo;Structure follows process follows strategy&rdquo; — anchored
+              &ldquo;Structure follows process follows strategy&rdquo; - anchored
               in the three pillars of <strong>People, Process, and Technology</strong>.
             </p>
           </div>

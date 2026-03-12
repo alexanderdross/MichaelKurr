@@ -27,7 +27,7 @@ export default function Hero() {
           <div className="relative w-36 h-36 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden ring-4 ring-gold/30 shadow-2xl">
             <Image
               src="/images/profile.jpg"
-              alt="Dr. Michael Kurr — professional headshot"
+              alt="Dr. Michael Kurr - professional headshot"
               width={800}
               height={800}
               sizes="(max-width: 640px) 144px, (max-width: 1024px) 224px, 256px"
@@ -83,7 +83,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator — hidden on small screens to avoid overlap */}
+      {/* Scroll indicator - hidden on small screens to avoid overlap */}
       <a
         href="#about"
         className="hidden sm:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-3 text-white/60 hover:text-white/80 transition-colors duration-200 cursor-pointer"

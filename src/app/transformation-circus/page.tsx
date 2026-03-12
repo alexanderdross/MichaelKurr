@@ -6,9 +6,9 @@ import { makeProductSchema, makeNavigationSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
   title:
-    "The Transformation Circus — Big Pharma, Smart Machines, Same Old Chaos | Dr. Michael Kurr",
+    "The Transformation Circus - Big Pharma, Smart Machines, Same Old Chaos | Dr. Michael Kurr",
   description:
-    "Leading the Transformation Circus in the Age of AI. Dr. Michael Kurr shares 15+ years of lessons on pharma transformation — taming chaos monkeys, building smart ape teams, leveraging AI agents, and surviving the lion tamers of corporate executive sponsorship.",
+    "Leading the Transformation Circus in the Age of AI. Dr. Michael Kurr shares 15+ years of lessons on pharma transformation - taming chaos monkeys, building smart ape teams, leveraging AI agents, and surviving the lion tamers of corporate executive sponsorship.",
   keywords: [
     "pharma transformation",
     "corporate transformation",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     canonical: "https://dr.michaelkurr.com/transformation-circus/",
   },
   openGraph: {
-    title: "The Transformation Circus — Dr. Michael Kurr",
+    title: "The Transformation Circus - Dr. Michael Kurr",
     description:
       "Big Pharma, Smart Machines, Same Old Chaos. Leading the Transformation Circus in the Age of AI. Lessons from 15+ years of pharma transformation.",
     type: "article",
@@ -60,19 +60,19 @@ export const metadata: Metadata = {
         url: "/images/profile.jpg",
         width: 800,
         height: 800,
-        alt: "Dr. Michael Kurr — The Transformation Circus",
+        alt: "Dr. Michael Kurr - The Transformation Circus",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Transformation Circus — Dr. Michael Kurr",
+    title: "The Transformation Circus - Dr. Michael Kurr",
     description:
       "Big Pharma, Smart Machines, Same Old Chaos. 15+ years of pharma transformation lessons.",
     images: [
       {
         url: "/images/profile.jpg",
-        alt: "Dr. Michael Kurr — The Transformation Circus",
+        alt: "Dr. Michael Kurr - The Transformation Circus",
       },
     ],
   },
@@ -110,7 +110,7 @@ function RingmasterBox({
   );
 }
 
-/* ─── Slide section — mirrors PDF left-image / right-content layout ─── */
+/* ─── Slide section - mirrors PDF left-image / right-content layout ─── */
 function SlideSection({
   id,
   imagePlaceholder,
@@ -281,7 +281,7 @@ export default function TransformationCircusPage() {
             datePublished: "2026-03-01",
             dateModified: "2026-03-06",
             description:
-              "Lessons from 15+ years of leading pharma transformation — taming chaos, building teams, and integrating AI without losing your mind.",
+              "Lessons from 15+ years of leading pharma transformation - taming chaos, building teams, and integrating AI without losing your mind.",
             mainEntityOfPage: {
               "@type": "WebPage",
               "@id": "https://dr.michaelkurr.com/transformation-circus/",
@@ -350,7 +350,7 @@ export default function TransformationCircusPage() {
                 name: "What is the Transformation Circus?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "The Transformation Circus is a framework by Dr. Michael Kurr that uses the circus metaphor to explain corporate pharma transformation. It features Smart Apes (your success team), Chaos Monkeys (disruptors), AI Agents (new performers), Lion Tamers (executive sponsors), and the Ringmaster (transformation leader) — all navigating change in the age of AI.",
+                  text: "The Transformation Circus is a framework by Dr. Michael Kurr that uses the circus metaphor to explain corporate pharma transformation. It features Smart Apes (your success team), Chaos Monkeys (disruptors), AI Agents (new performers), Lion Tamers (executive sponsors), and the Ringmaster (transformation leader) - all navigating change in the age of AI.",
                 },
               },
               {
@@ -358,7 +358,7 @@ export default function TransformationCircusPage() {
                 name: "How does AI fit into pharma transformation?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "AI agents accelerate execution — they route tasks, analyze data, draft content, and flag compliance issues. But they don't replace leadership. In pharma's highly regulated environment, AI must operate inside governed workflows, and accountability cannot be delegated to algorithms. Your operating model decides what gets scaled.",
+                  text: "AI agents accelerate execution - they route tasks, analyze data, draft content, and flag compliance issues. But they don't replace leadership. In pharma's highly regulated environment, AI must operate inside governed workflows, and accountability cannot be delegated to algorithms. Your operating model decides what gets scaled.",
                 },
               },
               {
@@ -366,7 +366,7 @@ export default function TransformationCircusPage() {
                 name: "What are the key takeaways for leading corporate transformation?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Six key takeaways: (1) AI won't tame the monkeys — manage disruption early, (2) Without executive sponsorship you're just an appetizer, (3) A billion-dollar business case means nothing without ownership, (4) Corporate transformation takes years — pace the change, (5) AI scales execution but your operating model decides what gets scaled, (6) Build the right team — trusted, strategic, adaptable, collaborative.",
+                  text: "Six key takeaways: (1) AI won't tame the monkeys - manage disruption early, (2) Without executive sponsorship you're just an appetizer, (3) A billion-dollar business case means nothing without ownership, (4) Corporate transformation takes years - pace the change, (5) AI scales execution but your operating model decides what gets scaled, (6) Build the right team - trusted, strategic, adaptable, collaborative.",
                 },
               },
             ],
@@ -382,7 +382,7 @@ export default function TransformationCircusPage() {
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <Link
             href="/"
-            title="Dr. Michael Kurr — Home"
+            title="Dr. Michael Kurr - Home"
             className="font-heading text-xl font-bold text-navy tracking-wider"
           >
             MK
@@ -444,7 +444,7 @@ export default function TransformationCircusPage() {
             ═══════════════════════════════════════════ */}
         <SlideSection
           imagePlaceholder="&#127914;"
-          imageAlt="Ringmaster Dr. Michael Kurr in front of a colorful circus tent — The Transformation Circus"
+          imageAlt="Ringmaster Dr. Michael Kurr in front of a colorful circus tent - The Transformation Circus"
         >
           <p className="text-navy/80 text-sm font-semibold tracking-[0.2em] uppercase mb-4">
             A Talk by Dr. Michael A. Kurr
@@ -492,11 +492,11 @@ export default function TransformationCircusPage() {
         <SlideSection
           id="showtime"
           imagePlaceholder="&#127911;"
-          imageAlt="Circus tent with performers, lions, and a captivated audience — It's Showtime"
+          imageAlt="Circus tent with performers, lions, and a captivated audience - It's Showtime"
           bgClass="bg-offwhite"
         >
           <h2 className="font-heading text-3xl sm:text-4xl font-bold italic text-navy mb-4">
-            Welcome to the Transformation Circus — It&rsquo;s Showtime!
+            Welcome to the Transformation Circus - It&rsquo;s Showtime!
           </h2>
           <p className="text-charcoal text-lg mb-8">
             <strong>Pharma transformation</strong> is a full-blown circus. Where{" "}
@@ -545,7 +545,7 @@ export default function TransformationCircusPage() {
             ═══════════════════════════════════════════ */}
         <SlideSection
           imagePlaceholder="&#129464;"
-          imageAlt="The Ringmaster in a white top hat commanding the circus stage — Master of Chaos"
+          imageAlt="The Ringmaster in a white top hat commanding the circus stage - Master of Chaos"
         >
           <h2 className="font-heading text-3xl sm:text-4xl font-bold italic text-navy mb-3">
             The Ringmaster &mdash; Master of Chaos, Keeper of Sanity
@@ -909,7 +909,7 @@ export default function TransformationCircusPage() {
             ═══════════════════════════════════════════ */}
         <SlideSection
           imagePlaceholder="&#129409;"
-          imageAlt="The Lion Tamer — a senior executive in a top hat standing confidently beside a lion"
+          imageAlt="The Lion Tamer - a senior executive in a top hat standing confidently beside a lion"
         >
           <h2 className="font-heading text-3xl sm:text-4xl font-bold italic text-navy mb-3">
             The Lion Tamer (Senior Executive Sponsor)
@@ -988,7 +988,7 @@ export default function TransformationCircusPage() {
             ═══════════════════════════════════════════ */}
         <SlideSection
           imagePlaceholder="&#9878;&#65039;"
-          imageAlt="AI in a highly regulated pharma tent — robots and compliance officers on stage"
+          imageAlt="AI in a highly regulated pharma tent - robots and compliance officers on stage"
           reverse
           bgClass="bg-offwhite"
         >
@@ -1662,7 +1662,7 @@ export default function TransformationCircusPage() {
                   </div>
                 </div>
 
-                {/* Highlighted AI box — matching PDF bottom box */}
+                {/* Highlighted AI box - matching PDF bottom box */}
                 <div className="rounded-xl bg-navy p-6 text-white">
                   <Bullet emoji="&#129302;">
                     <div>
@@ -1727,7 +1727,7 @@ export default function TransformationCircusPage() {
           </div>
         </section>
 
-        {/* FAQ — visible accordion matching FAQPage schema */}
+        {/* FAQ - visible accordion matching FAQPage schema */}
         <SubpageFAQ
           slug="transformation-circus"
           title="The Transformation Circus"
@@ -1735,17 +1735,17 @@ export default function TransformationCircusPage() {
             {
               id: "what-is-the-transformation-circus",
               question: "What is the Transformation Circus?",
-              answer: "The Transformation Circus is a framework by Dr. Michael Kurr that uses the circus metaphor to explain corporate pharma transformation. It features Smart Apes (your success team), Chaos Monkeys (disruptors), AI Agents (new performers), Lion Tamers (executive sponsors), and the Ringmaster (transformation leader) — all navigating change in the age of AI.",
+              answer: "The Transformation Circus is a framework by Dr. Michael Kurr that uses the circus metaphor to explain corporate pharma transformation. It features Smart Apes (your success team), Chaos Monkeys (disruptors), AI Agents (new performers), Lion Tamers (executive sponsors), and the Ringmaster (transformation leader) - all navigating change in the age of AI.",
             },
             {
               id: "how-does-ai-fit-into-pharma-transformation",
               question: "How does AI fit into pharma transformation?",
-              answer: "AI agents accelerate execution — they route tasks, analyze data, draft content, and flag compliance issues. But they don't replace leadership. In pharma's highly regulated environment, AI must operate inside governed workflows, and accountability cannot be delegated to algorithms. Your operating model decides what gets scaled.",
+              answer: "AI agents accelerate execution - they route tasks, analyze data, draft content, and flag compliance issues. But they don't replace leadership. In pharma's highly regulated environment, AI must operate inside governed workflows, and accountability cannot be delegated to algorithms. Your operating model decides what gets scaled.",
             },
             {
               id: "key-takeaways-corporate-transformation",
               question: "What are the key takeaways for leading corporate transformation?",
-              answer: "Six key takeaways: (1) AI won't tame the monkeys — manage disruption early, (2) Without executive sponsorship you're just an appetizer, (3) A billion-dollar business case means nothing without ownership, (4) Corporate transformation takes years — pace the change, (5) AI scales execution but your operating model decides what gets scaled, (6) Build the right team — trusted, strategic, adaptable, collaborative.",
+              answer: "Six key takeaways: (1) AI won't tame the monkeys - manage disruption early, (2) Without executive sponsorship you're just an appetizer, (3) A billion-dollar business case means nothing without ownership, (4) Corporate transformation takes years - pace the change, (5) AI scales execution but your operating model decides what gets scaled, (6) Build the right team - trusted, strategic, adaptable, collaborative.",
             },
           ]}
         />
@@ -1768,7 +1768,7 @@ export default function TransformationCircusPage() {
             aria-label="Footer navigation"
             className="flex flex-wrap items-center justify-center gap-x-1 gap-y-2 text-sm"
           >
-            <Link href="/" title="Dr. Michael Kurr — Home" className="hover:text-white transition-colors px-2">
+            <Link href="/" title="Dr. Michael Kurr - Home" className="hover:text-white transition-colors px-2">
               Home
             </Link>
             <span className="text-white/20" aria-hidden="true">·</span>

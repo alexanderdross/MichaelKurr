@@ -3,7 +3,7 @@ import { readFileSync } from "fs";
 import { join } from "path";
 import { getLeadershipBySlug, getAllLeadershipSlugs } from "@/data/leadership";
 
-export const alt = "Dr. Michael Kurr — Leadership Philosophy";
+export const alt = "Dr. Michael Kurr - Leadership Philosophy";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

@@ -8,7 +8,7 @@ export default function Contact() {
           Connect
         </span>
         <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 group/heading">
-          <a href="#contact" title="Contact Dr. Michael Kurr — Fractional C-Level Advisory & Pharma Consulting" className="hover:text-white/80 transition-colors">
+          <a href="#contact" title="Contact Dr. Michael Kurr - Fractional C-Level Advisory & Pharma Consulting" className="hover:text-white/80 transition-colors">
             Let&rsquo;s Connect
             <span className="text-gold/0 group-hover/heading:text-gold/60 transition-colors ml-2 text-2xl" aria-hidden="true">#</span>
           </a>

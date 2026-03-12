@@ -36,7 +36,7 @@ export default function Featured() {
           Recognition
         </span>
         <h2 className="fade-in font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-16 group/heading">
-          <a href="#featured" title="Dr. Michael Kurr — Featured in CIOLook, Hanser Verlag & Google Knowledge Graph" className="hover:text-navy/80 transition-colors">
+          <a href="#featured" title="Dr. Michael Kurr - Featured in CIOLook, Hanser Verlag & Google Knowledge Graph" className="hover:text-navy/80 transition-colors">
             As Featured In
             <span className="text-gold/0 group-hover/heading:text-gold/60 transition-colors ml-2 text-2xl" aria-hidden="true">#</span>
           </a>
@@ -49,7 +49,7 @@ export default function Featured() {
               href={f.href}
               target="_blank"
               rel="noopener noreferrer"
-              title={`Dr. Michael Kurr featured on ${f.name} — ${f.desc}`}
+              title={`Dr. Michael Kurr featured on ${f.name} - ${f.desc}`}
               className="group flex flex-col items-center justify-center p-6 bg-white rounded-xl border border-gray-200 hover:border-gold/40 hover:shadow-md transition-all duration-300 text-center min-h-[120px]"
             >
               <span className="font-heading text-lg font-semibold text-navy group-hover:text-gold transition-colors duration-200">

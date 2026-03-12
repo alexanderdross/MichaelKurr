@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 import { makeProductSchema, makeNavigationSchema } from "@/data/schemas";
 
 export const metadata: Metadata = {
-  title: "Contact — Dr. Michael Kurr",
+  title: "Contact - Dr. Michael Kurr",
   description:
     "Get in touch with Dr. Michael A. Kurr for fractional C-level mandates, transformation advisory, or strategic counsel in Pharma & Life Sciences.",
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     canonical: "https://dr.michaelkurr.com/contact/",
   },
   openGraph: {
-    title: "Contact — Dr. Michael Kurr",
+    title: "Contact - Dr. Michael Kurr",
     description:
       "Get in touch with Dr. Michael A. Kurr for fractional C-level mandates, transformation advisory, or strategic counsel in Pharma & Life Sciences.",
     type: "website",
@@ -30,19 +30,19 @@ export const metadata: Metadata = {
         url: "/images/profile.jpg",
         width: 800,
         height: 800,
-        alt: "Dr. Michael Kurr — Contact",
+        alt: "Dr. Michael Kurr - Contact",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact — Dr. Michael Kurr",
+    title: "Contact - Dr. Michael Kurr",
     description:
       "Get in touch for fractional C-level mandates, transformation advisory, or strategic counsel in Pharma & Life Sciences.",
     images: [
       {
         url: "/images/profile.jpg",
-        alt: "Dr. Michael Kurr — Contact",
+        alt: "Dr. Michael Kurr - Contact",
       },
     ],
   },
@@ -101,7 +101,7 @@ export default function ContactPage() {
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
           <Link
             href="/"
-            title="Dr. Michael Kurr — Home"
+            title="Dr. Michael Kurr - Home"
             className="font-heading text-xl font-bold text-white tracking-wider"
           >
             MK

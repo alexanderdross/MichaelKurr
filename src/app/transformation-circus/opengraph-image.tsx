@@ -3,7 +3,7 @@ import { readFileSync } from "fs";
 import { join } from "path";
 
 export const alt =
-  "The Transformation Circus — Big Pharma, Smart Machines, Same Old Chaos | Dr. Michael Kurr";
+  "The Transformation Circus - Big Pharma, Smart Machines, Same Old Chaos | Dr. Michael Kurr";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
